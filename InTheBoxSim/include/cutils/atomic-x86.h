@@ -19,51 +19,61 @@
 
 #include <stdint.h>
 
-extern inline void android_compiler_barrier(void)
+// FlexyCore Edit: replaced every "extern inline" by "FC_INLINE"
+
+// Begin FlexyCore
+#ifdef __GNUC_GNU_INLINE__
+#define FC_INLINE extern inline
+#else
+#define FC_INLINE inline
+#endif
+// End FlexyCore
+
+FC_INLINE void android_compiler_barrier(void)
 {
     __asm__ __volatile__ ("" : : : "memory");
 }
 
 #if ANDROID_SMP == 0
-extern inline void android_memory_barrier(void)
+FC_INLINE void android_memory_barrier(void)
 {
     android_compiler_barrier();
 }
 #else
-extern inline void android_memory_barrier(void)
+FC_INLINE void android_memory_barrier(void)
 {
     __asm__ __volatile__ ("mfence" : : : "memory");
 }
 #endif
 
-extern inline int32_t android_atomic_acquire_load(volatile const int32_t *ptr)
+FC_INLINE int32_t android_atomic_acquire_load(volatile const int32_t *ptr)
 {
     int32_t value = *ptr;
     android_compiler_barrier();
     return value;
 }
 
-extern inline int32_t android_atomic_release_load(volatile const int32_t *ptr)
+FC_INLINE int32_t android_atomic_release_load(volatile const int32_t *ptr)
 {
     android_memory_barrier();
     return *ptr;
 }
 
-extern inline void android_atomic_acquire_store(int32_t value,
+FC_INLINE void android_atomic_acquire_store(int32_t value,
                                                 volatile int32_t *ptr)
 {
     *ptr = value;
     android_memory_barrier();
 }
 
-extern inline void android_atomic_release_store(int32_t value,
+FC_INLINE void android_atomic_release_store(int32_t value,
                                                 volatile int32_t *ptr)
 {
     android_compiler_barrier();
     *ptr = value;
 }
 
-extern inline int android_atomic_cas(int32_t old_value, int32_t new_value,
+FC_INLINE int android_atomic_cas(int32_t old_value, int32_t new_value,
                                      volatile int32_t *ptr)
 {
     int32_t prev;
@@ -74,7 +84,7 @@ extern inline int android_atomic_cas(int32_t old_value, int32_t new_value,
     return prev != old_value;
 }
 
-extern inline int android_atomic_acquire_cas(int32_t old_value,
+FC_INLINE int android_atomic_acquire_cas(int32_t old_value,
                                              int32_t new_value,
                                              volatile int32_t *ptr)
 {
@@ -82,7 +92,7 @@ extern inline int android_atomic_acquire_cas(int32_t old_value,
     return android_atomic_cas(old_value, new_value, ptr);
 }
 
-extern inline int android_atomic_release_cas(int32_t old_value,
+FC_INLINE int android_atomic_release_cas(int32_t old_value,
                                              int32_t new_value,
                                              volatile int32_t *ptr)
 {
@@ -90,7 +100,7 @@ extern inline int android_atomic_release_cas(int32_t old_value,
     return android_atomic_cas(old_value, new_value, ptr);
 }
 
-extern inline int32_t android_atomic_swap(int32_t new_value,
+FC_INLINE int32_t android_atomic_swap(int32_t new_value,
                                           volatile int32_t *ptr)
 {
     __asm__ __volatile__ ("xchgl %1, %0"
@@ -101,7 +111,7 @@ extern inline int32_t android_atomic_swap(int32_t new_value,
     return new_value;
 }
 
-extern inline int32_t android_atomic_add(int32_t increment,
+FC_INLINE int32_t android_atomic_add(int32_t increment,
                                          volatile int32_t *ptr)
 {
     __asm__ __volatile__ ("lock; xaddl %0, %1"
@@ -111,17 +121,17 @@ extern inline int32_t android_atomic_add(int32_t increment,
     return increment;
 }
 
-extern inline int32_t android_atomic_inc(volatile int32_t *addr)
+FC_INLINE int32_t android_atomic_inc(volatile int32_t *addr)
 {
     return android_atomic_add(1, addr);
 }
 
-extern inline int32_t android_atomic_dec(volatile int32_t *addr)
+FC_INLINE int32_t android_atomic_dec(volatile int32_t *addr)
 {
     return android_atomic_add(-1, addr);
 }
 
-extern inline int32_t android_atomic_and(int32_t value,
+FC_INLINE int32_t android_atomic_and(int32_t value,
                                          volatile int32_t *ptr)
 {
     int32_t prev, status;
@@ -132,7 +142,7 @@ extern inline int32_t android_atomic_and(int32_t value,
     return prev;
 }
 
-extern inline int32_t android_atomic_or(int32_t value, volatile int32_t *ptr)
+FC_INLINE int32_t android_atomic_or(int32_t value, volatile int32_t *ptr)
 {
     int32_t prev, status;
     do {

@@ -42,7 +42,14 @@
  * it was built with optimizations enabled.
  */
 #ifndef _DEX_GEN_INLINES             /* only defined by DexInlines.c */
-# define DEX_INLINE extern __inline__
+// Begin FlexyCore
+#ifdef __GNUC_GNU_INLINE__
+#define DEX_INLINE extern __inline__
+#else
+#define DEX_INLINE __inline__
+#endif
+//# define DEX_INLINE extern __inline__
+// End FlexyCore
 #else
 # define DEX_INLINE
 #endif
