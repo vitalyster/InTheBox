@@ -1051,7 +1051,7 @@
 		F872AB021369608A00CE824B /* InTheBoxSimAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F53C135DE26300A8BDFF /* InTheBoxSimAppDelegate.m */; };
 		F872AB04136960A400CE824B /* InTheBoxSimAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F540135DE26300A8BDFF /* InTheBoxSimAppDelegate_iPhone.m */; };
 		F872AB05136960B100CE824B /* InTheBoxSimAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F547135DE26300A8BDFF /* InTheBoxSimAppDelegate_iPad.m */; };
-		F8895DAE1369AAF4002154D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8895DAD1369AA7D002154D7 /* main.m */; };
+		F8DA3118136AF32A0010A282 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3117136AF32A0010A282 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -14111,7 +14111,7 @@
 		F866FC86135DE4FA00A8BDFF /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
 		F866FC87135DE4FA00A8BDFF /* UtfString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UtfString.c; sourceTree = "<group>"; };
 		F866FC88135DE4FA00A8BDFF /* UtfString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtfString.h; sourceTree = "<group>"; };
-		F8895DAD1369AA7D002154D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
+		F8DA3117136AF32A0010A282 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32526,7 +32526,7 @@
 		F866F533135DE26300A8BDFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F8895DAD1369AA7D002154D7 /* main.m */,
+				F8DA3117136AF32A0010A282 /* main.m */,
 				F866F534135DE26300A8BDFF /* InTheBoxSim-Info.plist */,
 				F866F535135DE26300A8BDFF /* InfoPlist.strings */,
 				F866F538135DE26300A8BDFF /* InTheBoxSim-Prefix.pch */,
@@ -36155,7 +36155,7 @@
 				F872AB021369608A00CE824B /* InTheBoxSimAppDelegate.m in Sources */,
 				F872AB04136960A400CE824B /* InTheBoxSimAppDelegate_iPhone.m in Sources */,
 				F872AB05136960B100CE824B /* InTheBoxSimAppDelegate_iPad.m in Sources */,
-				F8895DAE1369AAF4002154D7 /* main.m in Sources */,
+				F8DA3118136AF32A0010A282 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
