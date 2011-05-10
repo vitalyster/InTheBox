@@ -19,7 +19,6 @@
 
 #include <stdint.h>
 #include <machine/cpu-features.h>
-#error machin
 // FlexyCore Edit: replaced every "extern inline" by "FC_INLINE"
 
 // Begin FlexyCore

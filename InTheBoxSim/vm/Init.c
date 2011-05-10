@@ -1316,6 +1316,12 @@ int dvmStartup(int argc, const char* const argv[], bool ignoreUnrecognized,
         LOGE("dvmTestIndirectRefTable FAILED\n");
 #endif
 
+    // Begin FlexyCore
+    fprintf(stdout, "FlexyCore Ex1\n");
+    Thread *selfThread = dvmThreadSelf();
+    Object *ex = selfThread->exception;
+    // End FlexyCore
+    
     assert(!dvmCheckException(dvmThreadSelf()));
     gDvm.initExceptionCount = 0;
 

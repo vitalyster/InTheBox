@@ -564,7 +564,7 @@ static ClassPathEntry* processClassPath(const char* pathStr, bool isBootstrap)
         }
     }
     end = cp;
-
+    
     /*
      * Allocate storage.  We over-alloc by one so we can set an "end" marker.
      */

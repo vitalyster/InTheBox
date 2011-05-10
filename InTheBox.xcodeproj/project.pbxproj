@@ -10,6 +10,7 @@
 		F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F542135DE26300A8BDFF /* MainWindow_iPhone.xib */; };
 		F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F549135DE26300A8BDFF /* MainWindow_iPad.xib */; };
 		F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F866F535135DE26300A8BDFF /* InfoPlist.strings */; };
+		F81DD62613715C18003C90A1 /* java_io_File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863151361BC9D00426E84 /* java_io_File.cpp */; };
 		F82852C41360618E00426E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F820593B13584758001217BF /* Foundation.framework */; };
 		F82852CB136061A100426E84 /* event_tag_map.c in Sources */ = {isa = PBXBuildFile; fileRef = F82852BA136060BB00426E84 /* event_tag_map.c */; };
 		F82852CC136061A300426E84 /* logd_write.c in Sources */ = {isa = PBXBuildFile; fileRef = F82852BC136060BB00426E84 /* logd_write.c */; };
@@ -1052,6 +1053,131 @@
 		F872AB04136960A400CE824B /* InTheBoxSimAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F540135DE26300A8BDFF /* InTheBoxSimAppDelegate_iPhone.m */; };
 		F872AB05136960B100CE824B /* InTheBoxSimAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F547135DE26300A8BDFF /* InTheBoxSimAppDelegate_iPad.m */; };
 		F8DA3118136AF32A0010A282 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3117136AF32A0010A282 /* main.m */; };
+		F8DA3124136ED99A0010A282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F820593B13584758001217BF /* Foundation.framework */; };
+		F8DA312A136EDA2A0010A282 /* AllocTracker.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F634135DE4F700A8BDFF /* AllocTracker.c */; };
+		F8DA312B136EDA2A0010A282 /* Atomic.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F654135DE4F800A8BDFF /* Atomic.c */; };
+		F8DA312C136EDA2A0010A282 /* AtomicCache.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F656135DE4F800A8BDFF /* AtomicCache.c */; };
+		F8DA312D136EDA2A0010A282 /* CheckJni.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F659135DE4F800A8BDFF /* CheckJni.c */; };
+		F8DA312E136EDA2B0010A282 /* Ddm.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F6E9135DE4F800A8BDFF /* Ddm.c */; };
+		F8DA312F136EDA2B0010A282 /* Debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F6EB135DE4F800A8BDFF /* Debugger.c */; };
+		F8DA3130136EDA2B0010A282 /* DvmDex.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F6EE135DE4F800A8BDFF /* DvmDex.c */; };
+		F8DA3131136EDA2B0010A282 /* Exception.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F6F0135DE4F800A8BDFF /* Exception.c */; };
+		F8DA3132136EDA2B0010A282 /* Hash.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F6F3135DE4F800A8BDFF /* Hash.c */; };
+		F8DA3133136EDA2B0010A282 /* IndirectRefTable.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F6FF135DE4F800A8BDFF /* IndirectRefTable.c */; };
+		F8DA3134136EDA2B0010A282 /* Init.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F701135DE4F800A8BDFF /* Init.c */; };
+		F8DA3135136EDA2B0010A282 /* InlineNative.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F703135DE4F800A8BDFF /* InlineNative.c */; };
+		F8DA3136136EDA2B0010A282 /* Inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F705135DE4F800A8BDFF /* Inlines.c */; };
+		F8DA3137136EDA2B0010A282 /* Intern.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F707135DE4F800A8BDFF /* Intern.c */; };
+		F8DA3138136EDA820010A282 /* JarFile.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F712135DE4F800A8BDFF /* JarFile.c */; };
+		F8DA3139136EDA820010A282 /* Jni.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F723135DE4F800A8BDFF /* Jni.c */; };
+		F8DA313A136EDA820010A282 /* LinearAlloc.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F725135DE4F800A8BDFF /* LinearAlloc.c */; };
+		F8DA313B136EDA820010A282 /* Misc.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F727135DE4F800A8BDFF /* Misc.c */; };
+		F8DA313C136EDA820010A282 /* Native.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC58135DE4FA00A8BDFF /* Native.c */; };
+		F8DA313D136EDA820010A282 /* PointerSet.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC68135DE4FA00A8BDFF /* PointerSet.c */; };
+		F8DA313E136EDA820010A282 /* Profile.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC6A135DE4FA00A8BDFF /* Profile.c */; };
+		F8DA313F136EDA820010A282 /* Properties.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC6C135DE4FA00A8BDFF /* Properties.c */; };
+		F8DA3140136EDA820010A282 /* RawDexFile.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC6E135DE4FA00A8BDFF /* RawDexFile.c */; };
+		F8DA3141136EDA820010A282 /* ReferenceTable.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC72135DE4FA00A8BDFF /* ReferenceTable.c */; };
+		F8DA3142136EDA830010A282 /* SignalCatcher.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC79135DE4FA00A8BDFF /* SignalCatcher.c */; };
+		F8DA3143136EDA830010A282 /* StdioConverter.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC7B135DE4FA00A8BDFF /* StdioConverter.c */; };
+		F8DA3144136EDA830010A282 /* Sync.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC7D135DE4FA00A8BDFF /* Sync.c */; };
+		F8DA3145136EDA830010A282 /* Thread.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC85135DE4FA00A8BDFF /* Thread.c */; };
+		F8DA3146136EDA830010A282 /* UtfString.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC87135DE4FA00A8BDFF /* UtfString.c */; };
+		F8DA3147136EDA960010A282 /* TestCompability.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC84135DE4FA00A8BDFF /* TestCompability.c */; };
+		F8DA3148136EDAF50010A282 /* Alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F610135DE4F700A8BDFF /* Alloc.c */; };
+		F8DA3149136EDAF50010A282 /* CardTable.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F612135DE4F700A8BDFF /* CardTable.c */; };
+		F8DA314A136EDAF50010A282 /* clz.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F614135DE4F700A8BDFF /* clz.c */; };
+		F8DA314B136EDAF50010A282 /* DdmHeap.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F617135DE4F700A8BDFF /* DdmHeap.c */; };
+		F8DA314C136EDAF50010A282 /* Heap.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F61B135DE4F700A8BDFF /* Heap.c */; };
+		F8DA314D136EDAF50010A282 /* HeapBitmap.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F61D135DE4F700A8BDFF /* HeapBitmap.c */; };
+		F8DA314E136EDAF50010A282 /* HeapDebug.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F61F135DE4F700A8BDFF /* HeapDebug.c */; };
+		F8DA314F136EDAF50010A282 /* HeapTable.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F624135DE4F700A8BDFF /* HeapTable.c */; };
+		F8DA3150136EDAF60010A282 /* HeapWorker.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F626135DE4F700A8BDFF /* HeapWorker.c */; };
+		F8DA3151136EDAF60010A282 /* Verify.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F62E135DE4F700A8BDFF /* Verify.c */; };
+		F8DA3152136EDAF60010A282 /* Visit.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F630135DE4F700A8BDFF /* Visit.c */; };
+		F8DA3153136EDB230010A282 /* CodeVerify.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F637135DE4F800A8BDFF /* CodeVerify.c */; };
+		F8DA3154136EDB230010A282 /* DexPrepare.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F639135DE4F800A8BDFF /* DexPrepare.c */; };
+		F8DA3155136EDB230010A282 /* DexVerify.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F63B135DE4F800A8BDFF /* DexVerify.c */; };
+		F8DA3156136EDB230010A282 /* Optimize.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F63D135DE4F800A8BDFF /* Optimize.c */; };
+		F8DA3157136EDB230010A282 /* RegisterMap.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F63F135DE4F800A8BDFF /* RegisterMap.c */; };
+		F8DA3158136EDB230010A282 /* VerifySubs.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F641135DE4F800A8BDFF /* VerifySubs.c */; };
+		F8DA3159136EDB370010A282 /* Interp.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F70A135DE4F800A8BDFF /* Interp.c */; };
+		F8DA315A136EDB520010A282 /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F710135DE4F800A8BDFF /* Stack.c */; };
+		F8DA315B136EDB8F0010A282 /* ExpandBuf.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F715135DE4F800A8BDFF /* ExpandBuf.c */; };
+		F8DA315C136EDB8F0010A282 /* JdwpAdb.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F718135DE4F800A8BDFF /* JdwpAdb.c */; };
+		F8DA315D136EDB8F0010A282 /* JdwpConstants.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F719135DE4F800A8BDFF /* JdwpConstants.c */; };
+		F8DA315E136EDB8F0010A282 /* JdwpEvent.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F71B135DE4F800A8BDFF /* JdwpEvent.c */; };
+		F8DA315F136EDB900010A282 /* JdwpHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F71D135DE4F800A8BDFF /* JdwpHandler.c */; };
+		F8DA3160136EDB900010A282 /* JdwpMain.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F71F135DE4F800A8BDFF /* JdwpMain.c */; };
+		F8DA3161136EDB900010A282 /* JdwpSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F721135DE4F800A8BDFF /* JdwpSocket.c */; };
+		F8DA3162136EDBBA0010A282 /* Mterp.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F9E4135DE4F900A8BDFF /* Mterp.c */; };
+		F8DA3163136EDBDB0010A282 /* InterpC-portdbg.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F9F6135DE4F900A8BDFF /* InterpC-portdbg.c */; };
+		F8DA3164136EDBDB0010A282 /* InterpC-portstd.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F9F7135DE4F900A8BDFF /* InterpC-portstd.c */; };
+		F8DA3165136EDC250010A282 /* dalvik_system_DexFile.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC3A135DE4FA00A8BDFF /* dalvik_system_DexFile.c */; };
+		F8DA3166136EDC250010A282 /* dalvik_system_VMDebug.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC3B135DE4FA00A8BDFF /* dalvik_system_VMDebug.c */; };
+		F8DA3167136EDC250010A282 /* dalvik_system_VMRuntime.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC3C135DE4FA00A8BDFF /* dalvik_system_VMRuntime.c */; };
+		F8DA3168136EDC250010A282 /* dalvik_system_VMStack.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC3D135DE4FA00A8BDFF /* dalvik_system_VMStack.c */; };
+		F8DA3169136EDC250010A282 /* dalvik_system_Zygote.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC3E135DE4FA00A8BDFF /* dalvik_system_Zygote.c */; };
+		F8DA316A136EDC250010A282 /* InternalNative.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC3F135DE4FA00A8BDFF /* InternalNative.c */; };
+		F8DA316B136EDC250010A282 /* java_lang_Class.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC42135DE4FA00A8BDFF /* java_lang_Class.c */; };
+		F8DA316C136EDC250010A282 /* java_lang_Object.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC43135DE4FA00A8BDFF /* java_lang_Object.c */; };
+		F8DA316D136EDC250010A282 /* java_lang_Runtime.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC4A135DE4FA00A8BDFF /* java_lang_Runtime.c */; };
+		F8DA316E136EDC260010A282 /* java_lang_String.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC4B135DE4FA00A8BDFF /* java_lang_String.c */; };
+		F8DA316F136EDC260010A282 /* java_lang_System.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC4C135DE4FA00A8BDFF /* java_lang_System.c */; };
+		F8DA3170136EDC260010A282 /* java_lang_SystemProperties.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC4D135DE4FA00A8BDFF /* java_lang_SystemProperties.c */; };
+		F8DA3171136EDC260010A282 /* java_lang_Throwable.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC4E135DE4FA00A8BDFF /* java_lang_Throwable.c */; };
+		F8DA3172136EDC260010A282 /* java_lang_VMClassLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC4F135DE4FA00A8BDFF /* java_lang_VMClassLoader.c */; };
+		F8DA3173136EDC260010A282 /* java_lang_VMThread.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC50135DE4FA00A8BDFF /* java_lang_VMThread.c */; };
+		F8DA3174136EDC480010A282 /* java_lang_reflect_AccessibleObject.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC44135DE4FA00A8BDFF /* java_lang_reflect_AccessibleObject.c */; };
+		F8DA3175136EDC480010A282 /* java_lang_reflect_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC45135DE4FA00A8BDFF /* java_lang_reflect_Array.c */; };
+		F8DA3176136EDC480010A282 /* java_lang_reflect_Constructor.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC46135DE4FA00A8BDFF /* java_lang_reflect_Constructor.c */; };
+		F8DA3177136EDC480010A282 /* java_lang_reflect_Field.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC47135DE4FA00A8BDFF /* java_lang_reflect_Field.c */; };
+		F8DA3178136EDC490010A282 /* java_lang_reflect_Method.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC48135DE4FA00A8BDFF /* java_lang_reflect_Method.c */; };
+		F8DA3179136EDC490010A282 /* java_lang_reflect_Proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC49135DE4FA00A8BDFF /* java_lang_reflect_Proxy.c */; };
+		F8DA317A136EDC780010A282 /* java_security_AccessController.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC51135DE4FA00A8BDFF /* java_security_AccessController.c */; };
+		F8DA317B136EDC780010A282 /* java_util_concurrent_atomic_AtomicLong.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC52135DE4FA00A8BDFF /* java_util_concurrent_atomic_AtomicLong.c */; };
+		F8DA317C136EDC790010A282 /* org_apache_harmony_dalvik_ddmc_DdmServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC53135DE4FA00A8BDFF /* org_apache_harmony_dalvik_ddmc_DdmServer.c */; };
+		F8DA317D136EDC790010A282 /* org_apache_harmony_dalvik_ddmc_DdmVmInternal.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC54135DE4FA00A8BDFF /* org_apache_harmony_dalvik_ddmc_DdmVmInternal.c */; };
+		F8DA317E136EDC790010A282 /* org_apache_harmony_dalvik_NativeTestTarget.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC55135DE4FA00A8BDFF /* org_apache_harmony_dalvik_NativeTestTarget.c */; };
+		F8DA317F136EDC790010A282 /* sun_misc_Unsafe.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC57135DE4FA00A8BDFF /* sun_misc_Unsafe.c */; };
+		F8DA3180136EDCED0010A282 /* AccessCheck.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC5B135DE4FA00A8BDFF /* AccessCheck.c */; };
+		F8DA3181136EDCEE0010A282 /* Array.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC5D135DE4FA00A8BDFF /* Array.c */; };
+		F8DA3182136EDCEE0010A282 /* Class.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC5F135DE4FA00A8BDFF /* Class.c */; };
+		F8DA3183136EDCEE0010A282 /* Object.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC61135DE4FA00A8BDFF /* Object.c */; };
+		F8DA3184136EDCEE0010A282 /* Resolve.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC64135DE4FA00A8BDFF /* Resolve.c */; };
+		F8DA3185136EDCEE0010A282 /* TypeCheck.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC66135DE4FA00A8BDFF /* TypeCheck.c */; };
+		F8DA3186136EE1700010A282 /* Annotation.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC75135DE4FA00A8BDFF /* Annotation.c */; };
+		F8DA3187136EE1700010A282 /* Proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC76135DE4FA00A8BDFF /* Proxy.c */; };
+		F8DA3188136EE1700010A282 /* Reflect.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC77135DE4FA00A8BDFF /* Reflect.c */; };
+		F8DA3189136EE1700010A282 /* AtomicTest.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC80135DE4FA00A8BDFF /* AtomicTest.c */; };
+		F8DA318A136EE1700010A282 /* TestHash.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC82135DE4FA00A8BDFF /* TestHash.c */; };
+		F8DA318B136EE1710010A282 /* TestIndirectRefTable.c in Sources */ = {isa = PBXBuildFile; fileRef = F866FC83135DE4FA00A8BDFF /* TestIndirectRefTable.c */; };
+		F8DA318C136EE1B70010A282 /* HeapSource.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F622135DE4F700A8BDFF /* HeapSource.c */; };
+		F8DA318D136EE1B70010A282 /* MarkSweep.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F628135DE4F700A8BDFF /* MarkSweep.c */; };
+		F8DA318E136EE1D80010A282 /* Call.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F64A135DE4F800A8BDFF /* Call.c */; };
+		F8DA318F136EE1D80010A282 /* Hints.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F64B135DE4F800A8BDFF /* Hints.c */; };
+		F8DA3190136EE1F00010A282 /* InterpC-allstubs.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F9F0135DE4F900A8BDFF /* InterpC-allstubs.c */; };
+		F8DA3223136FFA080010A282 /* libdl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F828892113686B3800426E84 /* libdl.dylib */; };
+		F8DA3224136FFA080010A282 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F828892213686B4900426E84 /* libpthread.dylib */; };
+		F8DA3225136FFA080010A282 /* libcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8286C321361BDE400426E84 /* libcore.a */; };
+		F8DA3226136FFA080010A282 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8288502136819DE00426E84 /* libcrypto.a */; };
+		F8DA3227136FFA080010A282 /* libcutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828530B13606B5C00426E84 /* libcutils.a */; };
+		F8DA3228136FFA080010A282 /* libdex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828535F13617B1900426E84 /* libdex.a */; };
+		F8DA3229136FFA080010A282 /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828845A1366C89700426E84 /* libicui18n.a */; };
+		F8DA322A136FFA080010A282 /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82883B71361D89600426E84 /* libicuuc.a */; };
+		F8DA322B136FFA080010A282 /* libliblog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82852C31360618E00426E84 /* libliblog.a */; };
+		F8DA322C136FFA080010A282 /* libnativehelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82855601361B75700426E84 /* libnativehelper.a */; };
+		F8DA322D136FFA080010A282 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82888A613684CDF00426E84 /* libssl.a */; };
+		F8DA322E136FFA080010A282 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8285530136188E000426E84 /* libz.a */; };
+		F8DA322F136FFA080010A282 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F866F52D135DE26300A8BDFF /* UIKit.framework */; };
+		F8DA3230136FFA080010A282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F820593B13584758001217BF /* Foundation.framework */; };
+		F8DA3231136FFA080010A282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F866F530135DE26300A8BDFF /* CoreGraphics.framework */; };
+		F8DA3234136FFA080010A282 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F542135DE26300A8BDFF /* MainWindow_iPhone.xib */; };
+		F8DA3235136FFA080010A282 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F549135DE26300A8BDFF /* MainWindow_iPad.xib */; };
+		F8DA3236136FFA080010A282 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F866F535135DE26300A8BDFF /* InfoPlist.strings */; };
+		F8DA323D136FFAC50010A282 /* libdvm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA3129136ED99A0010A282 /* libdvm.a */; };
+		F8DA3240136FFE010010A282 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828898C136874B800426E84 /* libffi.a */; };
+		F8DA3241137004D50010A282 /* OptMain.c in Sources */ = {isa = PBXBuildFile; fileRef = F8DA311D136ED7F80010A282 /* OptMain.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1124,6 +1250,83 @@
 			proxyType = 1;
 			remoteGlobalIDString = F82886D213684CDF00426E84;
 			remoteInfo = ssl;
+		};
+		F8DA31A3136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82852C21360618E00426E84;
+			remoteInfo = liblog;
+		};
+		F8DA31A5136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F828530013606B5C00426E84;
+			remoteInfo = cutils;
+		};
+		F8DA31A7136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F828535413617B1900426E84;
+			remoteInfo = dex;
+		};
+		F8DA31A9136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8285525136188E000426E84;
+			remoteInfo = zlib;
+		};
+		F8DA31AB136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82855551361B75700426E84;
+			remoteInfo = nativehelper;
+		};
+		F8DA31AD136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8286C271361BDE400426E84;
+			remoteInfo = libcore;
+		};
+		F8DA31AF136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82883AC1361D89600426E84;
+			remoteInfo = icuuc;
+		};
+		F8DA31B1136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F828844F1366C89700426E84;
+			remoteInfo = icui18n;
+		};
+		F8DA31B3136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82884F7136819DE00426E84;
+			remoteInfo = crypto;
+		};
+		F8DA31B5136FFA070010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82886D213684CDF00426E84;
+			remoteInfo = ssl;
+		};
+		F8DA323E136FFB270010A282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8DA311E136ED99A0010A282;
+			remoteInfo = dvm;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -14112,6 +14315,11 @@
 		F866FC87135DE4FA00A8BDFF /* UtfString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UtfString.c; sourceTree = "<group>"; };
 		F866FC88135DE4FA00A8BDFF /* UtfString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtfString.h; sourceTree = "<group>"; };
 		F8DA3117136AF32A0010A282 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8DA3119136B01FC0010A282 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
+		F8DA311C136ED7F80010A282 /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		F8DA311D136ED7F80010A282 /* OptMain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OptMain.c; sourceTree = "<group>"; };
+		F8DA3129136ED99A0010A282 /* libdvm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdvm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DA323A136FFA080010A282 /* dexopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dexopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -14218,12 +14426,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8DA3123136ED99A0010A282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DA3124136ED99A0010A282 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DA3222136FFA080010A282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DA3240136FFE010010A282 /* libffi.a in Frameworks */,
+				F8DA323D136FFAC50010A282 /* libdvm.a in Frameworks */,
+				F8DA3223136FFA080010A282 /* libdl.dylib in Frameworks */,
+				F8DA3224136FFA080010A282 /* libpthread.dylib in Frameworks */,
+				F8DA3225136FFA080010A282 /* libcore.a in Frameworks */,
+				F8DA3226136FFA080010A282 /* libcrypto.a in Frameworks */,
+				F8DA3227136FFA080010A282 /* libcutils.a in Frameworks */,
+				F8DA3228136FFA080010A282 /* libdex.a in Frameworks */,
+				F8DA3229136FFA080010A282 /* libicui18n.a in Frameworks */,
+				F8DA322A136FFA080010A282 /* libicuuc.a in Frameworks */,
+				F8DA322B136FFA080010A282 /* libliblog.a in Frameworks */,
+				F8DA322C136FFA080010A282 /* libnativehelper.a in Frameworks */,
+				F8DA322D136FFA080010A282 /* libssl.a in Frameworks */,
+				F8DA322E136FFA080010A282 /* libz.a in Frameworks */,
+				F8DA322F136FFA080010A282 /* UIKit.framework in Frameworks */,
+				F8DA3230136FFA080010A282 /* Foundation.framework in Frameworks */,
+				F8DA3231136FFA080010A282 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F820592D13584758001217BF = {
 			isa = PBXGroup;
 			children = (
+				F8DA3129136ED99A0010A282 /* libdvm.a */,
 				F828898C136874B800426E84 /* libffi.a */,
 				F828892113686B3800426E84 /* libdl.dylib */,
 				F828892213686B4900426E84 /* libpthread.dylib */,
@@ -14247,6 +14488,7 @@
 			isa = PBXGroup;
 			children = (
 				F82888E1136866C500426E84 /* InTheBoxSim.app */,
+				F8DA323A136FFA080010A282 /* dexopt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -32502,6 +32744,8 @@
 		F866F532135DE26300A8BDFF /* InTheBoxSim */ = {
 			isa = PBXGroup;
 			children = (
+				F8DA311B136ED7F70010A282 /* dexopt */,
+				F8DA3119136B01FC0010A282 /* Main.c */,
 				F866F53C135DE26300A8BDFF /* InTheBoxSimAppDelegate.m */,
 				F866F53B135DE26300A8BDFF /* InTheBoxSimAppDelegate.h */,
 				F8287EFC1361D47800426E84 /* openssl */,
@@ -34747,6 +34991,15 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		F8DA311B136ED7F70010A282 /* dexopt */ = {
+			isa = PBXGroup;
+			children = (
+				F8DA311C136ED7F80010A282 /* Android.mk */,
+				F8DA311D136ED7F80010A282 /* OptMain.c */,
+			);
+			path = dexopt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -34814,6 +35067,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F82888A213684CDF00426E84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DA3125136ED99A0010A282 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35020,6 +35280,51 @@
 			productReference = F82888E1136866C500426E84 /* InTheBoxSim.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F8DA311E136ED99A0010A282 /* dvm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DA3126136ED99A0010A282 /* Build configuration list for PBXNativeTarget "dvm" */;
+			buildPhases = (
+				F8DA311F136ED99A0010A282 /* Sources */,
+				F8DA3123136ED99A0010A282 /* Frameworks */,
+				F8DA3125136ED99A0010A282 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dvm;
+			productName = liblog;
+			productReference = F8DA3129136ED99A0010A282 /* libdvm.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F8DA31A1136FFA070010A282 /* dexopt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DA3237136FFA080010A282 /* Build configuration list for PBXNativeTarget "dexopt" */;
+			buildPhases = (
+				F8DA31B6136FFA070010A282 /* Sources */,
+				F8DA3222136FFA080010A282 /* Frameworks */,
+				F8DA3233136FFA080010A282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8DA323F136FFB270010A282 /* PBXTargetDependency */,
+				F8DA31A2136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31A4136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31A6136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31A8136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31AA136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31AC136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31AE136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31B0136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31B2136FFA070010A282 /* PBXTargetDependency */,
+				F8DA31B4136FFA070010A282 /* PBXTargetDependency */,
+			);
+			name = dexopt;
+			productName = InTheBoxSim;
+			productReference = F8DA323A136FFA080010A282 /* dexopt.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -35048,6 +35353,8 @@
 				F828844F1366C89700426E84 /* icui18n */,
 				F82884F7136819DE00426E84 /* crypto */,
 				F82886D213684CDF00426E84 /* ssl */,
+				F8DA311E136ED99A0010A282 /* dvm */,
+				F8DA31A1136FFA070010A282 /* dexopt */,
 			);
 		};
 /* End PBXProject section */
@@ -35060,6 +35367,16 @@
 				F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */,
 				F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */,
 				F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DA3233136FFA080010A282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DA3234136FFA080010A282 /* MainWindow_iPhone.xib in Resources */,
+				F8DA3235136FFA080010A282 /* MainWindow_iPad.xib in Resources */,
+				F8DA3236136FFA080010A282 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35198,6 +35515,7 @@
 				F8286C4E1361BEFB00426E84 /* java_util_zip_CRC32.cpp in Sources */,
 				F8286C4F1361BEFB00426E84 /* java_util_zip_Deflater.cpp in Sources */,
 				F8286C501361BEFB00426E84 /* java_util_zip_Inflater.cpp in Sources */,
+				F81DD62613715C18003C90A1 /* java_io_File.cpp in Sources */,
 				F8286C511361BEFB00426E84 /* JniConstants.cpp in Sources */,
 				F8286C521361BEFB00426E84 /* JniException.cpp in Sources */,
 				F8286C531361BEFB00426E84 /* libcore_io_IoUtils.cpp in Sources */,
@@ -36159,6 +36477,124 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8DA311F136ED99A0010A282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DA312A136EDA2A0010A282 /* AllocTracker.c in Sources */,
+				F8DA312B136EDA2A0010A282 /* Atomic.c in Sources */,
+				F8DA312C136EDA2A0010A282 /* AtomicCache.c in Sources */,
+				F8DA312D136EDA2A0010A282 /* CheckJni.c in Sources */,
+				F8DA312E136EDA2B0010A282 /* Ddm.c in Sources */,
+				F8DA312F136EDA2B0010A282 /* Debugger.c in Sources */,
+				F8DA3130136EDA2B0010A282 /* DvmDex.c in Sources */,
+				F8DA3131136EDA2B0010A282 /* Exception.c in Sources */,
+				F8DA3132136EDA2B0010A282 /* Hash.c in Sources */,
+				F8DA3133136EDA2B0010A282 /* IndirectRefTable.c in Sources */,
+				F8DA3134136EDA2B0010A282 /* Init.c in Sources */,
+				F8DA3135136EDA2B0010A282 /* InlineNative.c in Sources */,
+				F8DA3136136EDA2B0010A282 /* Inlines.c in Sources */,
+				F8DA3137136EDA2B0010A282 /* Intern.c in Sources */,
+				F8DA3138136EDA820010A282 /* JarFile.c in Sources */,
+				F8DA3139136EDA820010A282 /* Jni.c in Sources */,
+				F8DA313A136EDA820010A282 /* LinearAlloc.c in Sources */,
+				F8DA313B136EDA820010A282 /* Misc.c in Sources */,
+				F8DA313C136EDA820010A282 /* Native.c in Sources */,
+				F8DA313D136EDA820010A282 /* PointerSet.c in Sources */,
+				F8DA313E136EDA820010A282 /* Profile.c in Sources */,
+				F8DA313F136EDA820010A282 /* Properties.c in Sources */,
+				F8DA3140136EDA820010A282 /* RawDexFile.c in Sources */,
+				F8DA3141136EDA820010A282 /* ReferenceTable.c in Sources */,
+				F8DA3142136EDA830010A282 /* SignalCatcher.c in Sources */,
+				F8DA3143136EDA830010A282 /* StdioConverter.c in Sources */,
+				F8DA3144136EDA830010A282 /* Sync.c in Sources */,
+				F8DA3147136EDA960010A282 /* TestCompability.c in Sources */,
+				F8DA3145136EDA830010A282 /* Thread.c in Sources */,
+				F8DA3146136EDA830010A282 /* UtfString.c in Sources */,
+				F8DA3148136EDAF50010A282 /* Alloc.c in Sources */,
+				F8DA3149136EDAF50010A282 /* CardTable.c in Sources */,
+				F8DA314A136EDAF50010A282 /* clz.c in Sources */,
+				F8DA314B136EDAF50010A282 /* DdmHeap.c in Sources */,
+				F8DA314C136EDAF50010A282 /* Heap.c in Sources */,
+				F8DA314D136EDAF50010A282 /* HeapBitmap.c in Sources */,
+				F8DA314E136EDAF50010A282 /* HeapDebug.c in Sources */,
+				F8DA314F136EDAF50010A282 /* HeapTable.c in Sources */,
+				F8DA3150136EDAF60010A282 /* HeapWorker.c in Sources */,
+				F8DA3151136EDAF60010A282 /* Verify.c in Sources */,
+				F8DA3152136EDAF60010A282 /* Visit.c in Sources */,
+				F8DA3153136EDB230010A282 /* CodeVerify.c in Sources */,
+				F8DA3154136EDB230010A282 /* DexPrepare.c in Sources */,
+				F8DA3155136EDB230010A282 /* DexVerify.c in Sources */,
+				F8DA3156136EDB230010A282 /* Optimize.c in Sources */,
+				F8DA3157136EDB230010A282 /* RegisterMap.c in Sources */,
+				F8DA3158136EDB230010A282 /* VerifySubs.c in Sources */,
+				F8DA3159136EDB370010A282 /* Interp.c in Sources */,
+				F8DA315A136EDB520010A282 /* Stack.c in Sources */,
+				F8DA315B136EDB8F0010A282 /* ExpandBuf.c in Sources */,
+				F8DA315C136EDB8F0010A282 /* JdwpAdb.c in Sources */,
+				F8DA315D136EDB8F0010A282 /* JdwpConstants.c in Sources */,
+				F8DA315E136EDB8F0010A282 /* JdwpEvent.c in Sources */,
+				F8DA315F136EDB900010A282 /* JdwpHandler.c in Sources */,
+				F8DA3160136EDB900010A282 /* JdwpMain.c in Sources */,
+				F8DA3161136EDB900010A282 /* JdwpSocket.c in Sources */,
+				F8DA3162136EDBBA0010A282 /* Mterp.c in Sources */,
+				F8DA3163136EDBDB0010A282 /* InterpC-portdbg.c in Sources */,
+				F8DA3164136EDBDB0010A282 /* InterpC-portstd.c in Sources */,
+				F8DA3165136EDC250010A282 /* dalvik_system_DexFile.c in Sources */,
+				F8DA3166136EDC250010A282 /* dalvik_system_VMDebug.c in Sources */,
+				F8DA3167136EDC250010A282 /* dalvik_system_VMRuntime.c in Sources */,
+				F8DA3168136EDC250010A282 /* dalvik_system_VMStack.c in Sources */,
+				F8DA3169136EDC250010A282 /* dalvik_system_Zygote.c in Sources */,
+				F8DA316A136EDC250010A282 /* InternalNative.c in Sources */,
+				F8DA316B136EDC250010A282 /* java_lang_Class.c in Sources */,
+				F8DA316C136EDC250010A282 /* java_lang_Object.c in Sources */,
+				F8DA316D136EDC250010A282 /* java_lang_Runtime.c in Sources */,
+				F8DA316E136EDC260010A282 /* java_lang_String.c in Sources */,
+				F8DA316F136EDC260010A282 /* java_lang_System.c in Sources */,
+				F8DA3170136EDC260010A282 /* java_lang_SystemProperties.c in Sources */,
+				F8DA3171136EDC260010A282 /* java_lang_Throwable.c in Sources */,
+				F8DA3172136EDC260010A282 /* java_lang_VMClassLoader.c in Sources */,
+				F8DA3173136EDC260010A282 /* java_lang_VMThread.c in Sources */,
+				F8DA3174136EDC480010A282 /* java_lang_reflect_AccessibleObject.c in Sources */,
+				F8DA3175136EDC480010A282 /* java_lang_reflect_Array.c in Sources */,
+				F8DA3176136EDC480010A282 /* java_lang_reflect_Constructor.c in Sources */,
+				F8DA3177136EDC480010A282 /* java_lang_reflect_Field.c in Sources */,
+				F8DA3178136EDC490010A282 /* java_lang_reflect_Method.c in Sources */,
+				F8DA3179136EDC490010A282 /* java_lang_reflect_Proxy.c in Sources */,
+				F8DA317A136EDC780010A282 /* java_security_AccessController.c in Sources */,
+				F8DA317B136EDC780010A282 /* java_util_concurrent_atomic_AtomicLong.c in Sources */,
+				F8DA317C136EDC790010A282 /* org_apache_harmony_dalvik_ddmc_DdmServer.c in Sources */,
+				F8DA317D136EDC790010A282 /* org_apache_harmony_dalvik_ddmc_DdmVmInternal.c in Sources */,
+				F8DA317E136EDC790010A282 /* org_apache_harmony_dalvik_NativeTestTarget.c in Sources */,
+				F8DA317F136EDC790010A282 /* sun_misc_Unsafe.c in Sources */,
+				F8DA3180136EDCED0010A282 /* AccessCheck.c in Sources */,
+				F8DA3181136EDCEE0010A282 /* Array.c in Sources */,
+				F8DA3182136EDCEE0010A282 /* Class.c in Sources */,
+				F8DA3183136EDCEE0010A282 /* Object.c in Sources */,
+				F8DA3184136EDCEE0010A282 /* Resolve.c in Sources */,
+				F8DA3185136EDCEE0010A282 /* TypeCheck.c in Sources */,
+				F8DA3186136EE1700010A282 /* Annotation.c in Sources */,
+				F8DA3187136EE1700010A282 /* Proxy.c in Sources */,
+				F8DA3188136EE1700010A282 /* Reflect.c in Sources */,
+				F8DA3189136EE1700010A282 /* AtomicTest.c in Sources */,
+				F8DA318A136EE1700010A282 /* TestHash.c in Sources */,
+				F8DA318B136EE1710010A282 /* TestIndirectRefTable.c in Sources */,
+				F8DA318C136EE1B70010A282 /* HeapSource.c in Sources */,
+				F8DA318D136EE1B70010A282 /* MarkSweep.c in Sources */,
+				F8DA318E136EE1D80010A282 /* Call.c in Sources */,
+				F8DA318F136EE1D80010A282 /* Hints.c in Sources */,
+				F8DA3190136EE1F00010A282 /* InterpC-allstubs.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DA31B6136FFA070010A282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DA3241137004D50010A282 /* OptMain.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -36211,6 +36647,61 @@
 			isa = PBXTargetDependency;
 			target = F82886D213684CDF00426E84 /* ssl */;
 			targetProxy = F828891513686AC800426E84 /* PBXContainerItemProxy */;
+		};
+		F8DA31A2136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82852C21360618E00426E84 /* liblog */;
+			targetProxy = F8DA31A3136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31A4136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F828530013606B5C00426E84 /* cutils */;
+			targetProxy = F8DA31A5136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31A6136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F828535413617B1900426E84 /* dex */;
+			targetProxy = F8DA31A7136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31A8136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8285525136188E000426E84 /* zlib */;
+			targetProxy = F8DA31A9136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31AA136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82855551361B75700426E84 /* nativehelper */;
+			targetProxy = F8DA31AB136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31AC136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8286C271361BDE400426E84 /* libcore */;
+			targetProxy = F8DA31AD136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31AE136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82883AC1361D89600426E84 /* icuuc */;
+			targetProxy = F8DA31AF136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31B0136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F828844F1366C89700426E84 /* icui18n */;
+			targetProxy = F8DA31B1136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31B2136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82884F7136819DE00426E84 /* crypto */;
+			targetProxy = F8DA31B3136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA31B4136FFA070010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82886D213684CDF00426E84 /* ssl */;
+			targetProxy = F8DA31B5136FFA070010A282 /* PBXContainerItemProxy */;
+		};
+		F8DA323F136FFB270010A282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8DA311E136ED99A0010A282 /* dvm */;
+			targetProxy = F8DA323E136FFB270010A282 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -36560,11 +37051,12 @@
 				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
-					"ICU_DATA_DIR_PREFIX_ENV_VAR=\"\\\"$(PROJECT_DIR)/InTheBoxSim/\\\"\"",
-					"ICU_DATA_DIR=\"\\\"/usr/icu\\\"\"",
+					"ICU_DATA_DIR_PREFIX_ENV_VAR=\"\\\"/\\\"\"",
+					"ICU_DATA_DIR=\"\\\"/Users/blamarche/Downloads/trunk/InTheBoxSim/icu4c/stubdata\\\"\"",
 					_REENTRANT,
 					U_COMMON_IMPLEMENTATION,
 					PIC,
+					UDATA_DEBUG,
 				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
@@ -36893,6 +37385,7 @@
 					DEBUG,
 					DVM_NO_ASM_INTERP,
 					"ANDROID_SMP=0",
+					VERY_VERBOSE_LOG,
 				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
@@ -36952,6 +37445,145 @@
 				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F8DA3127136ED99A0010A282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/dvm.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					DVM_NO_ASM_INTERP,
+					"ANDROID_SMP=0",
+				);
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/InTheBoxSim/include/",
+					"$(PROJECT_DIR)/InTheBoxSim/",
+					"$(PROJECT_DIR)/InTheBoxSim/vm/",
+					/usr/include/ffi/,
+				);
+				OTHER_CFLAGS = (
+					"-include",
+					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = dvm;
+			};
+			name = Debug;
+		};
+		F8DA3128136ED99A0010A282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/dvm.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DVM_NO_ASM_INTERP,
+					"ANDROID_SMP=0",
+				);
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/InTheBoxSim/include/",
+					"$(PROJECT_DIR)/InTheBoxSim/",
+					"$(PROJECT_DIR)/InTheBoxSim/vm/",
+					/usr/include/ffi/,
+				);
+				OTHER_CFLAGS = (
+					"-include",
+					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = dvm;
+			};
+			name = Release;
+		};
+		F8DA3238136FFA080010A282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					DVM_NO_ASM_INTERP,
+					"ANDROID_SMP=0",
+				);
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/InTheBoxSim/include/",
+					"$(PROJECT_DIR)/InTheBoxSim/vm/",
+					"$(PROJECT_DIR)/InTheBoxSim/",
+					/usr/include/ffi/,
+				);
+				INFOPLIST_FILE = "InTheBoxSim/InTheBoxSim-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/InTheBoxSim\\\"",
+					"\\\"$(SDKROOT)/usr/lib/system\\\"",
+					"\"$(SRCROOT)/InTheBoxSim\"",
+				);
+				OTHER_CFLAGS = (
+					"-include",
+					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
+				);
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_NAME = dexopt;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8DA3239136FFA080010A282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DVM_NO_ASM_INTERP,
+					"ANDROID_SMP=0",
+				);
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/InTheBoxSim/include/",
+					"$(PROJECT_DIR)/InTheBoxSim/vm/",
+					"$(PROJECT_DIR)/InTheBoxSim/",
+					/usr/include/ffi/,
+				);
+				INFOPLIST_FILE = "InTheBoxSim/InTheBoxSim-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/InTheBoxSim\\\"",
+					"\\\"$(SDKROOT)/usr/lib/system\\\"",
+					"\"$(SRCROOT)/InTheBoxSim\"",
+				);
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-include",
+					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
+				);
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_NAME = dexopt;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -37065,6 +37697,24 @@
 			buildConfigurations = (
 				F8288901136866DD00426E84 /* Debug */,
 				F8288902136866DD00426E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DA3126136ED99A0010A282 /* Build configuration list for PBXNativeTarget "dvm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DA3127136ED99A0010A282 /* Debug */,
+				F8DA3128136ED99A0010A282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DA3237136FFA080010A282 /* Build configuration list for PBXNativeTarget "dexopt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DA3238136FFA080010A282 /* Debug */,
+				F8DA3239136FFA080010A282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

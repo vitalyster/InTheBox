@@ -4,25 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>In The Box.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
 		<key>InTheBoxSim.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
-		</dict>
-		<key>InTheBoxSim2.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
-		<key>InTheBoxSim3.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
 		</dict>
 		<key>crypto.xcscheme</key>
 		<dict>
@@ -39,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>dexopt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>icui18n.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,6 +43,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
+		</dict>
+		<key>libdvm.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
 		</dict>
 		<key>liblog.xcscheme</key>
 		<dict>
@@ -138,6 +133,21 @@
 			<true/>
 		</dict>
 		<key>F866F52A135DE26300A8BDFF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8DA311E136ED99A0010A282</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8DA3194136EE3C50010A282</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8DA31A1136FFA070010A282</key>
 		<dict>
 			<key>primary</key>
 			<true/>

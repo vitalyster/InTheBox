@@ -125,6 +125,12 @@ void dvmClearOptException(Thread* self);
  * "self" pointer.
  */
 INLINE bool dvmCheckException(Thread* self) {
+    // Begin FlexyCore
+    if (self->exception != NULL){
+        fprintf(stdout, "FlexyCore: exception\n");
+        //dvmPrintExceptionStackTrace();
+    }
+    // End FlexyCore
     return (self->exception != NULL);
 }
 

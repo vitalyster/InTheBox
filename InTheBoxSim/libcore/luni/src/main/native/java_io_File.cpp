@@ -15,6 +15,8 @@
  *  limitations under the License.
  */
 
+// FlexyCore modified
+
 #define LOG_TAG "File"
 
 #include "JNIHelp.h"
@@ -31,7 +33,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/stat.h>
-#include <sys/vfs.h>
+//#include <sys/vfs.h>
 #include <sys/types.h>
 #include <time.h>
 #include <unistd.h>
@@ -193,7 +195,7 @@ static jboolean File_setWritableImpl(JNIEnv* env, jclass, jstring javaPath,
     return doChmod(env, javaPath, ownerOnly ? S_IWUSR : (S_IWUSR | S_IWGRP | S_IWOTH), set);
 }
 
-static bool doStatFs(JNIEnv* env, jstring javaPath, struct statfs& sb) {
+/*static bool doStatFs(JNIEnv* env, jstring javaPath, struct statfs& sb) {
     ScopedUtfChars path(env, javaPath);
     if (path.c_str() == NULL) {
         return JNI_FALSE;
@@ -225,7 +227,7 @@ static jlong File_getUsableSpaceImpl(JNIEnv* env, jclass, jstring javaPath) {
         return 0;
     }
     return sb.f_bavail * sb.f_bsize; // non-root free block count * block size in bytes.
-}
+}*/
 
 // Iterates over the filenames in the given directory.
 class ScopedReaddir {
@@ -424,9 +426,9 @@ static JNINativeMethod gMethods[] = {
     NATIVE_METHOD(File, createNewFileImpl, "(Ljava/lang/String;)Z"),
     NATIVE_METHOD(File, deleteImpl, "(Ljava/lang/String;)Z"),
     NATIVE_METHOD(File, existsImpl, "(Ljava/lang/String;)Z"),
-    NATIVE_METHOD(File, getFreeSpaceImpl, "(Ljava/lang/String;)J"),
-    NATIVE_METHOD(File, getTotalSpaceImpl, "(Ljava/lang/String;)J"),
-    NATIVE_METHOD(File, getUsableSpaceImpl, "(Ljava/lang/String;)J"),
+    //NATIVE_METHOD(File, getFreeSpaceImpl, "(Ljava/lang/String;)J"),
+    //NATIVE_METHOD(File, getTotalSpaceImpl, "(Ljava/lang/String;)J"),
+    //NATIVE_METHOD(File, getUsableSpaceImpl, "(Ljava/lang/String;)J"),
     NATIVE_METHOD(File, isDirectoryImpl, "(Ljava/lang/String;)Z"),
     NATIVE_METHOD(File, isFileImpl, "(Ljava/lang/String;)Z"),
     NATIVE_METHOD(File, lastModifiedImpl, "(Ljava/lang/String;)J"),

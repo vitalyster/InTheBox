@@ -832,9 +832,11 @@ static jobject addGlobalReference(Object* obj)
     }
     jobj = (jobject) obj;
 
-    LOGVV("GREF add %p  (%s.%s)\n", obj,
-        dvmGetCurrentJNIMethod()->clazz->descriptor,
-        dvmGetCurrentJNIMethod()->name);
+    // Begin FlexyCore
+    //LOGVV("GREF add %p  (%s.%s)\n", obj,
+    //    dvmGetCurrentJNIMethod()->clazz->descriptor,
+    //    dvmGetCurrentJNIMethod()->name);
+    // End FlexyCore
 
     /* GREF usage tracking; should probably be disabled for production env */
     if (kTrackGrefUsage && gDvm.jniGrefLimit != 0) {
@@ -4474,7 +4476,7 @@ jint JNI_CreateJavaVM(JavaVM** p_vm, JNIEnv** p_env, void* vm_args)
 
     /* set this up before initializing VM, so it can create some JNIEnvs */
     gDvm.vmList = (JavaVM*) pVM;
-
+    
     /*
      * Create an env for main thread.  We need to have something set up
      * here because some of the class initialization we do when starting

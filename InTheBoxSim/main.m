@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Main.c"
+
 int main(int argc, char *argv[])
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    androidMain(argc, argv);
     int retVal = UIApplicationMain(argc, argv, nil, nil);
     [pool release];
     return retVal;

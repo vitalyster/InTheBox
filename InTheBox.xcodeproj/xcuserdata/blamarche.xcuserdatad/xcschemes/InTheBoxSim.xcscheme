@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F866F52A135DE26300A8BDFF"
+               BlueprintIdentifier = "F82888E0136866C500426E84"
                BuildableName = "InTheBoxSim.app"
                BlueprintName = "InTheBoxSim"
                ReferencedContainer = "container:InTheBox.xcodeproj">
@@ -40,12 +40,35 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F866F52A135DE26300A8BDFF"
+            BlueprintIdentifier = "F82888E0136866C500426E84"
             BuildableName = "InTheBoxSim.app"
             BlueprintName = "InTheBoxSim"
             ReferencedContainer = "container:InTheBox.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-cp /Users/blamarche/foo.jar Foo"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "BOOTCLASSPATH"
+            value = "/Users/blamarche/framework/core.jar:/Users/blamarche/framework/ext.jar:/Users/blamarche/framework/framework.jar:/Users/blamarche/framework/android.policy.jar:/Users/blamarche/framework/services.jar"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "ANDROID_DATA"
+            value = "/Users/blamarche/dalvik_tmp"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "ANDROID_ROOT"
+            value = "/Users/blamarche"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -59,7 +82,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F866F52A135DE26300A8BDFF"
+            BlueprintIdentifier = "F82888E0136866C500426E84"
             BuildableName = "InTheBoxSim.app"
             BlueprintName = "InTheBoxSim"
             ReferencedContainer = "container:InTheBox.xcodeproj">
