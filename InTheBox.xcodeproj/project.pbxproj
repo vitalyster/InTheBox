@@ -12595,6 +12595,13 @@
 		F828892113686B3800426E84 /* libdl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdl.dylib; path = usr/lib/libdl.dylib; sourceTree = SDKROOT; };
 		F828892213686B4900426E84 /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
 		F828898C136874B800426E84 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = InTheBoxSim/libffi.a; sourceTree = "<group>"; };
+		F844FE7C1379843B005612C2 /* foo.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = foo.jar; sourceTree = "<group>"; };
+		F844FE7D1379843B005612C2 /* icudt44l.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = icudt44l.dat; sourceTree = "<group>"; };
+		F844FE7F1379848D005612C2 /* android.policy.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = android.policy.jar; sourceTree = "<group>"; };
+		F844FE801379848D005612C2 /* core.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = core.jar; sourceTree = "<group>"; };
+		F844FE811379848D005612C2 /* ext.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = ext.jar; sourceTree = "<group>"; };
+		F844FE821379848D005612C2 /* framework.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = framework.jar; sourceTree = "<group>"; };
+		F844FE831379848D005612C2 /* services.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = services.jar; sourceTree = "<group>"; };
 		F866F52D135DE26300A8BDFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F866F530135DE26300A8BDFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F866F534135DE26300A8BDFF /* InTheBoxSim-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InTheBoxSim-Info.plist"; sourceTree = "<group>"; };
@@ -32741,9 +32748,32 @@
 			path = ssl;
 			sourceTree = "<group>";
 		};
+		F844FE7B1379843B005612C2 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				F844FE7C1379843B005612C2 /* foo.jar */,
+				F844FE7D1379843B005612C2 /* icudt44l.dat */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		F844FE7E1379848D005612C2 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				F844FE7F1379848D005612C2 /* android.policy.jar */,
+				F844FE801379848D005612C2 /* core.jar */,
+				F844FE811379848D005612C2 /* ext.jar */,
+				F844FE821379848D005612C2 /* framework.jar */,
+				F844FE831379848D005612C2 /* services.jar */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
 		F866F532135DE26300A8BDFF /* InTheBoxSim */ = {
 			isa = PBXGroup;
 			children = (
+				F844FE7E1379848D005612C2 /* framework */,
+				F844FE7B1379843B005612C2 /* test */,
 				F8DA311B136ED7F70010A282 /* dexopt */,
 				F8DA3119136B01FC0010A282 /* Main.c */,
 				F866F53C135DE26300A8BDFF /* InTheBoxSimAppDelegate.m */,
@@ -37052,7 +37082,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					"ICU_DATA_DIR_PREFIX_ENV_VAR=\"\\\"/\\\"\"",
-					"ICU_DATA_DIR=\"\\\"/Users/blamarche/Downloads/trunk/InTheBoxSim/icu4c/stubdata\\\"\"",
+					"ICU_DATA_DIR=\"\\\"$(PROJECT_DIR)/InTheBoxSim/icu4c/stubdata\\\"\"",
 					_REENTRANT,
 					U_COMMON_IMPLEMENTATION,
 					PIC,

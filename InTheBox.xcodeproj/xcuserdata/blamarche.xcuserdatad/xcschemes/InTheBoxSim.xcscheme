@@ -48,14 +48,14 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-cp /Users/blamarche/foo.jar Foo"
+            argument = "-cp $(PROJECT_DIR)/InTheBoxSim/test/foo.jar Foo"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "BOOTCLASSPATH"
-            value = "/Users/blamarche/framework/core.jar:/Users/blamarche/framework/ext.jar:/Users/blamarche/framework/framework.jar:/Users/blamarche/framework/android.policy.jar:/Users/blamarche/framework/services.jar"
+            value = "$(PROJECT_DIR)/InTheBoxSim/framework/core.jar:$(PROJECT_DIR)/InTheBoxSim/framework/ext.jar:$(PROJECT_DIR)/InTheBoxSim/framework/framework.jar:$(PROJECT_DIR)/InTheBoxSim/framework/android.policy.jar:$(PROJECT_DIR)/InTheBoxSim/framework/services.jar"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
