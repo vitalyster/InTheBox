@@ -48,15 +48,15 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-cp $(PROJECT_DIR)/InTheBoxSim/test/foo.jar Foo"
-            isEnabled = "YES">
+            argument = "-cp $(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/foo.jar Foo"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "BOOTCLASSPATH"
-            value = "$(PROJECT_DIR)/InTheBoxSim/framework/core.jar:$(PROJECT_DIR)/InTheBoxSim/framework/ext.jar:$(PROJECT_DIR)/InTheBoxSim/framework/framework.jar:$(PROJECT_DIR)/InTheBoxSim/framework/android.policy.jar:$(PROJECT_DIR)/InTheBoxSim/framework/services.jar"
-            isEnabled = "YES">
+            value = "$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/core.jar:$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/ext.jar:$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/framework.jar:$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/android.policy.jar:$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/services.jar"
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "ANDROID_DATA"

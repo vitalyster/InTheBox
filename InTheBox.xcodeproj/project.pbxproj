@@ -1178,6 +1178,13 @@
 		F8DA323D136FFAC50010A282 /* libdvm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA3129136ED99A0010A282 /* libdvm.a */; };
 		F8DA3240136FFE010010A282 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828898C136874B800426E84 /* libffi.a */; };
 		F8DA3241137004D50010A282 /* OptMain.c in Sources */ = {isa = PBXBuildFile; fileRef = F8DA311D136ED7F80010A282 /* OptMain.c */; };
+		F8EB9532137C0AEC00470102 /* android.policy.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE7F1379848D005612C2 /* android.policy.jar */; };
+		F8EB9533137C0AEC00470102 /* core.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE801379848D005612C2 /* core.jar */; };
+		F8EB9534137C0AEC00470102 /* ext.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE811379848D005612C2 /* ext.jar */; };
+		F8EB9535137C0AEC00470102 /* framework.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE821379848D005612C2 /* framework.jar */; };
+		F8EB9536137C0AED00470102 /* services.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE831379848D005612C2 /* services.jar */; };
+		F8EB9537137C0AED00470102 /* foo.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE7C1379843B005612C2 /* foo.jar */; };
+		F8EB9538137C0AED00470102 /* icudt44l.dat in Resources */ = {isa = PBXBuildFile; fileRef = F844FE7D1379843B005612C2 /* icudt44l.dat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -14327,6 +14334,13 @@
 		F8DA311D136ED7F80010A282 /* OptMain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OptMain.c; sourceTree = "<group>"; };
 		F8DA3129136ED99A0010A282 /* libdvm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdvm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA323A136FFA080010A282 /* dexopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dexopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8EB9527137AD9DD00470102 /* ffi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		F8EB952A137AD9DD00470102 /* ffi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		F8EB952B137AD9DD00470102 /* ffitarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		F8EB952D137AD9DD00470102 /* ffi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		F8EB952E137AD9DD00470102 /* ffitarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		F8EB9530137AD9DD00470102 /* ffi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		F8EB9531137AD9DD00470102 /* ffitarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32831,6 +32845,7 @@
 		F866F5A2135DE4E300A8BDFF /* include */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB9526137AD9DD00470102 /* ffi */,
 				F866F5A3135DE4E300A8BDFF /* android */,
 				F866F5A5135DE4E300A8BDFF /* AndroidConfig.h */,
 				F866F5A6135DE4E300A8BDFF /* bionic */,
@@ -35030,6 +35045,52 @@
 			path = dexopt;
 			sourceTree = "<group>";
 		};
+		F8EB9526137AD9DD00470102 /* ffi */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB9527137AD9DD00470102 /* ffi.h */,
+				F8EB9528137AD9DD00470102 /* include */,
+			);
+			path = ffi;
+			sourceTree = "<group>";
+		};
+		F8EB9528137AD9DD00470102 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB9529137AD9DD00470102 /* armv6 */,
+				F8EB952C137AD9DD00470102 /* armv7 */,
+				F8EB952F137AD9DD00470102 /* i386 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F8EB9529137AD9DD00470102 /* armv6 */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB952A137AD9DD00470102 /* ffi.h */,
+				F8EB952B137AD9DD00470102 /* ffitarget.h */,
+			);
+			path = armv6;
+			sourceTree = "<group>";
+		};
+		F8EB952C137AD9DD00470102 /* armv7 */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB952D137AD9DD00470102 /* ffi.h */,
+				F8EB952E137AD9DD00470102 /* ffitarget.h */,
+			);
+			path = armv7;
+			sourceTree = "<group>";
+		};
+		F8EB952F137AD9DD00470102 /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB9530137AD9DD00470102 /* ffi.h */,
+				F8EB9531137AD9DD00470102 /* ffitarget.h */,
+			);
+			path = i386;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -35394,6 +35455,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EB9532137C0AEC00470102 /* android.policy.jar in Resources */,
+				F8EB9533137C0AEC00470102 /* core.jar in Resources */,
+				F8EB9534137C0AEC00470102 /* ext.jar in Resources */,
+				F8EB9535137C0AEC00470102 /* framework.jar in Resources */,
+				F8EB9536137C0AED00470102 /* services.jar in Resources */,
+				F8EB9537137C0AED00470102 /* foo.jar in Resources */,
+				F8EB9538137C0AED00470102 /* icudt44l.dat in Resources */,
 				F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */,
 				F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */,
 				F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */,
@@ -36766,7 +36834,7 @@
 		F820594013584758001217BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
@@ -36775,7 +36843,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
 				OTHER_CFLAGS = "";
 				SDKROOT = iphoneos;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
@@ -36785,14 +36853,14 @@
 		F820594113584758001217BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
 				OTHER_CFLAGS = "";
 				SDKROOT = iphoneos;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
@@ -37082,7 +37150,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					"ICU_DATA_DIR_PREFIX_ENV_VAR=\"\\\"/\\\"\"",
-					"ICU_DATA_DIR=\"\\\"$(PROJECT_DIR)/InTheBoxSim/icu4c/stubdata\\\"\"",
+					"ICU_DATA_DIR=\"\\\"$(BUILT_PRODUCTS_DIR)/InTheBoxSim.app/\\\"\"",
 					_REENTRANT,
 					U_COMMON_IMPLEMENTATION,
 					PIC,
@@ -37415,14 +37483,13 @@
 					DEBUG,
 					DVM_NO_ASM_INTERP,
 					"ANDROID_SMP=0",
-					VERY_VERBOSE_LOG,
 				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
 					"$(PROJECT_DIR)/InTheBoxSim/vm/",
 					"$(PROJECT_DIR)/InTheBoxSim/",
-					/usr/include/ffi/,
+					"$(PROJECT_DIR)/InTheBoxSim/include/ffi/",
 				);
 				INFOPLIST_FILE = "InTheBoxSim/InTheBoxSim-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -37460,7 +37527,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
 					"$(PROJECT_DIR)/InTheBoxSim/vm/",
 					"$(PROJECT_DIR)/InTheBoxSim/",
-					/usr/include/ffi/,
+					"$(PROJECT_DIR)/InTheBoxSim/include/ffi/",
 				);
 				INFOPLIST_FILE = "InTheBoxSim/InTheBoxSim-Info.plist";
 				LIBRARY_SEARCH_PATHS = (

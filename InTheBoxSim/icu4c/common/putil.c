@@ -37,6 +37,10 @@
 ******************************************************************************
 */
 
+// Begin FlexyCore
+#include "CoreFoundation/CoreFoundation.h"
+// End FlexyCore
+
 /* Define _XOPEN_SOURCE for Solaris and friends. */
 /* NetBSD needs it to be >= 4 */
 #if !defined(_XOPEN_SOURCE)
@@ -1161,6 +1165,17 @@ u_getDataDirectory(void) {
 #   endif
 
     /* ICU_DATA_DIR may be set as a compile option */
+    // Begin FlexyCore
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef resourcesURL = CFBundleCopyResourcesDirectoryURL(mainBundle);
+    char path2[PATH_MAX];
+    if (!CFURLGetFileSystemRepresentation(resourcesURL, TRUE, (UInt8 *)path2, PATH_MAX))
+    {
+        fprintf(stderr, "ICU Path error \n");
+    }
+    CFRelease(resourcesURL);
+    path=path2;
+#   undef ICU_DATA_DIR
 #   ifdef ICU_DATA_DIR
     if(path==NULL || *path==0) {
 #       if defined(ICU_DATA_DIR_PREFIX_ENV_VAR)
@@ -1175,6 +1190,7 @@ u_getDataDirectory(void) {
 #       endif
     }
 #   endif
+    // End FlexyCore
 
     if(path==NULL) {
         /* It looks really bad, set it to something. */
