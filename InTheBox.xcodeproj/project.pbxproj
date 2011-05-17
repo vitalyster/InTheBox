@@ -1049,6 +1049,7 @@
 		F828898A1368719F00426E84 /* Hints.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F64B135DE4F800A8BDFF /* Hints.c */; };
 		F828898B1368719F00426E84 /* InterpC-allstubs.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F9F0135DE4F900A8BDFF /* InterpC-allstubs.c */; };
 		F828898D136874D200426E84 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828898C136874B800426E84 /* libffi.a */; };
+		F828FE7C138160E10009CD63 /* tools.m in Sources */ = {isa = PBXBuildFile; fileRef = F828FE791381240E0009CD63 /* tools.m */; };
 		F872AB021369608A00CE824B /* InTheBoxSimAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F53C135DE26300A8BDFF /* InTheBoxSimAppDelegate.m */; };
 		F872AB04136960A400CE824B /* InTheBoxSimAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F540135DE26300A8BDFF /* InTheBoxSimAppDelegate_iPhone.m */; };
 		F872AB05136960B100CE824B /* InTheBoxSimAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F547135DE26300A8BDFF /* InTheBoxSimAppDelegate_iPad.m */; };
@@ -12602,6 +12603,9 @@
 		F828892113686B3800426E84 /* libdl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdl.dylib; path = usr/lib/libdl.dylib; sourceTree = SDKROOT; };
 		F828892213686B4900426E84 /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
 		F828898C136874B800426E84 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = InTheBoxSim/libffi.a; sourceTree = "<group>"; };
+		F828FE7813811F840009CD63 /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
+		F828FE791381240E0009CD63 /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
+		F828FE7B13815D530009CD63 /* toolsCinterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toolsCinterface.h; sourceTree = "<group>"; };
 		F844FE7C1379843B005612C2 /* foo.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = foo.jar; sourceTree = "<group>"; };
 		F844FE7D1379843B005612C2 /* icudt44l.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = icudt44l.dat; sourceTree = "<group>"; };
 		F844FE7F1379848D005612C2 /* android.policy.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = android.policy.jar; sourceTree = "<group>"; };
@@ -32818,6 +32822,9 @@
 				F866F534135DE26300A8BDFF /* InTheBoxSim-Info.plist */,
 				F866F535135DE26300A8BDFF /* InfoPlist.strings */,
 				F866F538135DE26300A8BDFF /* InTheBoxSim-Prefix.pch */,
+				F828FE7813811F840009CD63 /* tools.h */,
+				F828FE791381240E0009CD63 /* tools.m */,
+				F828FE7B13815D530009CD63 /* toolsCinterface.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -36572,6 +36579,7 @@
 				F872AB04136960A400CE824B /* InTheBoxSimAppDelegate_iPhone.m in Sources */,
 				F872AB05136960B100CE824B /* InTheBoxSimAppDelegate_iPad.m in Sources */,
 				F8DA3118136AF32A0010A282 /* main.m in Sources */,
+				F828FE7C138160E10009CD63 /* tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36910,6 +36918,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/cutils.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -36919,6 +36928,7 @@
 					"ANDROID_SMP=0",
 					ANDROID,
 				);
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
 				OTHER_CFLAGS = (
@@ -36934,6 +36944,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/cutils.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -36942,6 +36953,7 @@
 					"ANDROID_SMP=0",
 					ANDROID,
 				);
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
 				OTHER_CFLAGS = (

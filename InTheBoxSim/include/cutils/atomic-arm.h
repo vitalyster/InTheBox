@@ -90,7 +90,7 @@ FC_INLINE void android_atomic_release_store(int32_t value,
 //extern int android_atomic_cas(int32_t old_value, int32_t new_value,
 //                              volatile int32_t *ptr);
 //#elif defined(__ARM_HAVE_LDREX_STREX)
-#if 0
+#if defined(__ARM_HAVE_LDREX_STREX)
 // End FlexyCore
 FC_INLINE int android_atomic_cas(int32_t old_value, int32_t new_value,
                                      volatile int32_t *ptr)
@@ -179,7 +179,7 @@ FC_INLINE int32_t android_atomic_swap(int32_t new_value,
 //extern int32_t android_atomic_add(int32_t increment,
 //                                  volatile int32_t *ptr);
 //#elif defined(__ARM_HAVE_LDREX_STREX)
-#if 0
+#if defined(__ARM_HAVE_LDREX_STREX)
 // End FlexyCore
 FC_INLINE int32_t android_atomic_add(int32_t increment,
                                          volatile int32_t *ptr)
