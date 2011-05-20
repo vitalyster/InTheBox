@@ -943,7 +943,6 @@
 		F828891E13686B3800426E84 /* libnativehelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82855601361B75700426E84 /* libnativehelper.a */; };
 		F828891F13686B3800426E84 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82888A613684CDF00426E84 /* libssl.a */; };
 		F828892013686B3800426E84 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8285530136188E000426E84 /* libz.a */; };
-		F828892313686B6100426E84 /* libdl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F828892113686B3800426E84 /* libdl.dylib */; };
 		F828892413686B6100426E84 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F828892213686B4900426E84 /* libpthread.dylib */; };
 		F828892513686E5700426E84 /* AllocTracker.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F634135DE4F700A8BDFF /* AllocTracker.c */; };
 		F828892613686E5700426E84 /* Atomic.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F654135DE4F800A8BDFF /* Atomic.c */; };
@@ -14432,7 +14431,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F828892313686B6100426E84 /* libdl.dylib in Frameworks */,
+				F82888E3136866C500426E84 /* UIKit.framework in Frameworks */,
+				F82888E4136866C500426E84 /* Foundation.framework in Frameworks */,
+				F82888E5136866C500426E84 /* CoreGraphics.framework in Frameworks */,
+				F828898D136874D200426E84 /* libffi.a in Frameworks */,
 				F828892413686B6100426E84 /* libpthread.dylib in Frameworks */,
 				F828891713686B3700426E84 /* libcore.a in Frameworks */,
 				F828891813686B3800426E84 /* libcrypto.a in Frameworks */,
@@ -14444,10 +14446,6 @@
 				F828891E13686B3800426E84 /* libnativehelper.a in Frameworks */,
 				F828891F13686B3800426E84 /* libssl.a in Frameworks */,
 				F828892013686B3800426E84 /* libz.a in Frameworks */,
-				F82888E3136866C500426E84 /* UIKit.framework in Frameworks */,
-				F82888E4136866C500426E84 /* Foundation.framework in Frameworks */,
-				F82888E5136866C500426E84 /* CoreGraphics.framework in Frameworks */,
-				F828898D136874D200426E84 /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37166,7 +37164,6 @@
 					_REENTRANT,
 					U_COMMON_IMPLEMENTATION,
 					PIC,
-					UDATA_DEBUG,
 				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
@@ -37496,6 +37493,7 @@
 					DVM_NO_ASM_INTERP,
 					"ANDROID_SMP=0",
 				);
+				GCC_THUMB_SUPPORT = YES;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
@@ -37534,6 +37532,7 @@
 					DVM_NO_ASM_INTERP,
 					"ANDROID_SMP=0",
 				);
+				GCC_THUMB_SUPPORT = YES;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",

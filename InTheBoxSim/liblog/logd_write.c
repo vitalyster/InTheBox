@@ -140,7 +140,7 @@ int __android_log_write(int prio, const char *tag, const char *msg)
     
     // Begin FlexyCore
 
-    fprintf(stdout, "%s - %s", tag, msg);
+    //fprintf(stdout, "%s - %s", tag, msg);
     
     /* XXX: This needs to go! */
 //    if (!strcmp(tag, "HTC_RIL") ||
