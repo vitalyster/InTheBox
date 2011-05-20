@@ -412,7 +412,9 @@ INLINE void dvmDestroyMutex(pthread_mutex_t* pMutex)
 INLINE void dvmBroadcastCond(pthread_cond_t* pCond)
 {
     int cc __attribute__ ((__unused__)) = pthread_cond_broadcast(pCond);
-    assert(cc == 0);
+    // Begin FlexyCore
+    //assert(cc == 0);
+    // End FlexyCore
 }
 
 INLINE void dvmSignalCond(pthread_cond_t* pCond)

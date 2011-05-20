@@ -12,6 +12,10 @@
 
 #include "CoreFoundation/CoreFoundation.h"
 
+// CUSTOMIZE THIS
+const char * MAIN_JAVA_CLASS_NAME = "Foo";
+const char * JAR_NAME = "foo.jar";
+
 int main(int argc, char *argv[])
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
@@ -30,10 +34,10 @@ int main(int argc, char *argv[])
     argv2[0] = argv[0];
     argv2[1] = "-cp";
     char foopath[PATH_MAX];
-    char * foopath2;
     strcpy(foopath, path);
-    foopath2 = strcat(foopath, "/foo.jar");
-    argv2[2] = foopath2;
+    strcat(foopath, "/");
+    strcat(foopath, JAR_NAME);
+    argv2[2] = foopath;
     char bootclasspath[5*PATH_MAX + 17 + 10 + 9 + 15 + 20 + 14];
     strcpy(bootclasspath, "-Xbootclasspath:");
     strcat(bootclasspath, path);
@@ -47,7 +51,7 @@ int main(int argc, char *argv[])
     strcat(bootclasspath, path);
     strcat(bootclasspath, "/services.jar");
     argv2[3] = bootclasspath;
-    argv2[4] = "Foo";
+    argv2[4] = MAIN_JAVA_CLASS_NAME;
     androidMain(argc2, argv2);
     int retVal = UIApplicationMain(argc, argv, nil, nil);
     [pool release];
