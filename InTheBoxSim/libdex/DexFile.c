@@ -648,7 +648,11 @@ void dexFileFree(DexFile* pDexFile)
 const DexClassDef* dexFindClass(const DexFile* pDexFile,
     const char* descriptor)
 {
-    const DexClassLookup* pLookup = pDexFile->pClassLookup;
+    // Begin FlexyCore
+    const DexClassLookup* pLookup = dexCreateClassLookup(pDexFile);
+    
+    //const DexClassLookup* pLookup = pDexFile->pClassLookup;
+    // End FlexyCore
     u4 hash;
     int idx, mask;
 

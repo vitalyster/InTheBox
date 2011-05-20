@@ -88,6 +88,9 @@ bool dvmMterpStd(Thread* self, InterpState* glue)
         glue->pDebuggerActive = NULL;
     }
     glue->pActiveProfilers = &gDvm.activeProfilers;
+    
+//    if (strcmp(glue->method->clazz->descriptor, "Ljava/lang/Thread;") == 0)
+//        fprintf(stdout, "FlexyCore THREAD");
 
     IF_LOGVV() {
         char* desc = dexProtoCopyMethodDescriptor(&glue->method->prototype);

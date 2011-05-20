@@ -30,6 +30,10 @@
 #include "OptInvocation.h"
 #include "DexFile.h"
 
+// Begin FlexyCore
+#include "toolsCinterface.h"
+// End FlexyCore
+
 static const char* kClassesDex = "classes.dex";
 
 
@@ -92,14 +96,19 @@ char* dexOptGenerateCacheFileName(const char* fileName, const char* subFileName)
 
     /* Build the name of the cache directory.
      */
-    dataRoot = getenv("ANDROID_DATA");
-    if (dataRoot == NULL)
-        dataRoot = "/data";
-    snprintf(nameBuf, kBufLen, "%s/%s", dataRoot, kDexCachePath);
+    // Begin FlexyCore
+//    dataRoot = getenv("ANDROID_DATA");
+//    if (dataRoot == NULL)
+//        dataRoot = "/data";
+//    snprintf(nameBuf, kBufLen, "%s/%s", dataRoot, kDexCachePath);
+    char * appDocPath = getAppDocumentsPath();
+    strcpy(nameBuf, appDocPath);
 
     /* Tack on the file name for the actual cache file path.
      */
+//    strncat(nameBuf, absoluteFile, kBufLen);
     strncat(nameBuf, absoluteFile, kBufLen);
+    // End FlexyCore
 
     LOGV("Cache file for '%s' '%s' is '%s'\n", fileName, subFileName, nameBuf);
     return strdup(nameBuf);

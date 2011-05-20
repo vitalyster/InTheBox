@@ -50,10 +50,9 @@ int ashmem_create_region(const char *ignored, size_t size)
 	int fd;
 
 	srand(time(NULL) + pid);
-    char * docPath = getDocumentsPath2();
+    char * docPath = getAppDocumentsPath();
     strcpy(path, docPath);
     strcat(path, "/android-ashmem-%d-%c%c%c%c%c%c%c%c");
-    fprintf(stderr, "FlexyCore tmpfilepath2: %s\n", path);
 
 retry:
     
@@ -69,12 +68,10 @@ retry:
 		txt[(int) ((sizeof(txt) - 1) * (rand() / (RAND_MAX + 1.0)))],
 		txt[(int) ((sizeof(txt) - 1) * (rand() / (RAND_MAX + 1.0)))],
 		txt[(int) ((sizeof(txt) - 1) * (rand() / (RAND_MAX + 1.0)))]);
-    fprintf(stderr, "FlexyCore tmpfilepath3: %s\n", name);
     // End FlexyCore
 
 	/* open O_EXCL & O_CREAT: we are either the sole owner or we fail */
 	fd = open(name, O_RDWR | O_CREAT | O_EXCL, 0600);
-    fprintf(stderr, "FlexyCore fd: %d\n", fd);
 	if (fd == -1) {
 		/* unlikely, but if we failed because `name' exists, retry */
 		if (errno == EEXIST && ++retries < 6)

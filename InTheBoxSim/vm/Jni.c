@@ -1923,9 +1923,13 @@ static jclass FindClass(JNIEnv* env, const char* name)
         assert(strcmp(thisMethod->name, "nativeLoad") == 0);
         loader = _self->classLoaderOverride;
     } else if (thisMethod == gDvm.methFakeNativeEntry) {
+        //fprintf(stdout, "FlexyCore gDvm.methFakeNativeEntry\n");
         /* start point of invocation interface */
         if (!gDvm.initializing)
+        {
+            //fprintf(stdout, "FlexyCore !gDvm.initializing\n");
             loader = dvmGetSystemClassLoader();
+        }
         else
             loader = NULL;
     } else {

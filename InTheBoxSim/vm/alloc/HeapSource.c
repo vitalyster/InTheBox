@@ -471,7 +471,9 @@ static void gcDaemonShutdown(void)
         gHs->gcThreadShutdown = true;
         dvmSignalCond(&gHs->gcThreadCond);
         dvmUnlockMutex(&gHs->gcThreadMutex);
-        pthread_join(gHs->gcThread, NULL);
+        // Begin FlexyCore
+        //pthread_join(gHs->gcThread, NULL);
+        // End FlexyCore
     }
 }
 

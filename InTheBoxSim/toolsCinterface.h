@@ -10,6 +10,6 @@
 #ifndef __TOOLSCINTERFACE_H__
 #define __TOOLSCINTERFACE_H__ 1
 
-char * getDocumentsPath2 (void);
+char * getAppDocumentsPath (void);
 
 #endif

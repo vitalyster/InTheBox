@@ -143,22 +143,22 @@ int __android_log_write(int prio, const char *tag, const char *msg)
     fprintf(stdout, "%s - %s", tag, msg);
     
     /* XXX: This needs to go! */
-    if (!strcmp(tag, "HTC_RIL") ||
-        !strncmp(tag, "RIL", 3) || /* Any log tag with "RIL" as the prefix */
-        !strcmp(tag, "AT") ||
-        !strcmp(tag, "GSM") ||
-        !strcmp(tag, "STK") ||
-        !strcmp(tag, "CDMA") ||
-        !strcmp(tag, "PHONE") ||
-        !strcmp(tag, "SMS"))
-            log_id = LOG_ID_RADIO;
-
-    vec[0].iov_base   = (unsigned char *) &prio;
-    vec[0].iov_len    = 1;
-    vec[1].iov_base   = (void *) tag;
-    vec[1].iov_len    = strlen(tag) + 1;
-    vec[2].iov_base   = (void *) msg;
-    vec[2].iov_len    = strlen(msg) + 1;
+//    if (!strcmp(tag, "HTC_RIL") ||
+//        !strncmp(tag, "RIL", 3) || /* Any log tag with "RIL" as the prefix */
+//        !strcmp(tag, "AT") ||
+//        !strcmp(tag, "GSM") ||
+//        !strcmp(tag, "STK") ||
+//        !strcmp(tag, "CDMA") ||
+//        !strcmp(tag, "PHONE") ||
+//        !strcmp(tag, "SMS"))
+//            log_id = LOG_ID_RADIO;
+//
+//    vec[0].iov_base   = (unsigned char *) &prio;
+//    vec[0].iov_len    = 1;
+//    vec[1].iov_base   = (void *) tag;
+//    vec[1].iov_len    = strlen(tag) + 1;
+//    vec[2].iov_base   = (void *) msg;
+//    vec[2].iov_len    = strlen(msg) + 1;
 
     //return write_to_log(log_id, vec, 3);
     return 0;

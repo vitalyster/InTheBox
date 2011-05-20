@@ -365,11 +365,11 @@ INLINE void dvmLockMutex(pthread_mutex_t* pMutex)
 {
     int cc __attribute__ ((__unused__)) = pthread_mutex_lock(pMutex);
     // Begin FlexyCore
-    if (cc != 0){
-        fprintf(stdout, "FlexyCore pMutex address: %d\n", (int)pMutex);
-        fprintf(stdout, "FlexyCore pthread_mutex_lock returned: %d\n", cc);
-        fprintf(stdout, "FlexyCore EINVAL: %d\n", EINVAL);
-    }
+//    if (cc != 0){
+//        fprintf(stdout, "FlexyCore pMutex address: %d\n", (int)pMutex);
+//        fprintf(stdout, "FlexyCore pthread_mutex_lock returned: %d\n", cc);
+//        fprintf(stdout, "FlexyCore EINVAL: %d\n", EINVAL);
+//    }
     //assert(cc == 0);
     // End FlexyCore
 }
@@ -391,11 +391,11 @@ INLINE void dvmUnlockMutex(pthread_mutex_t* pMutex)
 {
     int cc __attribute__ ((__unused__)) = pthread_mutex_unlock(pMutex);
     // Begin FlexyCore
-    if (cc != 0){
-        fprintf(stdout, "FlexyCore pMutex address: %d\n", (int)pMutex);
-        fprintf(stdout, "FlexyCore pthread_mutex_lock returned: %d\n", cc);
-        fprintf(stdout, "FlexyCore EINVAL: %d\n", EINVAL);
-    }
+//    if (cc != 0){
+//        fprintf(stdout, "FlexyCore pMutex address: %d\n", (int)pMutex);
+//        fprintf(stdout, "FlexyCore pthread_mutex_lock returned: %d\n", cc);
+//        fprintf(stdout, "FlexyCore EINVAL: %d\n", EINVAL);
+//    }
     // End FlexyCore
     //assert(cc == 0);
 }

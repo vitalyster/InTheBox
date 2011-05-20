@@ -13,6 +13,4 @@
     
 }
 
-- (void) getDocumentsPath;
-
 @end

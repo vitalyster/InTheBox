@@ -1046,7 +1046,10 @@ static void setCommandLineDefaults()
 
     /* default verification and optimization modes */
     gDvm.classVerifyMode = VERIFY_MODE_ALL;
-    gDvm.dexOptMode = OPTIMIZE_MODE_VERIFIED;
+    // Begin FlexyCore
+    //gDvm.dexOptMode = OPTIMIZE_MODE_VERIFIED;
+    gDvm.dexOptMode = OPTIMIZE_MODE_NONE;
+    // End FlexyCore
 
     /*
      * Default execution mode.
@@ -1317,7 +1320,7 @@ int dvmStartup(int argc, const char* const argv[], bool ignoreUnrecognized,
 #endif
 
     // Begin FlexyCore
-    fprintf(stdout, "FlexyCore Ex1\n");
+    //fprintf(stdout, "FlexyCore Ex1\n");
     Thread *selfThread = dvmThreadSelf();
     Object *ex = selfThread->exception;
     // End FlexyCore

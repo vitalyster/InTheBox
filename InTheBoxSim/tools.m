@@ -9,22 +9,11 @@
 #import "tools.h"
 
 
-@implementation tools
-
-- (void) getDocumentsPath {
-     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-     NSString *documentsDirectory = [paths objectAtIndex:0];
-     NSLog(@"*** FlexyCore");
-     NSLog(documentsDirectory);
-     //return documentsDirectory;
-}
-
-char * getDocumentsPath2 ()
+char * getAppDocumentsPath ()
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    const char * cpath = [documentsDirectory cString];
+    const char * cpath = [documentsDirectory UTF8String];
     return cpath;
 }
 
-@end

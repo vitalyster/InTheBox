@@ -278,22 +278,29 @@ tryArchive:
                 bool result;
                 off_t dexOffset;
 
-                dexOffset = lseek(fd, 0, SEEK_CUR);
-                result = (dexOffset > 0);
+                dexOffset = lseek(fd, 0, SEEK_SET);
+                result =  true;
+                
+                // Begin FlexyCore
+//                dexOffset = lseek(fd, 0, SEEK_CUR);
+//                result = (dexOffset > 0);
+                // End FlexyCore
 
                 if (result) {
                     startWhen = dvmGetRelativeTimeUsec();
                     result = dexZipExtractEntryToFile(&archive, entry, fd) == 0;
                     extractWhen = dvmGetRelativeTimeUsec();
                 }
-                if (result) {
-                    result = dvmOptimizeDexFile(fd, dexOffset,
-                                dexGetZipEntryUncompLen(&archive, entry),
-                                fileName,
-                                dexGetZipEntryModTime(&archive, entry),
-                                dexGetZipEntryCrc32(&archive, entry),
-                                isBootstrap);
-                }
+                // Begin FlexyCore
+//                if (result) {
+//                    result = dvmOptimizeDexFile(fd, dexOffset,
+//                                dexGetZipEntryUncompLen(&archive, entry),
+//                                fileName,
+//                                dexGetZipEntryModTime(&archive, entry),
+//                                dexGetZipEntryCrc32(&archive, entry),
+//                                isBootstrap);
+//                }
+                // End FlexyCore
 
                 if (!result) {
                     LOGE("Unable to extract+optimize DEX from '%s'\n",
