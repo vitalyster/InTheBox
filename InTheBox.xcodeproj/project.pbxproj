@@ -942,7 +942,6 @@
 		F828891D13686B3800426E84 /* libliblog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82852C31360618E00426E84 /* libliblog.a */; };
 		F828891E13686B3800426E84 /* libnativehelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82855601361B75700426E84 /* libnativehelper.a */; };
 		F828891F13686B3800426E84 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82888A613684CDF00426E84 /* libssl.a */; };
-		F828892013686B3800426E84 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8285530136188E000426E84 /* libz.a */; };
 		F828892413686B6100426E84 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F828892213686B4900426E84 /* libpthread.dylib */; };
 		F828892513686E5700426E84 /* AllocTracker.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F634135DE4F700A8BDFF /* AllocTracker.c */; };
 		F828892613686E5700426E84 /* Atomic.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F654135DE4F800A8BDFF /* Atomic.c */; };
@@ -1052,6 +1051,9 @@
 		F872AB021369608A00CE824B /* InTheBoxSimAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F53C135DE26300A8BDFF /* InTheBoxSimAppDelegate.m */; };
 		F872AB04136960A400CE824B /* InTheBoxSimAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F540135DE26300A8BDFF /* InTheBoxSimAppDelegate_iPhone.m */; };
 		F872AB05136960B100CE824B /* InTheBoxSimAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = F866F547135DE26300A8BDFF /* InTheBoxSimAppDelegate_iPad.m */; };
+		F8CE5540138A589900D55C8C /* itbios.png in Resources */ = {isa = PBXBuildFile; fileRef = F8CE553F138A589900D55C8C /* itbios.png */; };
+		F8CE5542138A63DA00D55C8C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F8CE5541138A63DA00D55C8C /* Default.png */; };
+		F8CE5547138A6F6C00D55C8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE5546138A6F6C00D55C8C /* libz.dylib */; };
 		F8DA3118136AF32A0010A282 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3117136AF32A0010A282 /* main.m */; };
 		F8DA3124136ED99A0010A282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F820593B13584758001217BF /* Foundation.framework */; };
 		F8DA312A136EDA2A0010A282 /* AllocTracker.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F634135DE4F700A8BDFF /* AllocTracker.c */; };
@@ -1208,13 +1210,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = F828535413617B1900426E84;
 			remoteInfo = dex;
-		};
-		F828890913686AC800426E84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F820592F13584758001217BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F8285525136188E000426E84;
-			remoteInfo = zlib;
 		};
 		F828890B13686AC800426E84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -14331,6 +14326,9 @@
 		F866FC86135DE4FA00A8BDFF /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
 		F866FC87135DE4FA00A8BDFF /* UtfString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UtfString.c; sourceTree = "<group>"; };
 		F866FC88135DE4FA00A8BDFF /* UtfString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtfString.h; sourceTree = "<group>"; };
+		F8CE553F138A589900D55C8C /* itbios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itbios.png; sourceTree = "<group>"; };
+		F8CE5541138A63DA00D55C8C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F8CE5546138A6F6C00D55C8C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F8DA3117136AF32A0010A282 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8DA3119136B01FC0010A282 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F8DA311C136ED7F80010A282 /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
@@ -14436,6 +14434,7 @@
 				F82888E5136866C500426E84 /* CoreGraphics.framework in Frameworks */,
 				F828898D136874D200426E84 /* libffi.a in Frameworks */,
 				F828892413686B6100426E84 /* libpthread.dylib in Frameworks */,
+				F8CE5547138A6F6C00D55C8C /* libz.dylib in Frameworks */,
 				F828891713686B3700426E84 /* libcore.a in Frameworks */,
 				F828891813686B3800426E84 /* libcrypto.a in Frameworks */,
 				F828891913686B3800426E84 /* libcutils.a in Frameworks */,
@@ -14445,7 +14444,6 @@
 				F828891D13686B3800426E84 /* libliblog.a in Frameworks */,
 				F828891E13686B3800426E84 /* libnativehelper.a in Frameworks */,
 				F828891F13686B3800426E84 /* libssl.a in Frameworks */,
-				F828892013686B3800426E84 /* libz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -14487,6 +14485,8 @@
 		F820592D13584758001217BF = {
 			isa = PBXGroup;
 			children = (
+				F8CE5546138A6F6C00D55C8C /* libz.dylib */,
+				F8CE5541138A63DA00D55C8C /* Default.png */,
 				F8DA3129136ED99A0010A282 /* libdvm.a */,
 				F828898C136874B800426E84 /* libffi.a */,
 				F828892113686B3800426E84 /* libdl.dylib */,
@@ -32816,6 +32816,7 @@
 		F866F533135DE26300A8BDFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE553F138A589900D55C8C /* itbios.png */,
 				F8DA3117136AF32A0010A282 /* main.m */,
 				F866F534135DE26300A8BDFF /* InTheBoxSim-Info.plist */,
 				F866F535135DE26300A8BDFF /* InfoPlist.strings */,
@@ -35363,7 +35364,6 @@
 				F828890413686AC800426E84 /* PBXTargetDependency */,
 				F828890613686AC800426E84 /* PBXTargetDependency */,
 				F828890813686AC800426E84 /* PBXTargetDependency */,
-				F828890A13686AC800426E84 /* PBXTargetDependency */,
 				F828890C13686AC800426E84 /* PBXTargetDependency */,
 				F828890E13686AC800426E84 /* PBXTargetDependency */,
 				F828891013686AC800426E84 /* PBXTargetDependency */,
@@ -35470,6 +35470,8 @@
 				F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */,
 				F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */,
 				F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */,
+				F8CE5540138A589900D55C8C /* itbios.png in Resources */,
+				F8CE5542138A63DA00D55C8C /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36716,11 +36718,6 @@
 			isa = PBXTargetDependency;
 			target = F828535413617B1900426E84 /* dex */;
 			targetProxy = F828890713686AC800426E84 /* PBXContainerItemProxy */;
-		};
-		F828890A13686AC800426E84 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F8285525136188E000426E84 /* zlib */;
-			targetProxy = F828890913686AC800426E84 /* PBXContainerItemProxy */;
 		};
 		F828890C13686AC800426E84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
