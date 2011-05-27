@@ -58,16 +58,6 @@
             value = "$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/core.jar:$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/ext.jar:$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/framework.jar:$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/android.policy.jar:$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_FOLDER_PATH)/services.jar"
             isEnabled = "NO">
          </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "ANDROID_DATA"
-            value = "/Users/blamarche/dalvik_tmp"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "ANDROID_ROOT"
-            value = "/Users/blamarche"
-            isEnabled = "YES">
-         </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>

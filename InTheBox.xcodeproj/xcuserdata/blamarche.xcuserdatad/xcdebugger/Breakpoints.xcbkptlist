@@ -22,20 +22,6 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "InTheBoxSim/tools.h"
-         timestampString = "327244631.018168"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "12"
-         endingLineNumber = "12"
-         landmarkName = "@interface tools"
-         landmarkType = "2">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
          filePath = "InTheBoxSim/vm/JarFile.c"
          timestampString = "327420365.438488"
          startingColumnNumber = "9223372036854775807"

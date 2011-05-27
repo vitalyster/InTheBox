@@ -934,14 +934,12 @@
 		F82888E4136866C500426E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F820593B13584758001217BF /* Foundation.framework */; };
 		F82888E5136866C500426E84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F866F530135DE26300A8BDFF /* CoreGraphics.framework */; };
 		F828891713686B3700426E84 /* libcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8286C321361BDE400426E84 /* libcore.a */; };
-		F828891813686B3800426E84 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8288502136819DE00426E84 /* libcrypto.a */; };
 		F828891913686B3800426E84 /* libcutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828530B13606B5C00426E84 /* libcutils.a */; };
 		F828891A13686B3800426E84 /* libdex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828535F13617B1900426E84 /* libdex.a */; };
 		F828891B13686B3800426E84 /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828845A1366C89700426E84 /* libicui18n.a */; };
 		F828891C13686B3800426E84 /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82883B71361D89600426E84 /* libicuuc.a */; };
 		F828891D13686B3800426E84 /* libliblog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82852C31360618E00426E84 /* libliblog.a */; };
 		F828891E13686B3800426E84 /* libnativehelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82855601361B75700426E84 /* libnativehelper.a */; };
-		F828891F13686B3800426E84 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82888A613684CDF00426E84 /* libssl.a */; };
 		F828892413686B6100426E84 /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F828892213686B4900426E84 /* libpthread.dylib */; };
 		F828892513686E5700426E84 /* AllocTracker.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F634135DE4F700A8BDFF /* AllocTracker.c */; };
 		F828892613686E5700426E84 /* Atomic.c in Sources */ = {isa = PBXBuildFile; fileRef = F866F654135DE4F800A8BDFF /* Atomic.c */; };
@@ -1180,6 +1178,8 @@
 		F8DA323D136FFAC50010A282 /* libdvm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA3129136ED99A0010A282 /* libdvm.a */; };
 		F8DA3240136FFE010010A282 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F828898C136874B800426E84 /* libffi.a */; };
 		F8DA3241137004D50010A282 /* OptMain.c in Sources */ = {isa = PBXBuildFile; fileRef = F8DA311D136ED7F80010A282 /* OptMain.c */; };
+		F8E39B87138E5E84004095E9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8288502136819DE00426E84 /* libcrypto.a */; };
+		F8E39B8A138E5F5B004095E9 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F82888A613684CDF00426E84 /* libssl.a */; };
 		F8EB9532137C0AEC00470102 /* android.policy.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE7F1379848D005612C2 /* android.policy.jar */; };
 		F8EB9533137C0AEC00470102 /* core.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE801379848D005612C2 /* core.jar */; };
 		F8EB9534137C0AEC00470102 /* ext.jar in Resources */ = {isa = PBXBuildFile; fileRef = F844FE811379848D005612C2 /* ext.jar */; };
@@ -1238,20 +1238,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = F828844F1366C89700426E84;
 			remoteInfo = icui18n;
-		};
-		F828891313686AC800426E84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F820592F13584758001217BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F82884F7136819DE00426E84;
-			remoteInfo = crypto;
-		};
-		F828891513686AC800426E84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F820592F13584758001217BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F82886D213684CDF00426E84;
-			remoteInfo = ssl;
 		};
 		F8DA31A3136FFA070010A282 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1329,6 +1315,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = F8DA311E136ED99A0010A282;
 			remoteInfo = dvm;
+		};
+		F8E39B85138E5E78004095E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82884F7136819DE00426E84;
+			remoteInfo = crypto;
+		};
+		F8E39B88138E5F4C004095E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F820592F13584758001217BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82886D213684CDF00426E84;
+			remoteInfo = ssl;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -14436,14 +14436,14 @@
 				F828892413686B6100426E84 /* libpthread.dylib in Frameworks */,
 				F8CE5547138A6F6C00D55C8C /* libz.dylib in Frameworks */,
 				F828891713686B3700426E84 /* libcore.a in Frameworks */,
-				F828891813686B3800426E84 /* libcrypto.a in Frameworks */,
 				F828891913686B3800426E84 /* libcutils.a in Frameworks */,
 				F828891A13686B3800426E84 /* libdex.a in Frameworks */,
 				F828891B13686B3800426E84 /* libicui18n.a in Frameworks */,
 				F828891C13686B3800426E84 /* libicuuc.a in Frameworks */,
 				F828891D13686B3800426E84 /* libliblog.a in Frameworks */,
 				F828891E13686B3800426E84 /* libnativehelper.a in Frameworks */,
-				F828891F13686B3800426E84 /* libssl.a in Frameworks */,
+				F8E39B87138E5E84004095E9 /* libcrypto.a in Frameworks */,
+				F8E39B8A138E5F5B004095E9 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -14485,6 +14485,8 @@
 		F820592D13584758001217BF = {
 			isa = PBXGroup;
 			children = (
+				F82888A613684CDF00426E84 /* libssl.a */,
+				F8288502136819DE00426E84 /* libcrypto.a */,
 				F8CE5546138A6F6C00D55C8C /* libz.dylib */,
 				F8CE5541138A63DA00D55C8C /* Default.png */,
 				F8DA3129136ED99A0010A282 /* libdvm.a */,
@@ -14492,14 +14494,12 @@
 				F828892113686B3800426E84 /* libdl.dylib */,
 				F828892213686B4900426E84 /* libpthread.dylib */,
 				F8286C321361BDE400426E84 /* libcore.a */,
-				F8288502136819DE00426E84 /* libcrypto.a */,
 				F828530B13606B5C00426E84 /* libcutils.a */,
 				F828535F13617B1900426E84 /* libdex.a */,
 				F828845A1366C89700426E84 /* libicui18n.a */,
 				F82883B71361D89600426E84 /* libicuuc.a */,
 				F82852C31360618E00426E84 /* libliblog.a */,
 				F82855601361B75700426E84 /* libnativehelper.a */,
-				F82888A613684CDF00426E84 /* libssl.a */,
 				F8285530136188E000426E84 /* libz.a */,
 				F866F532135DE26300A8BDFF /* InTheBoxSim */,
 				F820593A13584758001217BF /* Frameworks */,
@@ -35361,6 +35361,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				F8E39B89138E5F4C004095E9 /* PBXTargetDependency */,
+				F8E39B86138E5E78004095E9 /* PBXTargetDependency */,
 				F828890413686AC800426E84 /* PBXTargetDependency */,
 				F828890613686AC800426E84 /* PBXTargetDependency */,
 				F828890813686AC800426E84 /* PBXTargetDependency */,
@@ -35368,8 +35370,6 @@
 				F828890E13686AC800426E84 /* PBXTargetDependency */,
 				F828891013686AC800426E84 /* PBXTargetDependency */,
 				F828891213686AC800426E84 /* PBXTargetDependency */,
-				F828891413686AC800426E84 /* PBXTargetDependency */,
-				F828891613686AC800426E84 /* PBXTargetDependency */,
 			);
 			name = InTheBoxSim;
 			productName = InTheBoxSim;
@@ -36739,16 +36739,6 @@
 			target = F828844F1366C89700426E84 /* icui18n */;
 			targetProxy = F828891113686AC800426E84 /* PBXContainerItemProxy */;
 		};
-		F828891413686AC800426E84 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F82884F7136819DE00426E84 /* crypto */;
-			targetProxy = F828891313686AC800426E84 /* PBXContainerItemProxy */;
-		};
-		F828891613686AC800426E84 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F82886D213684CDF00426E84 /* ssl */;
-			targetProxy = F828891513686AC800426E84 /* PBXContainerItemProxy */;
-		};
 		F8DA31A2136FFA070010A282 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F82852C21360618E00426E84 /* liblog */;
@@ -36803,6 +36793,16 @@
 			isa = PBXTargetDependency;
 			target = F8DA311E136ED99A0010A282 /* dvm */;
 			targetProxy = F8DA323E136FFB270010A282 /* PBXContainerItemProxy */;
+		};
+		F8E39B86138E5E78004095E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82884F7136819DE00426E84 /* crypto */;
+			targetProxy = F8E39B85138E5E78004095E9 /* PBXContainerItemProxy */;
+		};
+		F8E39B89138E5F4C004095E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82886D213684CDF00426E84 /* ssl */;
+			targetProxy = F8E39B88138E5F4C004095E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
