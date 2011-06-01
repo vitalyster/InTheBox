@@ -101,7 +101,7 @@ char* dexOptGenerateCacheFileName(const char* fileName, const char* subFileName)
 //    if (dataRoot == NULL)
 //        dataRoot = "/data";
 //    snprintf(nameBuf, kBufLen, "%s/%s", dataRoot, kDexCachePath);
-    char * appDocPath = getAppDocumentsPath();
+    const char * appDocPath = getAppDocumentsPath();
     strcpy(nameBuf, appDocPath);
 
     /* Tack on the file name for the actual cache file path.

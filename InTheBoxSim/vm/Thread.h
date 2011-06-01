@@ -29,7 +29,9 @@
 #if defined(CHECK_MUTEX) && !defined(__USE_UNIX98)
 /* glibc lacks this unless you #define __USE_UNIX98 */
 int pthread_mutexattr_settype(pthread_mutexattr_t *attr, int type);
-enum { PTHREAD_MUTEX_ERRORCHECK = PTHREAD_MUTEX_ERRORCHECK_NP };
+// Begin FlexyCore
+//enum { PTHREAD_MUTEX_ERRORCHECK = PTHREAD_MUTEX_ERRORCHECK_NP };
+// End FlexyCore
 #endif
 
 #ifdef WITH_MONITOR_TRACKING
@@ -349,7 +351,10 @@ INLINE void dvmInitMutex(pthread_mutex_t* pMutex)
     int cc;
 
     pthread_mutexattr_init(&attr);
-    cc = pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_ERRORCHECK_NP);
+    // Begin FlexyCore
+    cc = pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_ERRORCHECK);
+    //cc = pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_ERRORCHECK_NP);
+    // End FlexyCore
     assert(cc == 0);
     pthread_mutex_init(pMutex, &attr);
     pthread_mutexattr_destroy(&attr);
@@ -365,12 +370,11 @@ INLINE void dvmLockMutex(pthread_mutex_t* pMutex)
 {
     int cc __attribute__ ((__unused__)) = pthread_mutex_lock(pMutex);
     // Begin FlexyCore
-//    if (cc != 0){
-//        fprintf(stdout, "FlexyCore pMutex address: %d\n", (int)pMutex);
-//        fprintf(stdout, "FlexyCore pthread_mutex_lock returned: %d\n", cc);
-//        fprintf(stdout, "FlexyCore EINVAL: %d\n", EINVAL);
-//    }
-    //assert(cc == 0);
+    if (cc == EINVAL){
+        dvmInitMutex(pMutex);
+        cc = pthread_mutex_lock(pMutex);
+    }
+    assert(cc == 0);
     // End FlexyCore
 }
 
@@ -390,14 +394,7 @@ INLINE int dvmTryLockMutex(pthread_mutex_t* pMutex)
 INLINE void dvmUnlockMutex(pthread_mutex_t* pMutex)
 {
     int cc __attribute__ ((__unused__)) = pthread_mutex_unlock(pMutex);
-    // Begin FlexyCore
-//    if (cc != 0){
-//        fprintf(stdout, "FlexyCore pMutex address: %d\n", (int)pMutex);
-//        fprintf(stdout, "FlexyCore pthread_mutex_lock returned: %d\n", cc);
-//        fprintf(stdout, "FlexyCore EINVAL: %d\n", EINVAL);
-//    }
-    // End FlexyCore
-    //assert(cc == 0);
+    assert(cc == 0);
 }
 
 /*
@@ -412,9 +409,7 @@ INLINE void dvmDestroyMutex(pthread_mutex_t* pMutex)
 INLINE void dvmBroadcastCond(pthread_cond_t* pCond)
 {
     int cc __attribute__ ((__unused__)) = pthread_cond_broadcast(pCond);
-    // Begin FlexyCore
-    //assert(cc == 0);
-    // End FlexyCore
+    assert(cc == 0);
 }
 
 INLINE void dvmSignalCond(pthread_cond_t* pCond)

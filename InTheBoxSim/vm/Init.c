@@ -1046,10 +1046,7 @@ static void setCommandLineDefaults()
 
     /* default verification and optimization modes */
     gDvm.classVerifyMode = VERIFY_MODE_ALL;
-    // Begin FlexyCore
-    //gDvm.dexOptMode = OPTIMIZE_MODE_VERIFIED;
-    gDvm.dexOptMode = OPTIMIZE_MODE_NONE;
-    // End FlexyCore
+    gDvm.dexOptMode = OPTIMIZE_MODE_VERIFIED;
 
     /*
      * Default execution mode.

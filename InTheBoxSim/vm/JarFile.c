@@ -278,10 +278,11 @@ tryArchive:
                 bool result;
                 off_t dexOffset;
 
+                // Begin FlexyCore
+                // we want to use the dex directly, not convert it to odex,
+                // so let's erase the header that would make the format incorrect
                 dexOffset = lseek(fd, 0, SEEK_SET);
                 result =  true;
-                
-                // Begin FlexyCore
 //                dexOffset = lseek(fd, 0, SEEK_CUR);
 //                result = (dexOffset > 0);
                 // End FlexyCore

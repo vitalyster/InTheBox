@@ -9,7 +9,7 @@
 #import "toolsCinterface.h"
 
 
-char * getAppDocumentsPath ()
+const char * getAppDocumentsPath ()
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
