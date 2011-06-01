@@ -6,11 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
-//#import "toolsCinterface.h"
-//
-//@interface tools {
-//    
-//}
-//
-//@end
+
+#ifndef __TOOLS_H__
+#define __TOOLS_H__ 1
+
+const char * getAppDocumentsPath (void);
+
+#endif

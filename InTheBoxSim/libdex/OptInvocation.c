@@ -31,7 +31,7 @@
 #include "DexFile.h"
 
 // Begin FlexyCore
-#include "toolsCinterface.h"
+#include "tools.h"
 // End FlexyCore
 
 static const char* kClassesDex = "classes.dex";

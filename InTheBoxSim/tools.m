@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "toolsCinterface.h"
+#import "tools.h"
 
 
 const char * getAppDocumentsPath ()

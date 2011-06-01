@@ -12597,9 +12597,8 @@
 		F828892113686B3800426E84 /* libdl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdl.dylib; path = usr/lib/libdl.dylib; sourceTree = SDKROOT; };
 		F828892213686B4900426E84 /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
 		F828898C136874B800426E84 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = InTheBoxSim/libffi.a; sourceTree = "<group>"; };
-		F828FE7813811F840009CD63 /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		F828FE791381240E0009CD63 /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
-		F828FE7B13815D530009CD63 /* toolsCinterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toolsCinterface.h; sourceTree = "<group>"; };
+		F828FE7B13815D530009CD63 /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		F844FE7C1379843B005612C2 /* foo.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = foo.jar; sourceTree = "<group>"; };
 		F844FE7D1379843B005612C2 /* icudt44l.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = icudt44l.dat; sourceTree = "<group>"; };
 		F844FE7F1379848D005612C2 /* android.policy.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = android.policy.jar; sourceTree = "<group>"; };
@@ -32821,9 +32820,8 @@
 				F866F534135DE26300A8BDFF /* InTheBoxSim-Info.plist */,
 				F866F535135DE26300A8BDFF /* InfoPlist.strings */,
 				F866F538135DE26300A8BDFF /* InTheBoxSim-Prefix.pch */,
-				F828FE7813811F840009CD63 /* tools.h */,
 				F828FE791381240E0009CD63 /* tools.m */,
-				F828FE7B13815D530009CD63 /* toolsCinterface.h */,
+				F828FE7B13815D530009CD63 /* tools.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

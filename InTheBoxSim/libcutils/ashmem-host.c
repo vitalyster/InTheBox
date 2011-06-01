@@ -33,7 +33,7 @@
 #include <cutils/ashmem.h>
 
 // Begin FlexyCore
-#include "toolsCinterface.h"
+#include "tools.h"
 // End FlexyCore
 
 int ashmem_create_region(const char *ignored, size_t size)
