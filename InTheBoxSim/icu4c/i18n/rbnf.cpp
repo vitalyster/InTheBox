@@ -552,10 +552,6 @@ LocDataParser::parseError(const char* /*str*/) {
     pe.offset = (int32_t)(p - data);
     
 #ifdef DEBUG
-    // Begin FlexyCore
-    //fprintf(stderr, "%s at or near character %d: ", str, p-data);
-    // End FlexyCore
-
     UnicodeString msg;
     msg.append(start, p - start);
     msg.append((UChar)0x002f); /* SOLIDUS/SLASH */

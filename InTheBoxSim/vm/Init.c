@@ -182,10 +182,9 @@ static void dvmUsage(const char* progName)
         " profile_field_access"
 #endif
 #if defined(WITH_JIT)
-// Begin FlexyCore
+// ITB_CLEANME: why does ARCH_VARIANT cause an issue?
 //        " jit(" ARCH_VARIANT ")"
         " jit"
-// End FlexyCore
 #endif
 #if defined(WITH_SELF_VERIFICATION)
         " self_verification"
@@ -1315,12 +1314,6 @@ int dvmStartup(int argc, const char* const argv[], bool ignoreUnrecognized,
     if (false /*noisy!*/ && !dvmTestIndirectRefTable())
         LOGE("dvmTestIndirectRefTable FAILED\n");
 #endif
-
-    // Begin FlexyCore
-    //fprintf(stdout, "FlexyCore Ex1\n");
-    Thread *selfThread = dvmThreadSelf();
-    Object *ex = selfThread->exception;
-    // End FlexyCore
     
     assert(!dvmCheckException(dvmThreadSelf()));
     gDvm.initExceptionCount = 0;

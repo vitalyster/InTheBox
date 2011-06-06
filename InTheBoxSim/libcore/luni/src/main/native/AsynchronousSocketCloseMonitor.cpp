@@ -37,10 +37,7 @@ static AsynchronousSocketCloseMonitor* blockedThreadList = NULL;
 /**
  * The specific signal chosen here is arbitrary.
  */
-// Begin FlexyCore
-//static const int BLOCKED_THREAD_SIGNAL = SIGRTMIN + 2;
 static const int BLOCKED_THREAD_SIGNAL = 37;
-// End FlexyCore
 
 static void blockedThreadSignalHandler(int /*signal*/) {
     // Do nothing. We only sent this signal for its side-effect of interrupting syscalls.

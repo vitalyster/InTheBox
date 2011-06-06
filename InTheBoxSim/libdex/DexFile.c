@@ -648,11 +648,10 @@ void dexFileFree(DexFile* pDexFile)
 const DexClassDef* dexFindClass(const DexFile* pDexFile,
     const char* descriptor)
 {
-    // Begin FlexyCore
+    // ITB: Lookup is done here, because it is usually done during
+    // dex to dexopt conversion, which we didn't do.
     const DexClassLookup* pLookup = dexCreateClassLookup(pDexFile);
-    
     //const DexClassLookup* pLookup = pDexFile->pClassLookup;
-    // End FlexyCore
     u4 hash;
     int idx, mask;
 

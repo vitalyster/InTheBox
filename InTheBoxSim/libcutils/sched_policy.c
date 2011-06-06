@@ -204,7 +204,7 @@ int get_sched_policy(int tid, SchedPolicy *policy)
             return -1;
         }
     } else {
-        // Begin FlexyCore
+        // ITB_TODO: fix scheduling
         //int rc = sched_getscheduler(tid);
         //if (rc < 0)
             return -1;
@@ -216,7 +216,6 @@ int get_sched_policy(int tid, SchedPolicy *policy)
         //    errno = ERANGE;
         //    return -1;
         //}
-        // End FlexyCore
     }
     return 0;
 }
@@ -266,12 +265,11 @@ int set_sched_policy(int tid, SchedPolicy policy)
         struct sched_param param;
 
         param.sched_priority = 0;
-        // Begin FlexyCore
+        // ITB_TODO: fix scheduling
         //sched_setscheduler(tid,
         //                   (policy == SP_BACKGROUND) ?
         //                    SCHED_BATCH : SCHED_NORMAL,
         //                   &param);
-        // End FlexyCore
     }
 
     return 0;

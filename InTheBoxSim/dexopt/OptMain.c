@@ -237,10 +237,8 @@ static int processZipFile(int zipFd, int cacheFd, const char* zipName,
         int matchOffset = match - bcp;
         if (matchOffset > 0 && bcp[matchOffset-1] == ':')
             matchOffset--;
-        // Begin FlexyCore
-        //LOGV("DexOptZ: found '%s' in bootclasspath, cutting off at %d\n",
-        //    inputFileName, matchOffset);
-        // End FlexyCore
+        LOGV("DexOptZ: found '%s' in bootclasspath, cutting off at %d\n",
+            zipName, matchOffset);
         bcpCopy = strdup(bcp);
         bcpCopy[matchOffset] = '\0';
 

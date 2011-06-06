@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/JarFile.c"
-         timestampString = "328195642.403936"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "288"
-         endingLineNumber = "288"
+         startingLineNumber = "286"
+         endingLineNumber = "286"
          landmarkName = "dvmJarFileOpen()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -23,11 +23,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/libdex/DexFile.c"
-         timestampString = "327422847.506053"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "663"
-         endingLineNumber = "663"
+         startingLineNumber = "662"
+         endingLineNumber = "662"
          landmarkName = "dexFindClass()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -309,34 +309,6 @@
          startingLineNumber = "863"
          endingLineNumber = "863"
          landmarkName = "dvmLoaderInInitiatingList()"
-         landmarkType = "7">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "InTheBoxSim/vm/Jni.c"
-         timestampString = "328542862.864921"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1930"
-         endingLineNumber = "1930"
-         landmarkName = "FindClass()"
-         landmarkType = "7">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "InTheBoxSim/vm/mterp/Mterp.c"
-         timestampString = "327508534.638226"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "93"
-         endingLineNumber = "93"
-         landmarkName = "dvmMterpStd()"
          landmarkType = "7">
       </FileBreakpoint>
       <FileBreakpoint
@@ -723,11 +695,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/alloc/HeapWorker.c"
-         timestampString = "328548082.838358"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "388"
-         endingLineNumber = "388"
+         startingLineNumber = "386"
+         endingLineNumber = "386"
          landmarkName = "heapWorkerThreadStart()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -737,11 +709,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/alloc/HeapWorker.c"
-         timestampString = "328548082.838358"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "474"
-         endingLineNumber = "474"
+         startingLineNumber = "472"
+         endingLineNumber = "472"
          landmarkName = "dvmWaitForHeapWorkerIdle()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -751,11 +723,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/alloc/HeapWorker.c"
-         timestampString = "328548082.838358"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "502"
-         endingLineNumber = "502"
+         startingLineNumber = "500"
+         endingLineNumber = "500"
          landmarkName = "dvmRunFinalizationSync()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -779,11 +751,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/Jni.c"
-         timestampString = "328542862.864921"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "880"
-         endingLineNumber = "880"
+         startingLineNumber = "879"
+         endingLineNumber = "879"
          landmarkName = "deleteGlobalReference()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -793,11 +765,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/Jni.c"
-         timestampString = "328542862.864921"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1270"
-         endingLineNumber = "1270"
+         startingLineNumber = "1269"
+         endingLineNumber = "1269"
          landmarkName = "dvmGetJNIRefType()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -1283,7 +1255,21 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/analysis/Optimize.c"
-         timestampString = "328542862.864921"
+         timestampString = "329063961.186297"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "1053"
+         endingLineNumber = "1053"
+         landmarkName = "rewriteExecuteInline()"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "InTheBoxSim/vm/analysis/Optimize.c"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "1055"
@@ -1297,12 +1283,12 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/analysis/Optimize.c"
-         timestampString = "328542862.864921"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1057"
-         endingLineNumber = "1057"
-         landmarkName = "rewriteExecuteInline()"
+         startingLineNumber = "1094"
+         endingLineNumber = "1094"
+         landmarkName = "rewriteExecuteInlineRange()"
          landmarkType = "7">
       </FileBreakpoint>
       <FileBreakpoint
@@ -1311,7 +1297,7 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/analysis/Optimize.c"
-         timestampString = "328542862.864921"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "1096"
@@ -1324,26 +1310,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "InTheBoxSim/vm/analysis/Optimize.c"
-         timestampString = "328542862.864921"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1098"
-         endingLineNumber = "1098"
-         landmarkName = "rewriteExecuteInlineRange()"
-         landmarkType = "7">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
          filePath = "InTheBoxSim/vm/Thread.h"
-         timestampString = "328624780.300462"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "411"
-         endingLineNumber = "411"
+         startingLineNumber = "405"
+         endingLineNumber = "405"
          landmarkName = "dvmBroadcastCond(pthread_cond_t* pCond)"
          landmarkType = "7">
       </FileBreakpoint>
@@ -1353,11 +1325,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/alloc/HeapWorker.c"
-         timestampString = "328548082.838358"
+         timestampString = "329063961.186297"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "349"
-         endingLineNumber = "349"
+         startingLineNumber = "347"
+         endingLineNumber = "347"
          landmarkName = "heapWorkerThreadStart()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -1387,6 +1359,20 @@
          startingLineNumber = "2397"
          endingLineNumber = "2397"
          landmarkName = "dvmResumeThread()"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "InTheBoxSim/vm/Init.c"
+         timestampString = "329063961.186297"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "1596"
+         endingLineNumber = "1596"
+         landmarkName = "dvmShutdown()"
          landmarkType = "7">
       </FileBreakpoint>
    </FileBreakpoints>

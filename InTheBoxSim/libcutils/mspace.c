@@ -56,10 +56,7 @@ static void *contiguous_mspace_morecore(mstate0 m, ssize_t nb);
 
 #define MSPACES 1
 #define ONLY_MSPACES 1
-// Begin FlexyCore
-//#include "../../../bionic/libc/bionic/dlmalloc.c"
-#include "../include/bionic/libc/bionic/dlmalloc.c"
-//End FlexyCore
+#include "bionic/libc/bionic/dlmalloc.c"
 
 #ifndef PAGESIZE
 #define PAGESIZE  mparams.page_size

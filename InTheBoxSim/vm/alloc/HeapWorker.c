@@ -43,9 +43,7 @@ void dvmInitializeHeapWorkerState()
     dvmInitMutex(&gDvm.heapWorkerLock);
     pthread_cond_init(&gDvm.heapWorkerCond, NULL);
     pthread_cond_init(&gDvm.heapWorkerIdleCond, NULL);
-    // Begin FlexyCore
     pthread_cond_init(&gDvm.gcHeapCond, NULL);
-    // End FlexyCore
 
     gDvm.heapWorkerInitialized = true;
 }

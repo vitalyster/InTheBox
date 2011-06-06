@@ -10,6 +10,6 @@
 #ifndef __TOOLS_H__
 #define __TOOLS_H__ 1
 
-const char * getAppDocumentsPath (void);
+char * getAppDocumentsPath (void);
 
 #endif

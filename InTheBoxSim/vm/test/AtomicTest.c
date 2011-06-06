@@ -69,9 +69,6 @@ static int64_t wideCasTest = 0x6600000077000000LL;
  */
 static int64_t getRelativeTimeNsec(void)
 {
-// Begin FlexyCore
-//#define HAVE_POSIX_CLOCKS
-// End FlexyCore
 #ifdef HAVE_POSIX_CLOCKS
     struct timespec now;
     clock_gettime(CLOCK_MONOTONIC, &now);

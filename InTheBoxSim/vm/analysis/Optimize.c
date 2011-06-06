@@ -969,10 +969,8 @@ Method* dvmOptResolveInterfaceMethod(ClassObject* referrer, u4 methodIdx)
         DexProto proto;
         dexProtoSetFromMethodId(&proto, pDvmDex->pDexFile, pMethodId);
 
-        // Begin FlexyCore
-        //LOGVV("+++ looking for '%s' '%s' in resClass='%s'\n",
-        //    methodName, methodSig, resClass->descriptor);
-        // End FlexyCore
+        LOGVV("+++ looking for '%s' in resClass='%s'\n",
+            methodName, resClass->descriptor);
         resMethod = dvmFindVirtualMethod(resClass, methodName, &proto);
         if (resMethod == NULL) {
             /* scan superinterfaces and superclass interfaces */

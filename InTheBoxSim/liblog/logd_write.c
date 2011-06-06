@@ -138,8 +138,7 @@ int __android_log_write(int prio, const char *tag, const char *msg)
     if (!tag)
         tag = "";
     
-    // Begin FlexyCore
-
+    // TODO: maybe we should use real Adnroid logs
     //fprintf(stdout, "%s - %s", tag, msg);
     
     /* XXX: This needs to go! */
@@ -162,7 +161,6 @@ int __android_log_write(int prio, const char *tag, const char *msg)
 
     //return write_to_log(log_id, vec, 3);
     return 0;
-    // End FlexyCore
 }
 
 int __android_log_buf_write(int bufID, int prio, const char *tag, const char *msg)

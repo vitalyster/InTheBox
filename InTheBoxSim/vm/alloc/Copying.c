@@ -264,11 +264,9 @@ static void *virtualAlloc(size_t length)
     void *addr;
     int flags, prot;
 
-    // Begin FlexyCore
-    // apparently MAP_ANON is deprecated on Linux but MAP_ANONYMOUS does not exist on Mac.
-    //flags = MAP_PRIVATE | MAP_ANONYMOUS;
+    // ITB: apparently MAP_ANON is deprecated on Linux but MAP_ANONYMOUS does not exist on Mac,
+    // so we'll use MAP_ANON anyway
     flags = MAP_PRIVATE | MAP_ANON;
-    // End FlexyCore
     prot = PROT_READ | PROT_WRITE;
     addr = mmap(NULL, length, prot, flags, -1, 0);
     if (addr == MAP_FAILED) {

@@ -480,10 +480,8 @@ bool dvmContinueOptimization(int fd, off_t dexOffset, long dexLength,
 
     assert(gDvm.optimizing);
 
-    // Begin FlexyCore
-    //LOGV("Continuing optimization (%s, isb=%d, vfy=%d, opt=%d)\n",
-    //    fileName, isBootstrap, doVerify, doOpt);
-    // End FlexyCore
+    LOGV("Continuing optimization (%s, isb=%d)\n",
+        fileName, isBootstrap);
 
     assert(dexOffset >= 0);
 

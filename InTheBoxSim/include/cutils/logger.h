@@ -22,16 +22,10 @@ struct logger_entry {
     char        msg[0]; /* the entry's payload */
 };
 
-// Begin FlexyCore
 #define LOGGER_LOG_MAIN		"log/main"
 #define LOGGER_LOG_RADIO	"log/radio"
 #define LOGGER_LOG_EVENTS	"log/events"
 #define LOGGER_LOG_SYSTEM	"log/system"
-//#define LOGGER_LOG_MAIN		"stdout"
-//#define LOGGER_LOG_RADIO	"stdout"
-//#define LOGGER_LOG_EVENTS	"stdout"
-//#define LOGGER_LOG_SYSTEM	"stdout"
-// End FlexyCore
 
 #define LOGGER_ENTRY_MAX_LEN		(4*1024)
 #define LOGGER_ENTRY_MAX_PAYLOAD	\

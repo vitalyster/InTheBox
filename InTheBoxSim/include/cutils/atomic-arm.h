@@ -19,15 +19,12 @@
 
 #include <stdint.h>
 #include <machine/cpu-features.h>
-// FlexyCore Edit: replaced every "extern inline" by "FC_INLINE"
 
-// Begin FlexyCore
 #ifdef __GNUC_GNU_INLINE__
 #define FC_INLINE extern inline
 #else
 #define FC_INLINE inline
 #endif
-// End FlexyCore
 
 FC_INLINE void android_compiler_barrier(void)
 {
@@ -85,13 +82,12 @@ FC_INLINE void android_atomic_release_store(int32_t value,
     *ptr = value;
 }
 
-// Begin FlexyCore
+// ITB_CLEANME: where is the thumb implementation?
 //#if defined(__thumb__)
 //extern int android_atomic_cas(int32_t old_value, int32_t new_value,
 //                              volatile int32_t *ptr);
 //#elif defined(__ARM_HAVE_LDREX_STREX)
 #if defined(__ARM_HAVE_LDREX_STREX)
-// End FlexyCore
 FC_INLINE int android_atomic_cas(int32_t old_value, int32_t new_value,
                                      volatile int32_t *ptr)
 {
@@ -174,13 +170,12 @@ FC_INLINE int32_t android_atomic_swap(int32_t new_value,
 }
 #endif
 
-// Begin FlexyCore
+// ITB_CLEANME: where is the thumb implementation?
 //#if defined(__thumb__)
 //extern int32_t android_atomic_add(int32_t increment,
 //                                  volatile int32_t *ptr);
 //#elif defined(__ARM_HAVE_LDREX_STREX)
 #if defined(__ARM_HAVE_LDREX_STREX)
-// End FlexyCore
 FC_INLINE int32_t android_atomic_add(int32_t increment,
                                          volatile int32_t *ptr)
 {

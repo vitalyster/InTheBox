@@ -403,8 +403,7 @@ DigitList::getDouble() const
             nonConstThis->fDouble /= -1;
         }
     } else if (isInfinite()) {
-        // Begin FlexyCore
-        // FlexyCore: put back code before Android change
+        // ITB: put back code before Android change
         // BEGIN android-changed
         // There is no numeric_limits template member in Android std.
         //nonConstThis->fDouble = INFINITY;
@@ -414,7 +413,6 @@ DigitList::getDouble() const
             nonConstThis->fDouble = std::numeric_limits<double>::max();
         }
         // END android-changed
-        // End FlexyCore
        
         if (!isPositive()) {
             nonConstThis->fDouble = -fDouble;

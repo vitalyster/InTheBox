@@ -15,8 +15,6 @@
  *  limitations under the License.
  */
 
-// FlexyCore modified
-
 #define LOG_TAG "File"
 
 #include "JNIHelp.h"

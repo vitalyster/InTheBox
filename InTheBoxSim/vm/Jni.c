@@ -832,11 +832,9 @@ static jobject addGlobalReference(Object* obj)
     }
     jobj = (jobject) obj;
 
-    // Begin FlexyCore
     //LOGVV("GREF add %p  (%s.%s)\n", obj,
     //    dvmGetCurrentJNIMethod()->clazz->descriptor,
     //    dvmGetCurrentJNIMethod()->name);
-    // End FlexyCore
 
     /* GREF usage tracking; should probably be disabled for production env */
     if (kTrackGrefUsage && gDvm.jniGrefLimit != 0) {
@@ -1923,11 +1921,9 @@ static jclass FindClass(JNIEnv* env, const char* name)
         assert(strcmp(thisMethod->name, "nativeLoad") == 0);
         loader = _self->classLoaderOverride;
     } else if (thisMethod == gDvm.methFakeNativeEntry) {
-        //fprintf(stdout, "FlexyCore gDvm.methFakeNativeEntry\n");
         /* start point of invocation interface */
         if (!gDvm.initializing)
         {
-            //fprintf(stdout, "FlexyCore !gDvm.initializing\n");
             loader = dvmGetSystemClassLoader();
         }
         else

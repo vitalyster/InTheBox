@@ -3742,18 +3742,12 @@ void dvmNukeThread(Thread* thread)
     LOGD("threadid=%d: sending two SIGSTKFLTs to threadid=%d (tid=%d) to"
          " cause debuggerd dump\n",
         dvmThreadSelf()->threadId, thread->threadId, thread->systemTid);
-    // Begin FlexyCore
-    //killResult = pthread_kill(thread->handle, SIGSTKFLT);
     killResult = pthread_kill(thread->handle, SIGFPE);
-    // End FlexyCore
     if (killResult != 0) {
         LOGD("NOTE: pthread_kill #1 failed: %s\n", strerror(killResult));
     }
     usleep(2 * 1000 * 1000);    // TODO: timed-wait until debuggerd attaches
-    // Begin FlexyCore
-    //killResult = pthread_kill(thread->handle, SIGSTKFLT);
     killResult = pthread_kill(thread->handle, SIGFPE);
-    // End FlexyCore
     if (killResult != 0) {
         LOGD("NOTE: pthread_kill #2 failed: %s\n", strerror(killResult));
     }

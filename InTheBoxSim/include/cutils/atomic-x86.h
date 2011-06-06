@@ -19,15 +19,11 @@
 
 #include <stdint.h>
 
-// FlexyCore Edit: replaced every "extern inline" by "FC_INLINE"
-
-// Begin FlexyCore
 #ifdef __GNUC_GNU_INLINE__
 #define FC_INLINE extern inline
 #else
 #define FC_INLINE inline
 #endif
-// End FlexyCore
 
 FC_INLINE void android_compiler_barrier(void)
 {

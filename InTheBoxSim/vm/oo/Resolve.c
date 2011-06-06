@@ -336,12 +336,8 @@ Method* dvmResolveInterfaceMethod(const ClassObject* referrer, u4 methodIdx)
     DexProto proto;
     dexProtoSetFromMethodId(&proto, pDvmDex->pDexFile, pMethodId);
 
-    // Begin FlexyCore
-    //LOGVV("+++ looking for '%s' '%s' in resClass='%s'\n",
-    //    methodName, methodSig, resClass->descriptor);
     LOGVV("+++ looking for '%s' in resClass='%s'\n",
           methodName, resClass->descriptor);
-    // End FlexyCore
     resMethod = dvmFindVirtualMethod(resClass, methodName, &proto);
     if (resMethod == NULL) {
         LOGVV("+++ did not resolve immediately\n");

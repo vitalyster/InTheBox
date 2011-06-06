@@ -21,7 +21,7 @@ namespace android {
     extern int register_dalvik_system_TouchDex(JNIEnv* env);
 }
 
-// Begin FlexyCore
+// ITB_TODO: put back native files that have been removed
 extern int register_com_ibm_icu4jni_converters_NativeConverter(JNIEnv* env);
 extern int register_com_ibm_icu4jni_text_NativeBreakIterator(JNIEnv* env);
 extern int register_com_ibm_icu4jni_text_NativeCollator(JNIEnv* env);
@@ -121,4 +121,3 @@ extern "C" int registerCoreLibrariesJni(JNIEnv* env) {
 
     return result ? 0 : -1;
 }
-// End FlexyCore

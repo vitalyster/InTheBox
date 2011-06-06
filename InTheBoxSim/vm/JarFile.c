@@ -278,21 +278,19 @@ tryArchive:
                 bool result;
                 off_t dexOffset;
 
-                // Begin FlexyCore
-                // we want to use the dex directly, not convert it to odex,
+                // ITB: we want to use the dex directly, not convert it to odex,
                 // so let's erase the header that would make the format incorrect
                 dexOffset = lseek(fd, 0, SEEK_SET);
                 result =  true;
 //                dexOffset = lseek(fd, 0, SEEK_CUR);
 //                result = (dexOffset > 0);
-                // End FlexyCore
 
                 if (result) {
                     startWhen = dvmGetRelativeTimeUsec();
                     result = dexZipExtractEntryToFile(&archive, entry, fd) == 0;
                     extractWhen = dvmGetRelativeTimeUsec();
                 }
-                // Begin FlexyCore
+                // ITB: We don't want to transform dex files to odex
 //                if (result) {
 //                    result = dvmOptimizeDexFile(fd, dexOffset,
 //                                dexGetZipEntryUncompLen(&archive, entry),
@@ -301,7 +299,6 @@ tryArchive:
 //                                dexGetZipEntryCrc32(&archive, entry),
 //                                isBootstrap);
 //                }
-                // End FlexyCore
 
                 if (!result) {
                     LOGE("Unable to extract+optimize DEX from '%s'\n",
