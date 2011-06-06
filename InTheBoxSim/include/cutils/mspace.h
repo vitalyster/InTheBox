@@ -42,7 +42,7 @@
 
 #define MSPACES 1
 #define ONLY_MSPACES 1
-#include "../../../../bionic/libc/bionic/dlmalloc.h"
+#include "bionic/libc/bionic/dlmalloc.h"
 
 #ifdef __cplusplus
 extern "C" {
