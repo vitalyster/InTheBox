@@ -7,9 +7,11 @@
 //
 
 
-#ifndef __TOOLS
-#define __TOOLS 1
+#ifndef _TOOLS
+#define _TOOLS 1
 
 char * getAppDocumentsPath (void);
+
+char * getAppBundlePath (void);
 
 #endif
