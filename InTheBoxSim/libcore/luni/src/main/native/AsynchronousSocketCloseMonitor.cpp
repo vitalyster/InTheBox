@@ -37,7 +37,10 @@ static AsynchronousSocketCloseMonitor* blockedThreadList = NULL;
 /**
  * The specific signal chosen here is arbitrary.
  */
-static const int BLOCKED_THREAD_SIGNAL = 37;
+#ifdef WITH_JIT
+#error: the JIT should be deactivated with In-The_Box because of a potential signal use conflict
+#endif
+static const int BLOCKED_THREAD_SIGNAL = SIGUSR2;
 
 static void blockedThreadSignalHandler(int /*signal*/) {
     // Do nothing. We only sent this signal for its side-effect of interrupting syscalls.
