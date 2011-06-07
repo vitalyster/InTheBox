@@ -39,22 +39,18 @@ int ashmem_create_region(const char *ignored, size_t size)
 	static const char txt[] = "abcdefghijklmnopqrstuvwxyz"
 				  "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
-	char name[256];
-    char path[256];
+	char name[PATH_MAX];
 	unsigned int retries = 0;
 	pid_t pid = getpid();
 	int fd;
 
 	srand(time(NULL) + pid);
-    const char * docPath = getAppDocumentsPath();
-    strcpy(path, docPath);
-    strcat(path, "/android-ashmem-%d-%c%c%c%c%c%c%c%c");
 
 retry:
     
 	/* not beautiful, its just wolf-like loop unrolling */
-    snprintf(name, sizeof(name), path,
-		pid,
+    snprintf(name, sizeof(name), "%s/android-ashmem-%d-%c%c%c%c%c%c%c%c",
+		getAppDocumentsPath(), pid,
 		txt[(int) ((sizeof(txt) - 1) * (rand() / (RAND_MAX + 1.0)))],
 		txt[(int) ((sizeof(txt) - 1) * (rand() / (RAND_MAX + 1.0)))],
 		txt[(int) ((sizeof(txt) - 1) * (rand() / (RAND_MAX + 1.0)))],
