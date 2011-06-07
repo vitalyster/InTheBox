@@ -182,9 +182,7 @@ static void dvmUsage(const char* progName)
         " profile_field_access"
 #endif
 #if defined(WITH_JIT)
-// ITB_CLEANME: why does ARCH_VARIANT cause an issue?
-//        " jit(" ARCH_VARIANT ")"
-        " jit"
+        " jit(" ARCH_VARIANT ")"
 #endif
 #if defined(WITH_SELF_VERIFICATION)
         " self_verification"
