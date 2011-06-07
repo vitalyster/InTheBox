@@ -7,8 +7,8 @@
 //
 
 
-#ifndef __TOOLS_H__
-#define __TOOLS_H__ 1
+#ifndef __TOOLS
+#define __TOOLS 1
 
 char * getAppDocumentsPath (void);
 

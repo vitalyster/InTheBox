@@ -21,3 +21,19 @@ char * getAppDocumentsPath ()
     return cpath2;
 }
 
+char * getAppBundlePath ()
+{
+    char cpath2 [PATH_MAX];
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef resourcesURL = CFBundleCopyResourcesDirectoryURL(mainBundle);
+    if (!CFURLGetFileSystemRepresentation(resourcesURL, TRUE, (UInt8 *)cpath2, PATH_MAX))
+    {
+        fprintf(stderr, "getAppBundlePath Path error \n");
+    }
+    CFRelease(resourcesURL);
+    [pool release];
+    return cpath2;
+}
+
