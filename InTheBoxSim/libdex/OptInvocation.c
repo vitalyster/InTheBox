@@ -46,8 +46,7 @@ static const char* kClassesDex = "classes.dex";
  */
 char* dexOptGenerateCacheFileName(const char* fileName, const char* subFileName)
 {
-    int nameBufSize = 512;
-    char nameBuf[bufferSize];
+    char nameBuf[512];
     static const char kDexCachePath[] = "dalvik-cache";
     char absoluteFile[sizeof(nameBuf)];
     const size_t kBufLen = sizeof(nameBuf) - 1;
@@ -96,7 +95,7 @@ char* dexOptGenerateCacheFileName(const char* fileName, const char* subFileName)
     /* Build the name of the cache directory.
      */
     const char * appDocPath = getAppDocumentsPath();
-    strncpy(nameBuf, appDocPath, nameBufSize);
+    strncpy(nameBuf, appDocPath, kBufLen);
 
     /* Tack on the file name for the actual cache file path.
      */
