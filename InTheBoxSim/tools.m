@@ -13,7 +13,7 @@ const char * appBundlePath = NULL;
 
 const char * getAppDocumentsPath ()
 {
-    if (appDocumentsPath[0]=='\0')
+    if (!appDocumentsPath)
     {
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -24,7 +24,7 @@ const char * getAppDocumentsPath ()
 
 const char * getAppBundlePath ()
 {
-    if (appBundlePath[0]=='\0')
+    if (!appBundlePath)
     {
         appBundlePath = [[[NSBundle mainBundle] resourcePath] fileSystemRepresentation];
     }
