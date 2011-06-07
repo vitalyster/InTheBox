@@ -193,6 +193,8 @@ static jboolean File_setWritableImpl(JNIEnv* env, jclass, jstring javaPath,
     return doChmod(env, javaPath, ownerOnly ? S_IWUSR : (S_IWUSR | S_IWGRP | S_IWOTH), set);
 }
 
+// ITB_TODO: implement these linux-only android-added methods for 1.6 support
+
 /*static bool doStatFs(JNIEnv* env, jstring javaPath, struct statfs& sb) {
     ScopedUtfChars path(env, javaPath);
     if (path.c_str() == NULL) {
