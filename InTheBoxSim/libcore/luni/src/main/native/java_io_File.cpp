@@ -195,7 +195,8 @@ static jboolean File_setWritableImpl(JNIEnv* env, jclass, jstring javaPath,
 
 // ITB_TODO: implement these linux-only android-added methods for 1.6 support
 
-/*static bool doStatFs(JNIEnv* env, jstring javaPath, struct statfs& sb) {
+#if 0
+static bool doStatFs(JNIEnv* env, jstring javaPath, struct statfs& sb) {
     ScopedUtfChars path(env, javaPath);
     if (path.c_str() == NULL) {
         return JNI_FALSE;
@@ -227,7 +228,8 @@ static jlong File_getUsableSpaceImpl(JNIEnv* env, jclass, jstring javaPath) {
         return 0;
     }
     return sb.f_bavail * sb.f_bsize; // non-root free block count * block size in bytes.
-}*/
+}
+#endif
 
 // Iterates over the filenames in the given directory.
 class ScopedReaddir {
