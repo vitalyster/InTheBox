@@ -3739,7 +3739,7 @@ void dvmNukeThread(Thread* thread)
      * The target thread can continue to execute between the two signals.
      * (The first just causes debuggerd to attach to it.)
      */
-    LOGD("threadid=%d: sending two SIGSTKFLTs to threadid=%d (tid=%d) to"
+    LOGD("threadid=%d: sending two SIGFPEs to threadid=%d (tid=%d) to"
          " cause debuggerd dump\n",
         dvmThreadSelf()->threadId, thread->threadId, thread->systemTid);
     killResult = pthread_kill(thread->handle, SIGFPE);
