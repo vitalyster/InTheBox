@@ -10,8 +10,8 @@
 #ifndef _TOOLS
 #define _TOOLS 1
 
-char * getAppDocumentsPath (void);
+const char * getAppDocumentsPath (void);
 
-char * getAppBundlePath (void);
+const char * getAppBundlePath (void);
 
 #endif

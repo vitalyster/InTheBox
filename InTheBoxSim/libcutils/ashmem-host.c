@@ -46,7 +46,7 @@ int ashmem_create_region(const char *ignored, size_t size)
 	int fd;
 
 	srand(time(NULL) + pid);
-    char * docPath = getAppDocumentsPath();
+    const char * docPath = getAppDocumentsPath();
     strcpy(path, docPath);
     strcat(path, "/android-ashmem-%d-%c%c%c%c%c%c%c%c");
 

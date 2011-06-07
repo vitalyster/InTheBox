@@ -8,32 +8,26 @@
 
 #import "tools.h"
 
+const char * appDocumentsPath = NULL;
+const char * appBundlePath = NULL;
 
-char * getAppDocumentsPath ()
+const char * getAppDocumentsPath ()
 {
-    static char cpath2 [PATH_MAX];
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    const char * cpath = [documentsDirectory UTF8String];
-    strcpy(cpath2, cpath);
-    [pool release];
-    return cpath2;
+    if (appDocumentsPath[0]=='\0')
+    {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        appDocumentsPath = [documentsDirectory UTF8String];
+    }
+    return appDocumentsPath;
 }
 
-char * getAppBundlePath ()
+const char * getAppBundlePath ()
 {
-    static char cpath2 [PATH_MAX];
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    
-    CFBundleRef mainBundle = CFBundleGetMainBundle();
-    CFURLRef resourcesURL = CFBundleCopyResourcesDirectoryURL(mainBundle);
-    if (!CFURLGetFileSystemRepresentation(resourcesURL, TRUE, (UInt8 *)cpath2, PATH_MAX))
+    if (appBundlePath[0]=='\0')
     {
-        fprintf(stderr, "getAppBundlePath Path error \n");
+        appBundlePath = [[[NSBundle mainBundle] resourcePath] fileSystemRepresentation];
     }
-    CFRelease(resourcesURL);
-    [pool release];
-    return cpath2;
+    return appBundlePath;
 }
 
