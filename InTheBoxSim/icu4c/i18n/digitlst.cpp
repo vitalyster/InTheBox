@@ -36,11 +36,7 @@
 #include <limits.h>
 #include <string.h>
 #include <stdio.h>
-#ifdef ANDROID
 #include <math.h>
-#else
-#include <limits>
-#endif
 
 // ***************************************************************************
 // class DigitList
@@ -406,12 +402,12 @@ DigitList::getDouble() const
         // ITB: put back code before Android change
         // BEGIN android-changed
         // There is no numeric_limits template member in Android std.
-        //nonConstThis->fDouble = INFINITY;
-        if (std::numeric_limits<double>::has_infinity) {
-            nonConstThis->fDouble = std::numeric_limits<double>::infinity();
-        } else {
-            nonConstThis->fDouble = std::numeric_limits<double>::max();
-        }
+        nonConstThis->fDouble = INFINITY;
+//        if (std::numeric_limits<double>::has_infinity) {
+//            nonConstThis->fDouble = std::numeric_limits<double>::infinity();
+//        } else {
+//            nonConstThis->fDouble = std::numeric_limits<double>::max();
+//        }
         // END android-changed
        
         if (!isPositive()) {
