@@ -6,9 +6,12 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-
 #ifndef _TOOLS
-#define _TOOLS 1
+#define _TOOLS
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
 
 const char * getAppDocumentsPath (void);
 

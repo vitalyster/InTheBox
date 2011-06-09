@@ -14341,6 +14341,7 @@
 		F8EB952E137AD9DD00470102 /* ffitarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
 		F8EB9530137AD9DD00470102 /* ffi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
 		F8EB9531137AD9DD00470102 /* ffitarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		F8ECCCD9139E66D800591CCE /* ItbInlines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItbInlines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32858,6 +32859,7 @@
 				F866F5DA135DE4E300A8BDFF /* machine */,
 				F866F5DC135DE4E300A8BDFF /* nativehelper */,
 				F866F5DF135DE4E300A8BDFF /* utils */,
+				F8ECCCD9139E66D800591CCE /* ItbInlines.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -36838,6 +36840,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = 4.2;
@@ -36856,6 +36859,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -36874,15 +36878,13 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/liblog.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -36894,14 +36896,12 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/liblog.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -36914,8 +36914,9 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/cutils.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					"ANDROID_SMP=0",
@@ -36924,10 +36925,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = cutils;
 			};
@@ -36940,8 +36938,9 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/cutils.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"ANDROID_SMP=0",
 					ANDROID,
@@ -36949,10 +36948,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = cutils;
 			};
@@ -36964,8 +36960,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/dex.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
@@ -36974,10 +36971,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/safe-iop/include/",
 					"$(PROJECT_DIR)/InTheBoxSim/include/nativehelper/",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = dex;
 			};
@@ -36989,8 +36983,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/dex.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
@@ -36998,10 +36993,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/safe-iop/include/",
 					"$(PROJECT_DIR)/InTheBoxSim/include/nativehelper/",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = dex;
 			};
@@ -37013,18 +37005,16 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/zlib.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					USE_MMAP,
 				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = z;
 			};
@@ -37036,15 +37026,13 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/zlib.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = USE_MMAP;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = z;
 			};
@@ -37056,15 +37044,12 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/nativehelper.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = nativehelper;
 			};
@@ -37076,14 +37061,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/nativehelper.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/InTheBoxSim/include/";
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = nativehelper;
 			};
@@ -37095,8 +37077,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/libcore.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					MACOSX,
@@ -37109,10 +37091,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/i18n/",
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/include/",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = core;
 			};
@@ -37124,8 +37103,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/libcore.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
@@ -37135,10 +37114,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/i18n/",
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/include/",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = core;
 			};
@@ -37150,8 +37126,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/icuuc.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					"ICU_DATA_DIR_PREFIX_ENV_VAR=\"\\\"/\\\"\"",
@@ -37166,11 +37142,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/i18n/",
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/common/",
 				);
-				OTHER_CFLAGS = (
-					"-fPIC",
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "-fPIC";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = icuuc;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
@@ -37183,8 +37155,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/icuuc.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"ICU_DATA_DIR_PREFIX_ENV_VAR=\"\\\"$(PROJECT_DIR)/InTheBoxSim/\\\"\"",
 					"ICU_DATA_DIR=\"\\\"/usr/icu\\\"\"",
@@ -37198,11 +37170,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/i18n/",
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/common/",
 				);
-				OTHER_CFLAGS = (
-					"-fPIC",
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "-fPIC";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = icuuc;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
@@ -37215,14 +37183,15 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/icui18n.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					U_DARWIN,
 					_REENTRANT,
 					PIC,
 					U_I18N_IMPLEMENTATION,
+					ANDROID,
 				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
@@ -37230,11 +37199,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/common/",
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/i18n/",
 				);
-				OTHER_CFLAGS = (
-					"-fPIC",
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "-fPIC";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = icui18n;
 			};
@@ -37246,13 +37211,14 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/icui18n.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					U_DARWIN,
 					_REENTRANT,
 					PIC,
 					U_I18N_IMPLEMENTATION,
+					ANDROID,
 				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
@@ -37260,11 +37226,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/common/",
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/i18n/",
 				);
-				OTHER_CFLAGS = (
-					"-fPIC",
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "-fPIC";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = icui18n;
 			};
@@ -37276,8 +37238,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/crypto.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					NO_WINDOWS_BRAINDEATH,
@@ -37312,10 +37274,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/",
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/crypto/",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = crypto;
 			};
@@ -37327,8 +37286,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/crypto.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NO_WINDOWS_BRAINDEATH,
 					OPENSSL_THREADS,
@@ -37362,10 +37321,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/",
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/crypto/",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = crypto;
 			};
@@ -37377,8 +37333,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/ssl.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					NO_WINDOWS_BRAINDEATH,
@@ -37413,10 +37369,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/",
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/crypto/",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ssl;
 			};
@@ -37428,8 +37381,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/ssl.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NO_WINDOWS_BRAINDEATH,
 					OPENSSL_THREADS,
@@ -37463,10 +37416,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/",
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/crypto/",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ssl;
 			};
@@ -37481,7 +37431,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
@@ -37494,8 +37445,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
 					"$(PROJECT_DIR)/InTheBoxSim/vm/",
-					"$(PROJECT_DIR)/InTheBoxSim/",
 					"$(PROJECT_DIR)/InTheBoxSim/include/ffi/",
+					"$(PROJECT_DIR)/InTheBoxSim/",
 				);
 				INFOPLIST_FILE = "InTheBoxSim/InTheBoxSim-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -37503,10 +37454,7 @@
 					"\"$(SRCROOT)/InTheBoxSim\"",
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -37522,7 +37470,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DVM_NO_ASM_INTERP,
@@ -37533,8 +37482,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
 					"$(PROJECT_DIR)/InTheBoxSim/vm/",
-					"$(PROJECT_DIR)/InTheBoxSim/",
 					"$(PROJECT_DIR)/InTheBoxSim/include/ffi/",
+					"$(PROJECT_DIR)/InTheBoxSim/",
 				);
 				INFOPLIST_FILE = "InTheBoxSim/InTheBoxSim-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -37542,11 +37491,7 @@
 					"\"$(SRCROOT)/InTheBoxSim\"",
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -37561,8 +37506,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/dvm.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					DVM_NO_ASM_INTERP,
@@ -37575,10 +37521,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/vm/",
 					/usr/include/ffi/,
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = dvm;
 			};
@@ -37590,8 +37533,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/dvm.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DVM_NO_ASM_INTERP,
 					"ANDROID_SMP=0",
@@ -37603,10 +37547,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/vm/",
 					/usr/include/ffi/,
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = dvm;
 			};
@@ -37621,7 +37562,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
@@ -37642,10 +37583,7 @@
 					"\\\"$(SDKROOT)/usr/lib/system\\\"",
 					"\"$(SRCROOT)/InTheBoxSim\"",
 				);
-				OTHER_CFLAGS = (
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = dexopt;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -37661,7 +37599,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DVM_NO_ASM_INTERP,
@@ -37681,11 +37619,7 @@
 					"\\\"$(SDKROOT)/usr/lib/system\\\"",
 					"\"$(SRCROOT)/InTheBoxSim\"",
 				);
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"-include",
-					"$(PROJECT_DIR)/InTheBoxSim/include/AndroidConfig.h",
-				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = dexopt;
 				TARGETED_DEVICE_FAMILY = "1,2";
