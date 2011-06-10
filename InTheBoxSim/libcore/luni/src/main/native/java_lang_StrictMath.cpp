@@ -16,7 +16,7 @@
 
 #define LOG_TAG "StrictMath"
 
-#include "../../external/fdlibm/fdlibm.h"
+#include "fdlibm/fdlibm.h"
 
 #include "jni.h"
 #include "JNIHelp.h"

@@ -39,7 +39,7 @@ extern int register_java_lang_Float(JNIEnv* env);
 extern int register_java_lang_Math(JNIEnv* env);
 extern int register_java_lang_ProcessManager(JNIEnv* env);
 extern int register_java_lang_RealToString(JNIEnv* env);
-//extern int register_java_lang_StrictMath(JNIEnv* env);
+extern int register_java_lang_StrictMath(JNIEnv* env);
 extern int register_java_lang_System(JNIEnv* env);
 extern int register_java_math_NativeBN(JNIEnv* env);
 extern int register_java_net_InetAddress(JNIEnv* env);
@@ -90,7 +90,7 @@ extern "C" int registerCoreLibrariesJni(JNIEnv* env) {
             register_java_lang_Math(env) != -1 &&
             register_java_lang_ProcessManager(env) != -1 &&
             register_java_lang_RealToString(env) != -1 &&
-            //register_java_lang_StrictMath(env) != -1 &&
+            register_java_lang_StrictMath(env) != -1 &&
             register_java_lang_System(env) != -1 &&
             register_java_math_NativeBN(env) != -1 &&
             register_java_net_InetAddress(env) != -1 &&
