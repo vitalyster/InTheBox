@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80FC70F13A2226500343648 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3119136B01FC0010A282 /* Main.c */; };
 		F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F542135DE26300A8BDFF /* MainWindow_iPhone.xib */; };
 		F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F549135DE26300A8BDFF /* MainWindow_iPad.xib */; };
 		F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F866F535135DE26300A8BDFF /* InfoPlist.strings */; };
@@ -65,21 +66,6 @@
 		F828536E13617C0F00426E84 /* SysUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F828535013617AD500426E84 /* SysUtil.c */; };
 		F828536F13617C0F00426E84 /* ZipArchive.c in Sources */ = {isa = PBXBuildFile; fileRef = F828535213617AD500426E84 /* ZipArchive.c */; };
 		F828552B136188E000426E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F820593B13584758001217BF /* Foundation.framework */; };
-		F8285531136189F800426E84 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = F82853E61361881100426E84 /* adler32.c */; };
-		F8285532136189F800426E84 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = F82853F41361881100426E84 /* compress.c */; };
-		F8285533136189F800426E84 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854B21361881200426E84 /* crc32.c */; };
-		F8285534136189F800426E84 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854B41361881200426E84 /* deflate.c */; };
-		F8285535136189F800426E84 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854CA1361881200426E84 /* gzclose.c */; };
-		F8285536136189F800426E84 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854CD1361881200426E84 /* gzlib.c */; };
-		F8285537136189F800426E84 /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854CE1361881200426E84 /* gzread.c */; };
-		F8285538136189F800426E84 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854CF1361881200426E84 /* gzwrite.c */; };
-		F8285539136189F800426E84 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854D11361881200426E84 /* infback.c */; };
-		F828553A136189F800426E84 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854D21361881200426E84 /* inffast.c */; };
-		F828553B136189F800426E84 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854D51361881200426E84 /* inflate.c */; };
-		F828553C136189F800426E84 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = F82854D71361881200426E84 /* inftrees.c */; };
-		F828553D136189F800426E84 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = F82855091361881200426E84 /* trees.c */; };
-		F828553E136189F800426E84 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = F828550B1361881200426E84 /* uncompr.c */; };
-		F828553F136189F800426E84 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = F82855231361881200426E84 /* zutil.c */; };
 		F828555B1361B75700426E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F820593B13584758001217BF /* Foundation.framework */; };
 		F82855611361B7C600426E84 /* JNIHelp.c in Sources */ = {isa = PBXBuildFile; fileRef = F82855501361B6E900426E84 /* JNIHelp.c */; };
 		F82855621361B7C900426E84 /* Register.c in Sources */ = {isa = PBXBuildFile; fileRef = F82855541361B6E900426E84 /* Register.c */; };
@@ -1333,6 +1319,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F80FC70D13A2214600343648 /* AndroidMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndroidMain.h; sourceTree = "<group>"; };
 		F820593B13584758001217BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F82852B9136060BB00426E84 /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
 		F82852BA136060BB00426E84 /* event_tag_map.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = event_tag_map.c; sourceTree = "<group>"; };
@@ -1422,290 +1409,6 @@
 		F828535213617AD500426E84 /* ZipArchive.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ZipArchive.c; sourceTree = "<group>"; };
 		F828535313617AD500426E84 /* ZipArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		F828535F13617B1900426E84 /* libdex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdex.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F82853A4136182C600426E84 /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
-		F82853A5136182C600426E84 /* CleanSpec.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = CleanSpec.mk; sourceTree = "<group>"; };
-		F82853A7136182C600426E84 /* safe_iop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = safe_iop.h; sourceTree = "<group>"; };
-		F82853A8136182C600426E84 /* MODULE_LICENSE_BSD_LIKE */ = {isa = PBXFileReference; lastKnownFileType = text; path = MODULE_LICENSE_BSD_LIKE; sourceTree = "<group>"; };
-		F82853A9136182C600426E84 /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
-		F82853AB136182C600426E84 /* safe_iop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = safe_iop.c; sourceTree = "<group>"; };
-		F82853AD136182C600426E84 /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
-		F82853AE136182C600426E84 /* ThirdPartyProject.prop */ = {isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyProject.prop; sourceTree = "<group>"; };
-		F82853E61361881100426E84 /* adler32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
-		F82853E71361881100426E84 /* algorithm.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = algorithm.txt; sourceTree = "<group>"; };
-		F82853E91361881100426E84 /* Makefile.pup */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.pup; sourceTree = "<group>"; };
-		F82853EA1361881100426E84 /* Makefile.sas */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.sas; sourceTree = "<group>"; };
-		F82853EB1361881100426E84 /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
-		F82853ED1361881100426E84 /* bndsrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = bndsrc; sourceTree = "<group>"; };
-		F82853EE1361881100426E84 /* compile.clp */ = {isa = PBXFileReference; lastKnownFileType = text; path = compile.clp; sourceTree = "<group>"; };
-		F82853EF1361881100426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F82853F01361881100426E84 /* zlib.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = zlib.inc; sourceTree = "<group>"; };
-		F82853F11361881100426E84 /* ChangeLog */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
-		F82853F21361881100426E84 /* CleanSpec.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = CleanSpec.mk; sourceTree = "<group>"; };
-		F82853F31361881100426E84 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
-		F82853F41361881100426E84 /* compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
-		F82853F51361881100426E84 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
-		F82853F81361881100426E84 /* buffer_demo.adb */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = buffer_demo.adb; sourceTree = "<group>"; };
-		F82853F91361881100426E84 /* mtest.adb */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = mtest.adb; sourceTree = "<group>"; };
-		F82853FA1361881100426E84 /* read.adb */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = read.adb; sourceTree = "<group>"; };
-		F82853FB1361881100426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F82853FC1361881100426E84 /* test.adb */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = test.adb; sourceTree = "<group>"; };
-		F82853FD1361881100426E84 /* zlib-streams.adb */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = "zlib-streams.adb"; sourceTree = "<group>"; };
-		F82853FE1361881100426E84 /* zlib-streams.ads */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = "zlib-streams.ads"; sourceTree = "<group>"; };
-		F82853FF1361881100426E84 /* zlib-thin.adb */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = "zlib-thin.adb"; sourceTree = "<group>"; };
-		F82854001361881100426E84 /* zlib-thin.ads */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = "zlib-thin.ads"; sourceTree = "<group>"; };
-		F82854011361881100426E84 /* zlib.adb */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = zlib.adb; sourceTree = "<group>"; };
-		F82854021361881100426E84 /* zlib.ads */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.ada; path = zlib.ads; sourceTree = "<group>"; };
-		F82854031361881100426E84 /* zlib.gpr */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.gpr; sourceTree = "<group>"; };
-		F82854051361881100426E84 /* amd64-match.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "amd64-match.S"; sourceTree = "<group>"; };
-		F82854071361881100426E84 /* match.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = match.S; sourceTree = "<group>"; };
-		F82854081361881100426E84 /* README.586 */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.586; sourceTree = "<group>"; };
-		F828540A1361881100426E84 /* match.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = match.S; sourceTree = "<group>"; };
-		F828540B1361881100426E84 /* README.686 */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.686; sourceTree = "<group>"; };
-		F828540D1361881100426E84 /* blast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = blast.c; sourceTree = "<group>"; };
-		F828540E1361881100426E84 /* blast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blast.h; sourceTree = "<group>"; };
-		F828540F1361881100426E84 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		F82854101361881100426E84 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		F82854111361881100426E84 /* test.pk */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.pk; sourceTree = "<group>"; };
-		F82854121361881100426E84 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
-		F82854141361881200426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F82854151361881200426E84 /* ZLib.pas */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = ZLib.pas; sourceTree = "<group>"; };
-		F82854161361881200426E84 /* ZLibConst.pas */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = ZLibConst.pas; sourceTree = "<group>"; };
-		F82854171361881200426E84 /* zlibd32.mak */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = zlibd32.mak; sourceTree = "<group>"; };
-		F828541A1361881200426E84 /* AssemblyInfo.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = AssemblyInfo.cs; sourceTree = "<group>"; };
-		F828541B1361881200426E84 /* ChecksumImpl.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChecksumImpl.cs; sourceTree = "<group>"; };
-		F828541C1361881200426E84 /* CircularBuffer.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = CircularBuffer.cs; sourceTree = "<group>"; };
-		F828541D1361881200426E84 /* CodecBase.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodecBase.cs; sourceTree = "<group>"; };
-		F828541E1361881200426E84 /* Deflater.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = Deflater.cs; sourceTree = "<group>"; };
-		F828541F1361881200426E84 /* DotZLib.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = DotZLib.cs; sourceTree = "<group>"; };
-		F82854201361881200426E84 /* DotZLib.csproj */ = {isa = PBXFileReference; lastKnownFileType = text; path = DotZLib.csproj; sourceTree = "<group>"; };
-		F82854211361881200426E84 /* GZipStream.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = GZipStream.cs; sourceTree = "<group>"; };
-		F82854221361881200426E84 /* Inflater.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = Inflater.cs; sourceTree = "<group>"; };
-		F82854231361881200426E84 /* UnitTests.cs */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.cs; sourceTree = "<group>"; };
-		F82854241361881200426E84 /* DotZLib.build */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DotZLib.build; sourceTree = "<group>"; };
-		F82854251361881200426E84 /* DotZLib.chm */ = {isa = PBXFileReference; lastKnownFileType = file; path = DotZLib.chm; sourceTree = "<group>"; };
-		F82854261361881200426E84 /* DotZLib.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = DotZLib.sln; sourceTree = "<group>"; };
-		F82854271361881200426E84 /* LICENSE_1_0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE_1_0.txt; sourceTree = "<group>"; };
-		F82854281361881200426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F828542A1361881200426E84 /* gvmat64.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = gvmat64.S; sourceTree = "<group>"; };
-		F828542C1361881200426E84 /* infback9.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = infback9.c; sourceTree = "<group>"; };
-		F828542D1361881200426E84 /* infback9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infback9.h; sourceTree = "<group>"; };
-		F828542E1361881200426E84 /* inffix9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inffix9.h; sourceTree = "<group>"; };
-		F828542F1361881200426E84 /* inflate9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inflate9.h; sourceTree = "<group>"; };
-		F82854301361881200426E84 /* inftree9.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inftree9.c; sourceTree = "<group>"; };
-		F82854311361881200426E84 /* inftree9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inftree9.h; sourceTree = "<group>"; };
-		F82854321361881200426E84 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		F82854341361881200426E84 /* inffas86.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inffas86.c; sourceTree = "<group>"; };
-		F82854351361881200426E84 /* inffast.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = inffast.S; sourceTree = "<group>"; };
-		F82854371361881200426E84 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
-		F82854381361881200426E84 /* zfstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zfstream.cpp; sourceTree = "<group>"; };
-		F82854391361881200426E84 /* zfstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zfstream.h; sourceTree = "<group>"; };
-		F828543B1361881200426E84 /* zstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstream.h; sourceTree = "<group>"; };
-		F828543C1361881200426E84 /* zstream_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zstream_test.cpp; sourceTree = "<group>"; };
-		F828543E1361881200426E84 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		F828543F1361881200426E84 /* test.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cc; sourceTree = "<group>"; };
-		F82854401361881200426E84 /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
-		F82854411361881200426E84 /* zfstream.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zfstream.cc; sourceTree = "<group>"; };
-		F82854421361881200426E84 /* zfstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zfstream.h; sourceTree = "<group>"; };
-		F82854441361881200426E84 /* match.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = match.asm; sourceTree = "<group>"; };
-		F82854461361881200426E84 /* bld_ml64.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = bld_ml64.bat; sourceTree = "<group>"; };
-		F82854471361881200426E84 /* gvmat64.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = gvmat64.asm; sourceTree = "<group>"; };
-		F82854481361881200426E84 /* gvmat64.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = gvmat64.obj; sourceTree = "<group>"; };
-		F82854491361881200426E84 /* inffas8664.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inffas8664.c; sourceTree = "<group>"; };
-		F828544A1361881200426E84 /* inffasx64.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = inffasx64.asm; sourceTree = "<group>"; };
-		F828544B1361881200426E84 /* inffasx64.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = inffasx64.obj; sourceTree = "<group>"; };
-		F828544C1361881200426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F828544E1361881200426E84 /* bld_ml32.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = bld_ml32.bat; sourceTree = "<group>"; };
-		F828544F1361881200426E84 /* gvmat32.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = gvmat32.asm; sourceTree = "<group>"; };
-		F82854501361881200426E84 /* gvmat32.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = gvmat32.obj; sourceTree = "<group>"; };
-		F82854511361881200426E84 /* gvmat32c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gvmat32c.c; sourceTree = "<group>"; };
-		F82854521361881200426E84 /* inffas32.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = inffas32.asm; sourceTree = "<group>"; };
-		F82854531361881200426E84 /* inffas32.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = inffas32.obj; sourceTree = "<group>"; };
-		F82854541361881200426E84 /* match686.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = match686.asm; sourceTree = "<group>"; };
-		F82854551361881200426E84 /* mkasm.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = mkasm.bat; sourceTree = "<group>"; };
-		F82854561361881200426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F82854581361881200426E84 /* ChangeLogUnzip */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLogUnzip; sourceTree = "<group>"; };
-		F82854591361881200426E84 /* crypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		F828545A1361881200426E84 /* ioapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		F828545B1361881200426E84 /* ioapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		F828545C1361881200426E84 /* iowin32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = iowin32.c; sourceTree = "<group>"; };
-		F828545D1361881200426E84 /* iowin32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iowin32.h; sourceTree = "<group>"; };
-		F828545E1361881200426E84 /* make_vms.com */ = {isa = PBXFileReference; lastKnownFileType = text; path = make_vms.com; sourceTree = "<group>"; };
-		F828545F1361881200426E84 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		F82854601361881200426E84 /* miniunz.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = miniunz.c; sourceTree = "<group>"; };
-		F82854611361881200426E84 /* minizip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = minizip.c; sourceTree = "<group>"; };
-		F82854621361881200426E84 /* MiniZip64_Changes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MiniZip64_Changes.txt; sourceTree = "<group>"; };
-		F82854631361881200426E84 /* MiniZip64_info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MiniZip64_info.txt; sourceTree = "<group>"; };
-		F82854641361881200426E84 /* mztools.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		F82854651361881200426E84 /* mztools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		F82854661361881200426E84 /* unzip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		F82854671361881200426E84 /* unzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		F82854681361881200426E84 /* zip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		F82854691361881200426E84 /* zip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		F828546B1361881200426E84 /* example.pas */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = example.pas; sourceTree = "<group>"; };
-		F828546C1361881200426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F828546D1361881200426E84 /* zlibd32.mak */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = zlibd32.mak; sourceTree = "<group>"; };
-		F828546E1361881200426E84 /* zlibpas.pas */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = zlibpas.pas; sourceTree = "<group>"; };
-		F82854701361881200426E84 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		F82854711361881200426E84 /* puff.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = puff.c; sourceTree = "<group>"; };
-		F82854721361881200426E84 /* puff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = puff.h; sourceTree = "<group>"; };
-		F82854731361881200426E84 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		F82854741361881200426E84 /* zeros.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = zeros.raw; sourceTree = "<group>"; };
-		F82854751361881200426E84 /* README.contrib */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.contrib; sourceTree = "<group>"; };
-		F82854771361881200426E84 /* testzlib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testzlib.c; sourceTree = "<group>"; };
-		F82854781361881200426E84 /* testzlib.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = testzlib.txt; sourceTree = "<group>"; };
-		F828547A1361881200426E84 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		F828547B1361881200426E84 /* Makefile.msc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.msc; sourceTree = "<group>"; };
-		F828547C1361881200426E84 /* untgz.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = untgz.c; sourceTree = "<group>"; };
-		F828547E1361881200426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F82854801361881200426E84 /* miniunz.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = miniunz.vcxproj; sourceTree = "<group>"; };
-		F82854811361881200426E84 /* miniunz.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = miniunz.vcxproj.filters; sourceTree = "<group>"; };
-		F82854821361881200426E84 /* miniunz.vcxproj.user */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = miniunz.vcxproj.user; sourceTree = "<group>"; };
-		F82854831361881200426E84 /* minizip.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = minizip.vcxproj; sourceTree = "<group>"; };
-		F82854841361881200426E84 /* minizip.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = minizip.vcxproj.filters; sourceTree = "<group>"; };
-		F82854851361881200426E84 /* minizip.vcxproj.user */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = minizip.vcxproj.user; sourceTree = "<group>"; };
-		F82854861361881200426E84 /* testzlib.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlib.vcxproj; sourceTree = "<group>"; };
-		F82854871361881200426E84 /* testzlib.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlib.vcxproj.filters; sourceTree = "<group>"; };
-		F82854881361881200426E84 /* testzlib.vcxproj.user */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlib.vcxproj.user; sourceTree = "<group>"; };
-		F82854891361881200426E84 /* testzlibdll.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlibdll.vcxproj; sourceTree = "<group>"; };
-		F828548A1361881200426E84 /* testzlibdll.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlibdll.vcxproj.filters; sourceTree = "<group>"; };
-		F828548B1361881200426E84 /* testzlibdll.vcxproj.user */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlibdll.vcxproj.user; sourceTree = "<group>"; };
-		F828548C1361881200426E84 /* zlib.rc */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.rc; sourceTree = "<group>"; };
-		F828548D1361881200426E84 /* zlibstat.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibstat.vcxproj; sourceTree = "<group>"; };
-		F828548E1361881200426E84 /* zlibstat.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibstat.vcxproj.filters; sourceTree = "<group>"; };
-		F828548F1361881200426E84 /* zlibstat.vcxproj.user */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibstat.vcxproj.user; sourceTree = "<group>"; };
-		F82854901361881200426E84 /* zlibvc.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlibvc.def; sourceTree = "<group>"; };
-		F82854911361881200426E84 /* zlibvc.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlibvc.sln; sourceTree = "<group>"; };
-		F82854921361881200426E84 /* zlibvc.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibvc.vcxproj; sourceTree = "<group>"; };
-		F82854931361881200426E84 /* zlibvc.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibvc.vcxproj.filters; sourceTree = "<group>"; };
-		F82854941361881200426E84 /* zlibvc.vcxproj.user */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibvc.vcxproj.user; sourceTree = "<group>"; };
-		F82854961361881200426E84 /* miniunz.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = miniunz.vcproj; sourceTree = "<group>"; };
-		F82854971361881200426E84 /* minizip.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = minizip.vcproj; sourceTree = "<group>"; };
-		F82854981361881200426E84 /* testzlib.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlib.vcproj; sourceTree = "<group>"; };
-		F82854991361881200426E84 /* zlib.rc */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.rc; sourceTree = "<group>"; };
-		F828549A1361881200426E84 /* zlibstat.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibstat.vcproj; sourceTree = "<group>"; };
-		F828549B1361881200426E84 /* zlibvc.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlibvc.def; sourceTree = "<group>"; };
-		F828549C1361881200426E84 /* zlibvc.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlibvc.sln; sourceTree = "<group>"; };
-		F828549D1361881200426E84 /* zlibvc.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibvc.vcproj; sourceTree = "<group>"; };
-		F828549F1361881200426E84 /* miniunz.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = miniunz.vcproj; sourceTree = "<group>"; };
-		F82854A01361881200426E84 /* minizip.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = minizip.vcproj; sourceTree = "<group>"; };
-		F82854A11361881200426E84 /* testzlib.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlib.vcproj; sourceTree = "<group>"; };
-		F82854A21361881200426E84 /* testzlibdll.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlibdll.vcproj; sourceTree = "<group>"; };
-		F82854A31361881200426E84 /* zlib.rc */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.rc; sourceTree = "<group>"; };
-		F82854A41361881200426E84 /* zlibstat.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibstat.vcproj; sourceTree = "<group>"; };
-		F82854A51361881200426E84 /* zlibvc.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlibvc.def; sourceTree = "<group>"; };
-		F82854A61361881200426E84 /* zlibvc.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlibvc.sln; sourceTree = "<group>"; };
-		F82854A71361881200426E84 /* zlibvc.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibvc.vcproj; sourceTree = "<group>"; };
-		F82854A91361881200426E84 /* miniunz.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = miniunz.vcproj; sourceTree = "<group>"; };
-		F82854AA1361881200426E84 /* minizip.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = minizip.vcproj; sourceTree = "<group>"; };
-		F82854AB1361881200426E84 /* testzlib.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlib.vcproj; sourceTree = "<group>"; };
-		F82854AC1361881200426E84 /* testzlibdll.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testzlibdll.vcproj; sourceTree = "<group>"; };
-		F82854AD1361881200426E84 /* zlib.rc */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.rc; sourceTree = "<group>"; };
-		F82854AE1361881200426E84 /* zlibstat.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibstat.vcproj; sourceTree = "<group>"; };
-		F82854AF1361881200426E84 /* zlibvc.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlibvc.def; sourceTree = "<group>"; };
-		F82854B01361881200426E84 /* zlibvc.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlibvc.sln; sourceTree = "<group>"; };
-		F82854B11361881200426E84 /* zlibvc.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zlibvc.vcproj; sourceTree = "<group>"; };
-		F82854B21361881200426E84 /* crc32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
-		F82854B31361881200426E84 /* crc32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
-		F82854B41361881200426E84 /* deflate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
-		F82854B51361881200426E84 /* deflate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
-		F82854B71361881200426E84 /* algorithm.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = algorithm.txt; sourceTree = "<group>"; };
-		F82854B81361881200426E84 /* rfc1950.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = rfc1950.txt; sourceTree = "<group>"; };
-		F82854B91361881200426E84 /* rfc1951.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = rfc1951.txt; sourceTree = "<group>"; };
-		F82854BA1361881200426E84 /* rfc1952.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = rfc1952.txt; sourceTree = "<group>"; };
-		F82854BB1361881200426E84 /* txtvsbin.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = txtvsbin.txt; sourceTree = "<group>"; };
-		F82854BC1361881200426E84 /* example.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = example.c; sourceTree = "<group>"; };
-		F82854BE1361881200426E84 /* enough.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = enough.c; sourceTree = "<group>"; };
-		F82854BF1361881200426E84 /* fitblk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fitblk.c; sourceTree = "<group>"; };
-		F82854C01361881200426E84 /* gun.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gun.c; sourceTree = "<group>"; };
-		F82854C11361881200426E84 /* gzappend.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gzappend.c; sourceTree = "<group>"; };
-		F82854C21361881200426E84 /* gzjoin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gzjoin.c; sourceTree = "<group>"; };
-		F82854C31361881200426E84 /* gzlog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gzlog.c; sourceTree = "<group>"; };
-		F82854C41361881200426E84 /* gzlog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gzlog.h; sourceTree = "<group>"; };
-		F82854C51361881200426E84 /* README.examples */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.examples; sourceTree = "<group>"; };
-		F82854C61361881200426E84 /* zlib_how.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = zlib_how.html; sourceTree = "<group>"; };
-		F82854C71361881200426E84 /* zpipe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zpipe.c; sourceTree = "<group>"; };
-		F82854C81361881200426E84 /* zran.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zran.c; sourceTree = "<group>"; };
-		F82854C91361881200426E84 /* FAQ */ = {isa = PBXFileReference; lastKnownFileType = text; path = FAQ; sourceTree = "<group>"; };
-		F82854CA1361881200426E84 /* gzclose.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gzclose.c; sourceTree = "<group>"; };
-		F82854CB1361881200426E84 /* gzguts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
-		F82854CC1361881200426E84 /* gzio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gzio.c; sourceTree = "<group>"; };
-		F82854CD1361881200426E84 /* gzlib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gzlib.c; sourceTree = "<group>"; };
-		F82854CE1361881200426E84 /* gzread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gzread.c; sourceTree = "<group>"; };
-		F82854CF1361881200426E84 /* gzwrite.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gzwrite.c; sourceTree = "<group>"; };
-		F82854D01361881200426E84 /* INDEX */ = {isa = PBXFileReference; lastKnownFileType = text; path = INDEX; sourceTree = "<group>"; };
-		F82854D11361881200426E84 /* infback.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
-		F82854D21361881200426E84 /* inffast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
-		F82854D31361881200426E84 /* inffast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
-		F82854D41361881200426E84 /* inffixed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
-		F82854D51361881200426E84 /* inflate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
-		F82854D61361881200426E84 /* inflate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
-		F82854D71361881200426E84 /* inftrees.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
-		F82854D81361881200426E84 /* inftrees.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
-		F82854D91361881200426E84 /* make_vms.com */ = {isa = PBXFileReference; lastKnownFileType = text; path = make_vms.com; sourceTree = "<group>"; };
-		F82854DA1361881200426E84 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		F82854DB1361881200426E84 /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
-		F82854DC1361881200426E84 /* minigzip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = minigzip.c; sourceTree = "<group>"; };
-		F82854DD1361881200426E84 /* MODULE_LICENSE_BSD_LIKE */ = {isa = PBXFileReference; lastKnownFileType = text; path = MODULE_LICENSE_BSD_LIKE; sourceTree = "<group>"; };
-		F82854DF1361881200426E84 /* Makefile.bor */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.bor; sourceTree = "<group>"; };
-		F82854E01361881200426E84 /* Makefile.dj2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.dj2; sourceTree = "<group>"; };
-		F82854E11361881200426E84 /* Makefile.emx */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.emx; sourceTree = "<group>"; };
-		F82854E21361881200426E84 /* Makefile.msc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.msc; sourceTree = "<group>"; };
-		F82854E31361881200426E84 /* Makefile.tc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.tc; sourceTree = "<group>"; };
-		F82854E51361881200426E84 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		F82854E61361881200426E84 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		F82854E71361881200426E84 /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
-		F82854EA1361881200426E84 /* bndsrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = bndsrc; sourceTree = "<group>"; };
-		F82854EB1361881200426E84 /* compile.clp */ = {isa = PBXFileReference; lastKnownFileType = text; path = compile.clp; sourceTree = "<group>"; };
-		F82854EC1361881200426E84 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		F82854ED1361881200426E84 /* zlib.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = zlib.inc; sourceTree = "<group>"; };
-		F82854EE1361881200426E84 /* descrip.mms */ = {isa = PBXFileReference; lastKnownFileType = text; path = descrip.mms; sourceTree = "<group>"; };
-		F82854EF1361881200426E84 /* Makefile.riscos */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.riscos; sourceTree = "<group>"; };
-		F82854F11361881200426E84 /* Makefile.os2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.os2; sourceTree = "<group>"; };
-		F82854F21361881200426E84 /* zlib.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.def; sourceTree = "<group>"; };
-		F82854F31361881200426E84 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		F82854F41361881200426E84 /* visual-basic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "visual-basic.txt"; sourceTree = "<group>"; };
-		F82854F61361881200426E84 /* example.dsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = example.dsp; sourceTree = "<group>"; };
-		F82854F71361881200426E84 /* minigzip.dsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = minigzip.dsp; sourceTree = "<group>"; };
-		F82854F81361881200426E84 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		F82854F91361881200426E84 /* zlib.dsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.dsp; sourceTree = "<group>"; };
-		F82854FA1361881200426E84 /* zlib.dsw */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.dsw; sourceTree = "<group>"; };
-		F82854FB1361881200426E84 /* zlib.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = zlib.html; sourceTree = "<group>"; };
-		F82854FD1361881200426E84 /* README.projects */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.projects; sourceTree = "<group>"; };
-		F82854FF1361881200426E84 /* example.dsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = example.dsp; sourceTree = "<group>"; };
-		F82855001361881200426E84 /* minigzip.dsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = minigzip.dsp; sourceTree = "<group>"; };
-		F82855011361881200426E84 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		F82855021361881200426E84 /* zlib.dsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.dsp; sourceTree = "<group>"; };
-		F82855031361881200426E84 /* zlib.dsw */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.dsw; sourceTree = "<group>"; };
-		F82855051361881200426E84 /* package.qpg */ = {isa = PBXFileReference; lastKnownFileType = text; path = package.qpg; sourceTree = "<group>"; };
-		F82855061361881200426E84 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		F82855071361881200426E84 /* ThirdPartyProject.prop */ = {isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyProject.prop; sourceTree = "<group>"; };
-		F82855081361881200426E84 /* treebuild.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = treebuild.xml; sourceTree = "<group>"; };
-		F82855091361881200426E84 /* trees.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
-		F828550A1361881200426E84 /* trees.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
-		F828550B1361881200426E84 /* uncompr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
-		F828550D1361881200426E84 /* watcom_f.mak */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = watcom_f.mak; sourceTree = "<group>"; };
-		F828550E1361881200426E84 /* watcom_l.mak */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = watcom_l.mak; sourceTree = "<group>"; };
-		F82855101361881200426E84 /* DLL_FAQ.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DLL_FAQ.txt; sourceTree = "<group>"; };
-		F82855111361881200426E84 /* Makefile.bor */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.bor; sourceTree = "<group>"; };
-		F82855121361881200426E84 /* Makefile.emx */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.emx; sourceTree = "<group>"; };
-		F82855131361881200426E84 /* Makefile.gcc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.gcc; sourceTree = "<group>"; };
-		F82855141361881200426E84 /* Makefile.msc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.msc; sourceTree = "<group>"; };
-		F82855151361881200426E84 /* README-WIN32.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README-WIN32.txt"; sourceTree = "<group>"; };
-		F82855161361881200426E84 /* VisualC.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = VisualC.txt; sourceTree = "<group>"; };
-		F82855171361881200426E84 /* zlib.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.def; sourceTree = "<group>"; };
-		F82855181361881200426E84 /* zlib1.rc */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib1.rc; sourceTree = "<group>"; };
-		F82855191361881200426E84 /* zconf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
-		F828551A1361881200426E84 /* zconf.h.cmakein */ = {isa = PBXFileReference; lastKnownFileType = text; path = zconf.h.cmakein; sourceTree = "<group>"; };
-		F828551B1361881200426E84 /* zconf.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = zconf.h.in; sourceTree = "<group>"; };
-		F828551C1361881200426E84 /* zconf.in.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zconf.in.h; sourceTree = "<group>"; };
-		F828551D1361881200426E84 /* zlib.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.3; sourceTree = "<group>"; };
-		F828551E1361881200426E84 /* zlib.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = zlib.3.pdf; sourceTree = "<group>"; };
-		F828551F1361881200426E84 /* zlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
-		F82855201361881200426E84 /* zlib.map */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.map; sourceTree = "<group>"; };
-		F82855211361881200426E84 /* zlib.pc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = zlib.pc.in; sourceTree = "<group>"; };
-		F82855221361881200426E84 /* zlib2ansi */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = zlib2ansi; sourceTree = "<group>"; };
-		F82855231361881200426E84 /* zutil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
-		F82855241361881200426E84 /* zutil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		F8285530136188E000426E84 /* libz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libz.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82855441361A6F800426E84 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
 		F828554B1361B6E900426E84 /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
@@ -12599,6 +12302,7 @@
 		F828898C136874B800426E84 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = InTheBoxSim/libffi.a; sourceTree = "<group>"; };
 		F828FE791381240E0009CD63 /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
 		F828FE7B13815D530009CD63 /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
+		F836D82513A119BB002E58CB /* safe_iop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = safe_iop.h; sourceTree = "<group>"; };
 		F844FE7C1379843B005612C2 /* foo.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = foo.jar; sourceTree = "<group>"; };
 		F844FE7D1379843B005612C2 /* icudt44l.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = icudt44l.dat; sourceTree = "<group>"; };
 		F844FE7F1379848D005612C2 /* android.policy.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = android.policy.jar; sourceTree = "<group>"; };
@@ -12657,17 +12361,6 @@
 		F866F5CB135DE4E300A8BDFF /* tztime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tztime.h; sourceTree = "<group>"; };
 		F866F5CC135DE4E300A8BDFF /* uio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uio.h; sourceTree = "<group>"; };
 		F866F5CD135DE4E300A8BDFF /* zygote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zygote.h; sourceTree = "<group>"; };
-		F866F5CF135DE4E300A8BDFF /* DexCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DexCatch.h; sourceTree = "<group>"; };
-		F866F5D0135DE4E300A8BDFF /* DexClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DexClass.h; sourceTree = "<group>"; };
-		F866F5D1135DE4E300A8BDFF /* DexFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DexFile.h; sourceTree = "<group>"; };
-		F866F5D2135DE4E300A8BDFF /* DexProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DexProto.h; sourceTree = "<group>"; };
-		F866F5D3135DE4E300A8BDFF /* InstrUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrUtils.h; sourceTree = "<group>"; };
-		F866F5D4135DE4E300A8BDFF /* Leb128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leb128.h; sourceTree = "<group>"; };
-		F866F5D5135DE4E300A8BDFF /* OpCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpCode.h; sourceTree = "<group>"; };
-		F866F5D6135DE4E300A8BDFF /* OpCodeNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpCodeNames.h; sourceTree = "<group>"; };
-		F866F5D7135DE4E300A8BDFF /* OptInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptInvocation.h; sourceTree = "<group>"; };
-		F866F5D8135DE4E300A8BDFF /* SysUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysUtil.h; sourceTree = "<group>"; };
-		F866F5D9135DE4E300A8BDFF /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		F866F5DB135DE4E300A8BDFF /* cpu-features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cpu-features.h"; sourceTree = "<group>"; };
 		F866F5DD135DE4E300A8BDFF /* jni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jni.h; sourceTree = "<group>"; };
 		F866F5DE135DE4E300A8BDFF /* JNIHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNIHelp.h; sourceTree = "<group>"; };
@@ -14629,672 +14322,6 @@
 				F828535313617AD500426E84 /* ZipArchive.h */,
 			);
 			path = libdex;
-			sourceTree = "<group>";
-		};
-		F8285370136182C300426E84 /* safe-iop */ = {
-			isa = PBXGroup;
-			children = (
-				F82853A4136182C600426E84 /* Android.mk */,
-				F82853A5136182C600426E84 /* CleanSpec.mk */,
-				F82853A6136182C600426E84 /* include */,
-				F82853A8136182C600426E84 /* MODULE_LICENSE_BSD_LIKE */,
-				F82853A9136182C600426E84 /* NOTICE */,
-				F82853AA136182C600426E84 /* src */,
-				F82853AC136182C600426E84 /* testsuite */,
-				F82853AE136182C600426E84 /* ThirdPartyProject.prop */,
-			);
-			path = "safe-iop";
-			sourceTree = "<group>";
-		};
-		F82853A6136182C600426E84 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				F82853A7136182C600426E84 /* safe_iop.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		F82853AA136182C600426E84 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				F82853AB136182C600426E84 /* safe_iop.c */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		F82853AC136182C600426E84 /* testsuite */ = {
-			isa = PBXGroup;
-			children = (
-				F82853AD136182C600426E84 /* Android.mk */,
-			);
-			path = testsuite;
-			sourceTree = "<group>";
-		};
-		F82853B21361880F00426E84 /* zlib */ = {
-			isa = PBXGroup;
-			children = (
-				F82853E61361881100426E84 /* adler32.c */,
-				F82853E71361881100426E84 /* algorithm.txt */,
-				F82853E81361881100426E84 /* amiga */,
-				F82853EB1361881100426E84 /* Android.mk */,
-				F82853EC1361881100426E84 /* as400 */,
-				F82853F11361881100426E84 /* ChangeLog */,
-				F82853F21361881100426E84 /* CleanSpec.mk */,
-				F82853F31361881100426E84 /* CMakeLists.txt */,
-				F82853F41361881100426E84 /* compress.c */,
-				F82853F51361881100426E84 /* configure */,
-				F82853F61361881100426E84 /* contrib */,
-				F82854B21361881200426E84 /* crc32.c */,
-				F82854B31361881200426E84 /* crc32.h */,
-				F82854B41361881200426E84 /* deflate.c */,
-				F82854B51361881200426E84 /* deflate.h */,
-				F82854B61361881200426E84 /* doc */,
-				F82854BC1361881200426E84 /* example.c */,
-				F82854BD1361881200426E84 /* examples */,
-				F82854C91361881200426E84 /* FAQ */,
-				F82854CA1361881200426E84 /* gzclose.c */,
-				F82854CB1361881200426E84 /* gzguts.h */,
-				F82854CC1361881200426E84 /* gzio.c */,
-				F82854CD1361881200426E84 /* gzlib.c */,
-				F82854CE1361881200426E84 /* gzread.c */,
-				F82854CF1361881200426E84 /* gzwrite.c */,
-				F82854D01361881200426E84 /* INDEX */,
-				F82854D11361881200426E84 /* infback.c */,
-				F82854D21361881200426E84 /* inffast.c */,
-				F82854D31361881200426E84 /* inffast.h */,
-				F82854D41361881200426E84 /* inffixed.h */,
-				F82854D51361881200426E84 /* inflate.c */,
-				F82854D61361881200426E84 /* inflate.h */,
-				F82854D71361881200426E84 /* inftrees.c */,
-				F82854D81361881200426E84 /* inftrees.h */,
-				F82854D91361881200426E84 /* make_vms.com */,
-				F82854DA1361881200426E84 /* Makefile */,
-				F82854DB1361881200426E84 /* Makefile.in */,
-				F82854DC1361881200426E84 /* minigzip.c */,
-				F82854DD1361881200426E84 /* MODULE_LICENSE_BSD_LIKE */,
-				F82854DE1361881200426E84 /* msdos */,
-				F82854E41361881200426E84 /* nintendods */,
-				F82854E71361881200426E84 /* NOTICE */,
-				F82854E81361881200426E84 /* old */,
-				F82854FC1361881200426E84 /* projects */,
-				F82855041361881200426E84 /* qnx */,
-				F82855061361881200426E84 /* README */,
-				F82855071361881200426E84 /* ThirdPartyProject.prop */,
-				F82855081361881200426E84 /* treebuild.xml */,
-				F82855091361881200426E84 /* trees.c */,
-				F828550A1361881200426E84 /* trees.h */,
-				F828550B1361881200426E84 /* uncompr.c */,
-				F828550C1361881200426E84 /* watcom */,
-				F828550F1361881200426E84 /* win32 */,
-				F82855191361881200426E84 /* zconf.h */,
-				F828551A1361881200426E84 /* zconf.h.cmakein */,
-				F828551B1361881200426E84 /* zconf.h.in */,
-				F828551C1361881200426E84 /* zconf.in.h */,
-				F828551D1361881200426E84 /* zlib.3 */,
-				F828551E1361881200426E84 /* zlib.3.pdf */,
-				F828551F1361881200426E84 /* zlib.h */,
-				F82855201361881200426E84 /* zlib.map */,
-				F82855211361881200426E84 /* zlib.pc.in */,
-				F82855221361881200426E84 /* zlib2ansi */,
-				F82855231361881200426E84 /* zutil.c */,
-				F82855241361881200426E84 /* zutil.h */,
-			);
-			path = zlib;
-			sourceTree = "<group>";
-		};
-		F82853E81361881100426E84 /* amiga */ = {
-			isa = PBXGroup;
-			children = (
-				F82853E91361881100426E84 /* Makefile.pup */,
-				F82853EA1361881100426E84 /* Makefile.sas */,
-			);
-			path = amiga;
-			sourceTree = "<group>";
-		};
-		F82853EC1361881100426E84 /* as400 */ = {
-			isa = PBXGroup;
-			children = (
-				F82853ED1361881100426E84 /* bndsrc */,
-				F82853EE1361881100426E84 /* compile.clp */,
-				F82853EF1361881100426E84 /* readme.txt */,
-				F82853F01361881100426E84 /* zlib.inc */,
-			);
-			path = as400;
-			sourceTree = "<group>";
-		};
-		F82853F61361881100426E84 /* contrib */ = {
-			isa = PBXGroup;
-			children = (
-				F82853F71361881100426E84 /* ada */,
-				F82854041361881100426E84 /* amd64 */,
-				F82854061361881100426E84 /* asm586 */,
-				F82854091361881100426E84 /* asm686 */,
-				F828540C1361881100426E84 /* blast */,
-				F82854131361881200426E84 /* delphi */,
-				F82854181361881200426E84 /* dotzlib */,
-				F82854291361881200426E84 /* gcc_gvmat64 */,
-				F828542B1361881200426E84 /* infback9 */,
-				F82854331361881200426E84 /* inflate86 */,
-				F82854361361881200426E84 /* iostream */,
-				F828543A1361881200426E84 /* iostream2 */,
-				F828543D1361881200426E84 /* iostream3 */,
-				F82854431361881200426E84 /* masm686 */,
-				F82854451361881200426E84 /* masmx64 */,
-				F828544D1361881200426E84 /* masmx86 */,
-				F82854571361881200426E84 /* minizip */,
-				F828546A1361881200426E84 /* pascal */,
-				F828546F1361881200426E84 /* puff */,
-				F82854751361881200426E84 /* README.contrib */,
-				F82854761361881200426E84 /* testzlib */,
-				F82854791361881200426E84 /* untgz */,
-				F828547D1361881200426E84 /* vstudio */,
-			);
-			path = contrib;
-			sourceTree = "<group>";
-		};
-		F82853F71361881100426E84 /* ada */ = {
-			isa = PBXGroup;
-			children = (
-				F82853F81361881100426E84 /* buffer_demo.adb */,
-				F82853F91361881100426E84 /* mtest.adb */,
-				F82853FA1361881100426E84 /* read.adb */,
-				F82853FB1361881100426E84 /* readme.txt */,
-				F82853FC1361881100426E84 /* test.adb */,
-				F82853FD1361881100426E84 /* zlib-streams.adb */,
-				F82853FE1361881100426E84 /* zlib-streams.ads */,
-				F82853FF1361881100426E84 /* zlib-thin.adb */,
-				F82854001361881100426E84 /* zlib-thin.ads */,
-				F82854011361881100426E84 /* zlib.adb */,
-				F82854021361881100426E84 /* zlib.ads */,
-				F82854031361881100426E84 /* zlib.gpr */,
-			);
-			path = ada;
-			sourceTree = "<group>";
-		};
-		F82854041361881100426E84 /* amd64 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854051361881100426E84 /* amd64-match.S */,
-			);
-			path = amd64;
-			sourceTree = "<group>";
-		};
-		F82854061361881100426E84 /* asm586 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854071361881100426E84 /* match.S */,
-				F82854081361881100426E84 /* README.586 */,
-			);
-			path = asm586;
-			sourceTree = "<group>";
-		};
-		F82854091361881100426E84 /* asm686 */ = {
-			isa = PBXGroup;
-			children = (
-				F828540A1361881100426E84 /* match.S */,
-				F828540B1361881100426E84 /* README.686 */,
-			);
-			path = asm686;
-			sourceTree = "<group>";
-		};
-		F828540C1361881100426E84 /* blast */ = {
-			isa = PBXGroup;
-			children = (
-				F828540D1361881100426E84 /* blast.c */,
-				F828540E1361881100426E84 /* blast.h */,
-				F828540F1361881100426E84 /* Makefile */,
-				F82854101361881100426E84 /* README */,
-				F82854111361881100426E84 /* test.pk */,
-				F82854121361881100426E84 /* test.txt */,
-			);
-			path = blast;
-			sourceTree = "<group>";
-		};
-		F82854131361881200426E84 /* delphi */ = {
-			isa = PBXGroup;
-			children = (
-				F82854141361881200426E84 /* readme.txt */,
-				F82854151361881200426E84 /* ZLib.pas */,
-				F82854161361881200426E84 /* ZLibConst.pas */,
-				F82854171361881200426E84 /* zlibd32.mak */,
-			);
-			path = delphi;
-			sourceTree = "<group>";
-		};
-		F82854181361881200426E84 /* dotzlib */ = {
-			isa = PBXGroup;
-			children = (
-				F82854191361881200426E84 /* DotZLib */,
-				F82854241361881200426E84 /* DotZLib.build */,
-				F82854251361881200426E84 /* DotZLib.chm */,
-				F82854261361881200426E84 /* DotZLib.sln */,
-				F82854271361881200426E84 /* LICENSE_1_0.txt */,
-				F82854281361881200426E84 /* readme.txt */,
-			);
-			path = dotzlib;
-			sourceTree = "<group>";
-		};
-		F82854191361881200426E84 /* DotZLib */ = {
-			isa = PBXGroup;
-			children = (
-				F828541A1361881200426E84 /* AssemblyInfo.cs */,
-				F828541B1361881200426E84 /* ChecksumImpl.cs */,
-				F828541C1361881200426E84 /* CircularBuffer.cs */,
-				F828541D1361881200426E84 /* CodecBase.cs */,
-				F828541E1361881200426E84 /* Deflater.cs */,
-				F828541F1361881200426E84 /* DotZLib.cs */,
-				F82854201361881200426E84 /* DotZLib.csproj */,
-				F82854211361881200426E84 /* GZipStream.cs */,
-				F82854221361881200426E84 /* Inflater.cs */,
-				F82854231361881200426E84 /* UnitTests.cs */,
-			);
-			path = DotZLib;
-			sourceTree = "<group>";
-		};
-		F82854291361881200426E84 /* gcc_gvmat64 */ = {
-			isa = PBXGroup;
-			children = (
-				F828542A1361881200426E84 /* gvmat64.S */,
-			);
-			path = gcc_gvmat64;
-			sourceTree = "<group>";
-		};
-		F828542B1361881200426E84 /* infback9 */ = {
-			isa = PBXGroup;
-			children = (
-				F828542C1361881200426E84 /* infback9.c */,
-				F828542D1361881200426E84 /* infback9.h */,
-				F828542E1361881200426E84 /* inffix9.h */,
-				F828542F1361881200426E84 /* inflate9.h */,
-				F82854301361881200426E84 /* inftree9.c */,
-				F82854311361881200426E84 /* inftree9.h */,
-				F82854321361881200426E84 /* README */,
-			);
-			path = infback9;
-			sourceTree = "<group>";
-		};
-		F82854331361881200426E84 /* inflate86 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854341361881200426E84 /* inffas86.c */,
-				F82854351361881200426E84 /* inffast.S */,
-			);
-			path = inflate86;
-			sourceTree = "<group>";
-		};
-		F82854361361881200426E84 /* iostream */ = {
-			isa = PBXGroup;
-			children = (
-				F82854371361881200426E84 /* test.cpp */,
-				F82854381361881200426E84 /* zfstream.cpp */,
-				F82854391361881200426E84 /* zfstream.h */,
-			);
-			path = iostream;
-			sourceTree = "<group>";
-		};
-		F828543A1361881200426E84 /* iostream2 */ = {
-			isa = PBXGroup;
-			children = (
-				F828543B1361881200426E84 /* zstream.h */,
-				F828543C1361881200426E84 /* zstream_test.cpp */,
-			);
-			path = iostream2;
-			sourceTree = "<group>";
-		};
-		F828543D1361881200426E84 /* iostream3 */ = {
-			isa = PBXGroup;
-			children = (
-				F828543E1361881200426E84 /* README */,
-				F828543F1361881200426E84 /* test.cc */,
-				F82854401361881200426E84 /* TODO */,
-				F82854411361881200426E84 /* zfstream.cc */,
-				F82854421361881200426E84 /* zfstream.h */,
-			);
-			path = iostream3;
-			sourceTree = "<group>";
-		};
-		F82854431361881200426E84 /* masm686 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854441361881200426E84 /* match.asm */,
-			);
-			path = masm686;
-			sourceTree = "<group>";
-		};
-		F82854451361881200426E84 /* masmx64 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854461361881200426E84 /* bld_ml64.bat */,
-				F82854471361881200426E84 /* gvmat64.asm */,
-				F82854481361881200426E84 /* gvmat64.obj */,
-				F82854491361881200426E84 /* inffas8664.c */,
-				F828544A1361881200426E84 /* inffasx64.asm */,
-				F828544B1361881200426E84 /* inffasx64.obj */,
-				F828544C1361881200426E84 /* readme.txt */,
-			);
-			path = masmx64;
-			sourceTree = "<group>";
-		};
-		F828544D1361881200426E84 /* masmx86 */ = {
-			isa = PBXGroup;
-			children = (
-				F828544E1361881200426E84 /* bld_ml32.bat */,
-				F828544F1361881200426E84 /* gvmat32.asm */,
-				F82854501361881200426E84 /* gvmat32.obj */,
-				F82854511361881200426E84 /* gvmat32c.c */,
-				F82854521361881200426E84 /* inffas32.asm */,
-				F82854531361881200426E84 /* inffas32.obj */,
-				F82854541361881200426E84 /* match686.asm */,
-				F82854551361881200426E84 /* mkasm.bat */,
-				F82854561361881200426E84 /* readme.txt */,
-			);
-			path = masmx86;
-			sourceTree = "<group>";
-		};
-		F82854571361881200426E84 /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-				F82854581361881200426E84 /* ChangeLogUnzip */,
-				F82854591361881200426E84 /* crypt.h */,
-				F828545A1361881200426E84 /* ioapi.c */,
-				F828545B1361881200426E84 /* ioapi.h */,
-				F828545C1361881200426E84 /* iowin32.c */,
-				F828545D1361881200426E84 /* iowin32.h */,
-				F828545E1361881200426E84 /* make_vms.com */,
-				F828545F1361881200426E84 /* Makefile */,
-				F82854601361881200426E84 /* miniunz.c */,
-				F82854611361881200426E84 /* minizip.c */,
-				F82854621361881200426E84 /* MiniZip64_Changes.txt */,
-				F82854631361881200426E84 /* MiniZip64_info.txt */,
-				F82854641361881200426E84 /* mztools.c */,
-				F82854651361881200426E84 /* mztools.h */,
-				F82854661361881200426E84 /* unzip.c */,
-				F82854671361881200426E84 /* unzip.h */,
-				F82854681361881200426E84 /* zip.c */,
-				F82854691361881200426E84 /* zip.h */,
-			);
-			path = minizip;
-			sourceTree = "<group>";
-		};
-		F828546A1361881200426E84 /* pascal */ = {
-			isa = PBXGroup;
-			children = (
-				F828546B1361881200426E84 /* example.pas */,
-				F828546C1361881200426E84 /* readme.txt */,
-				F828546D1361881200426E84 /* zlibd32.mak */,
-				F828546E1361881200426E84 /* zlibpas.pas */,
-			);
-			path = pascal;
-			sourceTree = "<group>";
-		};
-		F828546F1361881200426E84 /* puff */ = {
-			isa = PBXGroup;
-			children = (
-				F82854701361881200426E84 /* Makefile */,
-				F82854711361881200426E84 /* puff.c */,
-				F82854721361881200426E84 /* puff.h */,
-				F82854731361881200426E84 /* README */,
-				F82854741361881200426E84 /* zeros.raw */,
-			);
-			path = puff;
-			sourceTree = "<group>";
-		};
-		F82854761361881200426E84 /* testzlib */ = {
-			isa = PBXGroup;
-			children = (
-				F82854771361881200426E84 /* testzlib.c */,
-				F82854781361881200426E84 /* testzlib.txt */,
-			);
-			path = testzlib;
-			sourceTree = "<group>";
-		};
-		F82854791361881200426E84 /* untgz */ = {
-			isa = PBXGroup;
-			children = (
-				F828547A1361881200426E84 /* Makefile */,
-				F828547B1361881200426E84 /* Makefile.msc */,
-				F828547C1361881200426E84 /* untgz.c */,
-			);
-			path = untgz;
-			sourceTree = "<group>";
-		};
-		F828547D1361881200426E84 /* vstudio */ = {
-			isa = PBXGroup;
-			children = (
-				F828547E1361881200426E84 /* readme.txt */,
-				F828547F1361881200426E84 /* vc10 */,
-				F82854951361881200426E84 /* vc7 */,
-				F828549E1361881200426E84 /* vc8 */,
-				F82854A81361881200426E84 /* vc9 */,
-			);
-			path = vstudio;
-			sourceTree = "<group>";
-		};
-		F828547F1361881200426E84 /* vc10 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854801361881200426E84 /* miniunz.vcxproj */,
-				F82854811361881200426E84 /* miniunz.vcxproj.filters */,
-				F82854821361881200426E84 /* miniunz.vcxproj.user */,
-				F82854831361881200426E84 /* minizip.vcxproj */,
-				F82854841361881200426E84 /* minizip.vcxproj.filters */,
-				F82854851361881200426E84 /* minizip.vcxproj.user */,
-				F82854861361881200426E84 /* testzlib.vcxproj */,
-				F82854871361881200426E84 /* testzlib.vcxproj.filters */,
-				F82854881361881200426E84 /* testzlib.vcxproj.user */,
-				F82854891361881200426E84 /* testzlibdll.vcxproj */,
-				F828548A1361881200426E84 /* testzlibdll.vcxproj.filters */,
-				F828548B1361881200426E84 /* testzlibdll.vcxproj.user */,
-				F828548C1361881200426E84 /* zlib.rc */,
-				F828548D1361881200426E84 /* zlibstat.vcxproj */,
-				F828548E1361881200426E84 /* zlibstat.vcxproj.filters */,
-				F828548F1361881200426E84 /* zlibstat.vcxproj.user */,
-				F82854901361881200426E84 /* zlibvc.def */,
-				F82854911361881200426E84 /* zlibvc.sln */,
-				F82854921361881200426E84 /* zlibvc.vcxproj */,
-				F82854931361881200426E84 /* zlibvc.vcxproj.filters */,
-				F82854941361881200426E84 /* zlibvc.vcxproj.user */,
-			);
-			path = vc10;
-			sourceTree = "<group>";
-		};
-		F82854951361881200426E84 /* vc7 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854961361881200426E84 /* miniunz.vcproj */,
-				F82854971361881200426E84 /* minizip.vcproj */,
-				F82854981361881200426E84 /* testzlib.vcproj */,
-				F82854991361881200426E84 /* zlib.rc */,
-				F828549A1361881200426E84 /* zlibstat.vcproj */,
-				F828549B1361881200426E84 /* zlibvc.def */,
-				F828549C1361881200426E84 /* zlibvc.sln */,
-				F828549D1361881200426E84 /* zlibvc.vcproj */,
-			);
-			path = vc7;
-			sourceTree = "<group>";
-		};
-		F828549E1361881200426E84 /* vc8 */ = {
-			isa = PBXGroup;
-			children = (
-				F828549F1361881200426E84 /* miniunz.vcproj */,
-				F82854A01361881200426E84 /* minizip.vcproj */,
-				F82854A11361881200426E84 /* testzlib.vcproj */,
-				F82854A21361881200426E84 /* testzlibdll.vcproj */,
-				F82854A31361881200426E84 /* zlib.rc */,
-				F82854A41361881200426E84 /* zlibstat.vcproj */,
-				F82854A51361881200426E84 /* zlibvc.def */,
-				F82854A61361881200426E84 /* zlibvc.sln */,
-				F82854A71361881200426E84 /* zlibvc.vcproj */,
-			);
-			path = vc8;
-			sourceTree = "<group>";
-		};
-		F82854A81361881200426E84 /* vc9 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854A91361881200426E84 /* miniunz.vcproj */,
-				F82854AA1361881200426E84 /* minizip.vcproj */,
-				F82854AB1361881200426E84 /* testzlib.vcproj */,
-				F82854AC1361881200426E84 /* testzlibdll.vcproj */,
-				F82854AD1361881200426E84 /* zlib.rc */,
-				F82854AE1361881200426E84 /* zlibstat.vcproj */,
-				F82854AF1361881200426E84 /* zlibvc.def */,
-				F82854B01361881200426E84 /* zlibvc.sln */,
-				F82854B11361881200426E84 /* zlibvc.vcproj */,
-			);
-			path = vc9;
-			sourceTree = "<group>";
-		};
-		F82854B61361881200426E84 /* doc */ = {
-			isa = PBXGroup;
-			children = (
-				F82854B71361881200426E84 /* algorithm.txt */,
-				F82854B81361881200426E84 /* rfc1950.txt */,
-				F82854B91361881200426E84 /* rfc1951.txt */,
-				F82854BA1361881200426E84 /* rfc1952.txt */,
-				F82854BB1361881200426E84 /* txtvsbin.txt */,
-			);
-			path = doc;
-			sourceTree = "<group>";
-		};
-		F82854BD1361881200426E84 /* examples */ = {
-			isa = PBXGroup;
-			children = (
-				F82854BE1361881200426E84 /* enough.c */,
-				F82854BF1361881200426E84 /* fitblk.c */,
-				F82854C01361881200426E84 /* gun.c */,
-				F82854C11361881200426E84 /* gzappend.c */,
-				F82854C21361881200426E84 /* gzjoin.c */,
-				F82854C31361881200426E84 /* gzlog.c */,
-				F82854C41361881200426E84 /* gzlog.h */,
-				F82854C51361881200426E84 /* README.examples */,
-				F82854C61361881200426E84 /* zlib_how.html */,
-				F82854C71361881200426E84 /* zpipe.c */,
-				F82854C81361881200426E84 /* zran.c */,
-			);
-			path = examples;
-			sourceTree = "<group>";
-		};
-		F82854DE1361881200426E84 /* msdos */ = {
-			isa = PBXGroup;
-			children = (
-				F82854DF1361881200426E84 /* Makefile.bor */,
-				F82854E01361881200426E84 /* Makefile.dj2 */,
-				F82854E11361881200426E84 /* Makefile.emx */,
-				F82854E21361881200426E84 /* Makefile.msc */,
-				F82854E31361881200426E84 /* Makefile.tc */,
-			);
-			path = msdos;
-			sourceTree = "<group>";
-		};
-		F82854E41361881200426E84 /* nintendods */ = {
-			isa = PBXGroup;
-			children = (
-				F82854E51361881200426E84 /* Makefile */,
-				F82854E61361881200426E84 /* README */,
-			);
-			path = nintendods;
-			sourceTree = "<group>";
-		};
-		F82854E81361881200426E84 /* old */ = {
-			isa = PBXGroup;
-			children = (
-				F82854E91361881200426E84 /* as400 */,
-				F82854EE1361881200426E84 /* descrip.mms */,
-				F82854EF1361881200426E84 /* Makefile.riscos */,
-				F82854F01361881200426E84 /* os2 */,
-				F82854F31361881200426E84 /* README */,
-				F82854F41361881200426E84 /* visual-basic.txt */,
-				F82854F51361881200426E84 /* visualc6 */,
-				F82854FB1361881200426E84 /* zlib.html */,
-			);
-			path = old;
-			sourceTree = "<group>";
-		};
-		F82854E91361881200426E84 /* as400 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854EA1361881200426E84 /* bndsrc */,
-				F82854EB1361881200426E84 /* compile.clp */,
-				F82854EC1361881200426E84 /* readme.txt */,
-				F82854ED1361881200426E84 /* zlib.inc */,
-			);
-			path = as400;
-			sourceTree = "<group>";
-		};
-		F82854F01361881200426E84 /* os2 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854F11361881200426E84 /* Makefile.os2 */,
-				F82854F21361881200426E84 /* zlib.def */,
-			);
-			path = os2;
-			sourceTree = "<group>";
-		};
-		F82854F51361881200426E84 /* visualc6 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854F61361881200426E84 /* example.dsp */,
-				F82854F71361881200426E84 /* minigzip.dsp */,
-				F82854F81361881200426E84 /* README.txt */,
-				F82854F91361881200426E84 /* zlib.dsp */,
-				F82854FA1361881200426E84 /* zlib.dsw */,
-			);
-			path = visualc6;
-			sourceTree = "<group>";
-		};
-		F82854FC1361881200426E84 /* projects */ = {
-			isa = PBXGroup;
-			children = (
-				F82854FD1361881200426E84 /* README.projects */,
-				F82854FE1361881200426E84 /* visualc6 */,
-			);
-			path = projects;
-			sourceTree = "<group>";
-		};
-		F82854FE1361881200426E84 /* visualc6 */ = {
-			isa = PBXGroup;
-			children = (
-				F82854FF1361881200426E84 /* example.dsp */,
-				F82855001361881200426E84 /* minigzip.dsp */,
-				F82855011361881200426E84 /* README.txt */,
-				F82855021361881200426E84 /* zlib.dsp */,
-				F82855031361881200426E84 /* zlib.dsw */,
-			);
-			path = visualc6;
-			sourceTree = "<group>";
-		};
-		F82855041361881200426E84 /* qnx */ = {
-			isa = PBXGroup;
-			children = (
-				F82855051361881200426E84 /* package.qpg */,
-			);
-			path = qnx;
-			sourceTree = "<group>";
-		};
-		F828550C1361881200426E84 /* watcom */ = {
-			isa = PBXGroup;
-			children = (
-				F828550D1361881200426E84 /* watcom_f.mak */,
-				F828550E1361881200426E84 /* watcom_l.mak */,
-			);
-			path = watcom;
-			sourceTree = "<group>";
-		};
-		F828550F1361881200426E84 /* win32 */ = {
-			isa = PBXGroup;
-			children = (
-				F82855101361881200426E84 /* DLL_FAQ.txt */,
-				F82855111361881200426E84 /* Makefile.bor */,
-				F82855121361881200426E84 /* Makefile.emx */,
-				F82855131361881200426E84 /* Makefile.gcc */,
-				F82855141361881200426E84 /* Makefile.msc */,
-				F82855151361881200426E84 /* README-WIN32.txt */,
-				F82855161361881200426E84 /* VisualC.txt */,
-				F82855171361881200426E84 /* zlib.def */,
-				F82855181361881200426E84 /* zlib1.rc */,
-			);
-			path = win32;
 			sourceTree = "<group>";
 		};
 		F82855431361A6B200426E84 /* lib */ = {
@@ -32764,6 +31791,14 @@
 			path = ssl;
 			sourceTree = "<group>";
 		};
+		F836D82413A119BB002E58CB /* safe-iop */ = {
+			isa = PBXGroup;
+			children = (
+				F836D82513A119BB002E58CB /* safe_iop.h */,
+			);
+			path = "safe-iop";
+			sourceTree = "<group>";
+		};
 		F844FE7B1379843B005612C2 /* test */ = {
 			isa = PBXGroup;
 			children = (
@@ -32799,8 +31834,6 @@
 				F82855671361BC9200426E84 /* libcore */,
 				F828554A1361B6E600426E84 /* libnativehelper */,
 				F82855431361A6B200426E84 /* lib */,
-				F82853B21361880F00426E84 /* zlib */,
-				F8285370136182C300426E84 /* safe-iop */,
 				F828533313617AD300426E84 /* libdex */,
 				F82852D113606B1200426E84 /* libcutils */,
 				F82852B8136060BB00426E84 /* liblog */,
@@ -32850,16 +31883,17 @@
 		F866F5A2135DE4E300A8BDFF /* include */ = {
 			isa = PBXGroup;
 			children = (
+				F836D82413A119BB002E58CB /* safe-iop */,
 				F8EB9526137AD9DD00470102 /* ffi */,
 				F866F5A3135DE4E300A8BDFF /* android */,
 				F866F5A5135DE4E300A8BDFF /* AndroidConfig.h */,
 				F866F5A6135DE4E300A8BDFF /* bionic */,
 				F866F5AA135DE4E300A8BDFF /* cutils */,
-				F866F5CE135DE4E300A8BDFF /* libdex */,
 				F866F5DA135DE4E300A8BDFF /* machine */,
 				F866F5DC135DE4E300A8BDFF /* nativehelper */,
 				F866F5DF135DE4E300A8BDFF /* utils */,
 				F8ECCCD9139E66D800591CCE /* ItbInlines.h */,
+				F80FC70D13A2214600343648 /* AndroidMain.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -32937,24 +31971,6 @@
 				F866F5CD135DE4E300A8BDFF /* zygote.h */,
 			);
 			path = cutils;
-			sourceTree = "<group>";
-		};
-		F866F5CE135DE4E300A8BDFF /* libdex */ = {
-			isa = PBXGroup;
-			children = (
-				F866F5CF135DE4E300A8BDFF /* DexCatch.h */,
-				F866F5D0135DE4E300A8BDFF /* DexClass.h */,
-				F866F5D1135DE4E300A8BDFF /* DexFile.h */,
-				F866F5D2135DE4E300A8BDFF /* DexProto.h */,
-				F866F5D3135DE4E300A8BDFF /* InstrUtils.h */,
-				F866F5D4135DE4E300A8BDFF /* Leb128.h */,
-				F866F5D5135DE4E300A8BDFF /* OpCode.h */,
-				F866F5D6135DE4E300A8BDFF /* OpCodeNames.h */,
-				F866F5D7135DE4E300A8BDFF /* OptInvocation.h */,
-				F866F5D8135DE4E300A8BDFF /* SysUtil.h */,
-				F866F5D9135DE4E300A8BDFF /* ZipArchive.h */,
-			);
-			path = libdex;
 			sourceTree = "<group>";
 		};
 		F866F5DA135DE4E300A8BDFF /* machine */ = {
@@ -35563,21 +34579,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8285531136189F800426E84 /* adler32.c in Sources */,
-				F8285532136189F800426E84 /* compress.c in Sources */,
-				F8285533136189F800426E84 /* crc32.c in Sources */,
-				F8285534136189F800426E84 /* deflate.c in Sources */,
-				F8285535136189F800426E84 /* gzclose.c in Sources */,
-				F8285536136189F800426E84 /* gzlib.c in Sources */,
-				F8285537136189F800426E84 /* gzread.c in Sources */,
-				F8285538136189F800426E84 /* gzwrite.c in Sources */,
-				F8285539136189F800426E84 /* infback.c in Sources */,
-				F828553A136189F800426E84 /* inffast.c in Sources */,
-				F828553B136189F800426E84 /* inflate.c in Sources */,
-				F828553C136189F800426E84 /* inftrees.c in Sources */,
-				F828553D136189F800426E84 /* trees.c in Sources */,
-				F828553E136189F800426E84 /* uncompr.c in Sources */,
-				F828553F136189F800426E84 /* zutil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36580,6 +35581,7 @@
 				F872AB05136960B100CE824B /* InTheBoxSimAppDelegate_iPad.m in Sources */,
 				F8DA3118136AF32A0010A282 /* main.m in Sources */,
 				F828FE7C138160E10009CD63 /* tools.m in Sources */,
+				F80FC70F13A2226500343648 /* Main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36968,7 +35970,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
 					"$(PROJECT_DIR)/InTheBoxSim/",
-					"$(PROJECT_DIR)/InTheBoxSim/safe-iop/include/",
+					"$(PROJECT_DIR)/InTheBoxSim/include/safe-iop/",
 					"$(PROJECT_DIR)/InTheBoxSim/include/nativehelper/",
 				);
 				OTHER_CFLAGS = "";
@@ -36990,7 +35992,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
 					"$(PROJECT_DIR)/InTheBoxSim/",
-					"$(PROJECT_DIR)/InTheBoxSim/safe-iop/include/",
+					"$(PROJECT_DIR)/InTheBoxSim/include/safe-iop/",
 					"$(PROJECT_DIR)/InTheBoxSim/include/nativehelper/",
 				);
 				OTHER_CFLAGS = "";

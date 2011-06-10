@@ -24,6 +24,7 @@
 #include <signal.h>
 #include <assert.h>
 
+#include "AndroidMain.h"
 
 /*
  * We want failed write() calls to just return with an error.
