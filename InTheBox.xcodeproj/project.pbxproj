@@ -91,9 +91,9 @@
 		F80FC7CB13A258AC00343648 /* w_scalb.c in Sources */ = {isa = PBXBuildFile; fileRef = F80FC77A13A258A400343648 /* w_scalb.c */; };
 		F80FC7CC13A258AC00343648 /* w_sinh.c in Sources */ = {isa = PBXBuildFile; fileRef = F80FC77B13A258A400343648 /* w_sinh.c */; };
 		F80FC7CD13A258AC00343648 /* w_sqrt.c in Sources */ = {isa = PBXBuildFile; fileRef = F80FC77C13A258A400343648 /* w_sqrt.c */; };
-		F80FC7CE13A25DC000343648 /* java_lang_Float.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F828631C1361BC9D00426E84 /* java_lang_Float.cpp */; };
-		F80FC7CF13A25DD200343648 /* java_lang_StrictMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863201361BC9D00426E84 /* java_lang_StrictMath.cpp */; };
 		F80FC7D213A25E8A00343648 /* libfdlibm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80FC71D13A257D600343648 /* libfdlibm.a */; };
+		F80FC7D313A2661700343648 /* java_lang_StrictMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863201361BC9D00426E84 /* java_lang_StrictMath.cpp */; };
+		F80FC7D413A2662F00343648 /* java_net_NetworkInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863231361BC9D00426E84 /* java_net_NetworkInterface.cpp */; };
 		F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F542135DE26300A8BDFF /* MainWindow_iPhone.xib */; };
 		F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F549135DE26300A8BDFF /* MainWindow_iPad.xib */; };
 		F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F866F535135DE26300A8BDFF /* InfoPlist.strings */; };
@@ -35056,6 +35056,8 @@
 				F8286C651361BEFD00426E84 /* TimeZones.cpp in Sources */,
 				F8286C661361BEFD00426E84 /* valueOf.cpp in Sources */,
 				F80FC71013A243C300343648 /* java_lang_Float.cpp in Sources */,
+				F80FC7D313A2661700343648 /* java_lang_StrictMath.cpp in Sources */,
+				F80FC7D413A2662F00343648 /* java_net_NetworkInterface.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35997,8 +35999,6 @@
 				F8DA3118136AF32A0010A282 /* main.m in Sources */,
 				F828FE7C138160E10009CD63 /* tools.m in Sources */,
 				F80FC70F13A2226500343648 /* Main.c in Sources */,
-				F80FC7CE13A25DC000343648 /* java_lang_Float.cpp in Sources */,
-				F80FC7CF13A25DD200343648 /* java_lang_StrictMath.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36557,6 +36557,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/common/",
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/i18n/",
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/include/",
+					"$(PROJECT_DIR)/InTheBoxSim/",
 				);
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -36580,6 +36581,7 @@
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/common/",
 					"$(PROJECT_DIR)/InTheBoxSim/icu4c/i18n/",
 					"$(PROJECT_DIR)/InTheBoxSim/openssl/include/",
+					"$(PROJECT_DIR)/InTheBoxSim/",
 				);
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";

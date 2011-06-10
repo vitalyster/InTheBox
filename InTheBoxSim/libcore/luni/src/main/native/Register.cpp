@@ -43,7 +43,7 @@ extern int register_java_lang_StrictMath(JNIEnv* env);
 extern int register_java_lang_System(JNIEnv* env);
 extern int register_java_math_NativeBN(JNIEnv* env);
 extern int register_java_net_InetAddress(JNIEnv* env);
-//extern int register_java_net_NetworkInterface(JNIEnv* env);
+extern int register_java_net_NetworkInterface(JNIEnv* env);
 extern int register_java_nio_ByteOrder(JNIEnv* env);
 extern int register_java_nio_charset_Charsets(JNIEnv* env);
 extern int register_java_util_regex_Matcher(JNIEnv* env);
@@ -94,7 +94,7 @@ extern "C" int registerCoreLibrariesJni(JNIEnv* env) {
             register_java_lang_System(env) != -1 &&
             register_java_math_NativeBN(env) != -1 &&
             register_java_net_InetAddress(env) != -1 &&
-            //register_java_net_NetworkInterface(env) != -1 &&
+            register_java_net_NetworkInterface(env) != -1 &&
             register_java_nio_ByteOrder(env) != -1 &&
             register_java_nio_charset_Charsets(env) != -1 &&
             register_java_util_regex_Matcher(env) != -1 &&

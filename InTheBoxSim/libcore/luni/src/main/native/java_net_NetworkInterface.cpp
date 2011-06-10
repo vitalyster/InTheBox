@@ -173,6 +173,8 @@ static jboolean hasFlag(JNIEnv* env, jstring name, int flag) {
     return (ifr.ifr_flags & flag) != 0;
 }
 
+// ITB_TODO: implement this linux-only android-added methods for 1.6 support
+#if 0
 static jbyteArray NetworkInterface_getHardwareAddressImpl(JNIEnv* env, jclass, jstring name) {
     ifreq ifr;
     if (!doIoctl(env, name, SIOCGIFHWADDR, ifr)) {
@@ -193,6 +195,7 @@ static jbyteArray NetworkInterface_getHardwareAddressImpl(JNIEnv* env, jclass, j
     env->SetByteArrayRegion(result, 0, IFHWADDRLEN, bytes);
     return result;
 }
+#endif
 
 static jint NetworkInterface_getMTUImpl(JNIEnv* env, jclass, jstring name) {
     ifreq ifr;
@@ -218,7 +221,7 @@ static jboolean NetworkInterface_supportsMulticastImpl(JNIEnv* env, jclass, jstr
 
 static JNINativeMethod gMethods[] = {
     NATIVE_METHOD(NetworkInterface, getAllInterfaceAddressesImpl, "()[Ljava/net/InterfaceAddress;"),
-    NATIVE_METHOD(NetworkInterface, getHardwareAddressImpl, "(Ljava/lang/String;)[B"),
+    //NATIVE_METHOD(NetworkInterface, getHardwareAddressImpl, "(Ljava/lang/String;)[B"),
     NATIVE_METHOD(NetworkInterface, getMTUImpl, "(Ljava/lang/String;)I"),
     NATIVE_METHOD(NetworkInterface, isLoopbackImpl, "(Ljava/lang/String;)Z"),
     NATIVE_METHOD(NetworkInterface, isPointToPointImpl, "(Ljava/lang/String;)Z"),
