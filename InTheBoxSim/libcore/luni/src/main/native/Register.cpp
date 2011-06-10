@@ -35,7 +35,7 @@ extern int register_java_io_ObjectOutputStream(JNIEnv* env);
 extern int register_java_io_ObjectStreamClass(JNIEnv* env);
 extern int register_java_lang_Character(JNIEnv* env);
 extern int register_java_lang_Double(JNIEnv* env);
-//extern int register_java_lang_Float(JNIEnv* env);
+extern int register_java_lang_Float(JNIEnv* env);
 extern int register_java_lang_Math(JNIEnv* env);
 extern int register_java_lang_ProcessManager(JNIEnv* env);
 extern int register_java_lang_RealToString(JNIEnv* env);
@@ -86,7 +86,7 @@ extern "C" int registerCoreLibrariesJni(JNIEnv* env) {
             register_java_io_ObjectStreamClass(env) != -1 &&
             register_java_lang_Character(env) != -1 &&
             register_java_lang_Double(env) != -1 &&
-            //register_java_lang_Float(env) != -1 &&
+            register_java_lang_Float(env) != -1 &&
             register_java_lang_Math(env) != -1 &&
             register_java_lang_ProcessManager(env) != -1 &&
             register_java_lang_RealToString(env) != -1 &&

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F80FC70F13A2226500343648 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F8DA3119136B01FC0010A282 /* Main.c */; };
+		F80FC71013A243C300343648 /* java_lang_Float.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F828631C1361BC9D00426E84 /* java_lang_Float.cpp */; };
 		F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F542135DE26300A8BDFF /* MainWindow_iPhone.xib */; };
 		F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F549135DE26300A8BDFF /* MainWindow_iPad.xib */; };
 		F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F866F535135DE26300A8BDFF /* InfoPlist.strings */; };
@@ -34641,6 +34642,7 @@
 				F8286C641361BEFD00426E84 /* Register.cpp in Sources */,
 				F8286C651361BEFD00426E84 /* TimeZones.cpp in Sources */,
 				F8286C661361BEFD00426E84 /* valueOf.cpp in Sources */,
+				F80FC71013A243C300343648 /* java_lang_Float.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
