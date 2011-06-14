@@ -94,6 +94,7 @@
 		F80FC7D213A25E8A00343648 /* libfdlibm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80FC71D13A257D600343648 /* libfdlibm.a */; };
 		F80FC7D313A2661700343648 /* java_lang_StrictMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863201361BC9D00426E84 /* java_lang_StrictMath.cpp */; };
 		F80FC7D413A2662F00343648 /* java_net_NetworkInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863231361BC9D00426E84 /* java_net_NetworkInterface.cpp */; };
+		F80FC7D513A753B300343648 /* org_apache_harmony_luni_platform_OSMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F828633F1361BC9D00426E84 /* org_apache_harmony_luni_platform_OSMemory.cpp */; };
 		F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F542135DE26300A8BDFF /* MainWindow_iPhone.xib */; };
 		F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F549135DE26300A8BDFF /* MainWindow_iPad.xib */; };
 		F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F866F535135DE26300A8BDFF /* InfoPlist.strings */; };
@@ -35058,6 +35059,7 @@
 				F80FC71013A243C300343648 /* java_lang_Float.cpp in Sources */,
 				F80FC7D313A2661700343648 /* java_lang_StrictMath.cpp in Sources */,
 				F80FC7D413A2662F00343648 /* java_net_NetworkInterface.cpp in Sources */,
+				F80FC7D513A753B300343648 /* org_apache_harmony_luni_platform_OSMemory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -311,7 +311,7 @@ static jboolean OSMemory_isLoaded(JNIEnv*, jclass, jint address, jlong size) {
     size += align_offset;
     int page_count = (size + page_size - 1) / page_size;
 
-    UniquePtr<unsigned char[]> vec(new unsigned char[page_count]);
+    UniquePtr<char[]> vec(new char[page_count]);
     int rc = mincore(cast<void*>(address), size, vec.get());
     if (rc == -1) {
         return JNI_FALSE;
