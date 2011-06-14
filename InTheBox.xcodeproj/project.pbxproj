@@ -95,6 +95,7 @@
 		F80FC7D313A2661700343648 /* java_lang_StrictMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863201361BC9D00426E84 /* java_lang_StrictMath.cpp */; };
 		F80FC7D413A2662F00343648 /* java_net_NetworkInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863231361BC9D00426E84 /* java_net_NetworkInterface.cpp */; };
 		F80FC7D513A753B300343648 /* org_apache_harmony_luni_platform_OSMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F828633F1361BC9D00426E84 /* org_apache_harmony_luni_platform_OSMemory.cpp */; };
+		F80FC7D613A766A600343648 /* org_apache_harmony_luni_util_FloatingPointParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82863411361BC9D00426E84 /* org_apache_harmony_luni_util_FloatingPointParser.cpp */; };
 		F814A29D1369C70700DDF55F /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F542135DE26300A8BDFF /* MainWindow_iPhone.xib */; };
 		F814A29E1369C70700DDF55F /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F866F549135DE26300A8BDFF /* MainWindow_iPad.xib */; };
 		F814A29F1369C70700DDF55F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F866F535135DE26300A8BDFF /* InfoPlist.strings */; };
@@ -35060,6 +35061,7 @@
 				F80FC7D313A2661700343648 /* java_lang_StrictMath.cpp in Sources */,
 				F80FC7D413A2662F00343648 /* java_net_NetworkInterface.cpp in Sources */,
 				F80FC7D513A753B300343648 /* org_apache_harmony_luni_platform_OSMemory.cpp in Sources */,
+				F80FC7D613A766A600343648 /* org_apache_harmony_luni_util_FloatingPointParser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36551,6 +36553,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					MACOSX,
+					USE_LL,
 				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
@@ -36575,7 +36578,10 @@
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InTheBoxSim/InTheBoxSim-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MACOSX,
+					USE_LL,
+				);
 				GCC_VERSION = 4.2;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/InTheBoxSim/include/",
