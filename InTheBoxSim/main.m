@@ -16,20 +16,19 @@
 char * MAIN_JAVA_CLASS_NAME = "Foo";
 const char * JAR_NAME = "foo.jar";
 
-int main(int argc, char *argv[])
+int main(void)
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
     const char * path = getAppBundlePath();
     
-    int argc2 = 5;
-    char *argv2[argc2];
-    argv2[0] = argv[0];
-    argv2[1] = "-cp";
+    int argc = 5;
+    char *argv[argc];
+    argv[1] = "-cp";
     char foopath[PATH_MAX];
     snprintf(foopath, sizeof(foopath), "%s/%s", path, JAR_NAME);
     
-    argv2[2] = foopath;
+    argv[2] = foopath;
     
     const char * bcpHeader = "-Xbootclasspath:";
     
@@ -38,11 +37,11 @@ int main(int argc, char *argv[])
              "%s%s/core.jar:%s/ext.jar:%s/framework.jar:%s/android.policy.jar:%s/services.jar",
              bcpHeader, path, path, path, path, path);
     
-    argv2[3] = bootclasspath;
-    argv2[4] = MAIN_JAVA_CLASS_NAME;
+    argv[3] = bootclasspath;
+    argv[4] = MAIN_JAVA_CLASS_NAME;
     
-    androidMain(argc2, argv2);
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
+    androidMain(argc, argv);
+    int retVal = UIApplicationMain(0, NULL, nil, nil);
     [pool release];
     return retVal;
 }
