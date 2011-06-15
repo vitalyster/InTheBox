@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F80FC71213A257D600343648"
-               BuildableName = "libliblog copy.a"
+               BuildableName = "libfdlibm.a"
                BlueprintName = "fdlibm"
                ReferencedContainer = "container:InTheBox.xcodeproj">
             </BuildableReference>

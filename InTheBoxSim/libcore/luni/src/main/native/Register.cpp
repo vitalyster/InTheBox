@@ -21,7 +21,6 @@ namespace android {
     extern int register_dalvik_system_TouchDex(JNIEnv* env);
 }
 
-// ITB_TODO: put back native files that have been removed
 extern int register_com_ibm_icu4jni_converters_NativeConverter(JNIEnv* env);
 extern int register_com_ibm_icu4jni_text_NativeBreakIterator(JNIEnv* env);
 extern int register_com_ibm_icu4jni_text_NativeCollator(JNIEnv* env);
@@ -63,7 +62,7 @@ extern int register_org_apache_harmony_luni_platform_OSMemory(JNIEnv* env);
 extern int register_org_apache_harmony_luni_platform_OSNetworkSystem(JNIEnv* env);
 extern int register_org_apache_harmony_luni_util_fltparse(JNIEnv* env);
 extern int register_org_apache_harmony_text_NativeBidi(JNIEnv* env);
-//extern int register_org_apache_harmony_xml_ExpatParser(JNIEnv* env);
+extern int register_org_apache_harmony_xml_ExpatParser(JNIEnv* env);
 extern int register_org_apache_harmony_xnet_provider_jsse_NativeCrypto(JNIEnv* env);
 
 // DalvikVM calls this on startup, so we can statically register all our native methods.
@@ -116,8 +115,8 @@ extern "C" int registerCoreLibrariesJni(JNIEnv* env) {
             register_org_apache_harmony_xnet_provider_jsse_NativeCrypto(env) != -1 &&
             // Initialize the Android classes last, as they have dependencies on the "corer" core classes.
             android::register_dalvik_system_TouchDex(env) != -1 &&
-    register_org_apache_harmony_dalvik_NativeTestTarget(env) != -1; // &&
-            //register_org_apache_harmony_xml_ExpatParser(env) != -1;
+            register_org_apache_harmony_dalvik_NativeTestTarget(env) != -1 &&
+            register_org_apache_harmony_xml_ExpatParser(env) != -1;
 
     return result ? 0 : -1;
 }

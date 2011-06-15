@@ -751,11 +751,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/Jni.c"
-         timestampString = "329063961.186297"
+         timestampString = "329066487.67644"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "879"
-         endingLineNumber = "879"
+         startingLineNumber = "878"
+         endingLineNumber = "878"
          landmarkName = "deleteGlobalReference()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -765,11 +765,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/Jni.c"
-         timestampString = "329063961.186297"
+         timestampString = "329066487.67644"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1269"
-         endingLineNumber = "1269"
+         startingLineNumber = "1268"
+         endingLineNumber = "1268"
          landmarkName = "dvmGetJNIRefType()"
          landmarkType = "7">
       </FileBreakpoint>
@@ -1367,11 +1367,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "InTheBoxSim/vm/Init.c"
-         timestampString = "329063961.186297"
+         timestampString = "329140381.982573"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1596"
-         endingLineNumber = "1596"
+         startingLineNumber = "1594"
+         endingLineNumber = "1594"
          landmarkName = "dvmShutdown()"
          landmarkType = "7">
       </FileBreakpoint>
