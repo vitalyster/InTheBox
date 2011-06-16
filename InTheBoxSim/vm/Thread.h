@@ -364,11 +364,6 @@ INLINE void dvmInitMutex(pthread_mutex_t* pMutex)
 INLINE void dvmLockMutex(pthread_mutex_t* pMutex)
 {
     int cc __attribute__ ((__unused__)) = pthread_mutex_lock(pMutex);
-    // ITB_TODO: initialize this elsewhere
-    if (cc == EINVAL){
-        dvmInitMutex(pMutex);
-        cc = pthread_mutex_lock(pMutex);
-    }
     assert(cc == 0);
 }
 

@@ -134,6 +134,9 @@ int dvmDexFileOpenFromFd(int fd, DvmDex** ppDvmDex)
         sysReleaseShmem(&memMap);
         goto bail;
     }
+    
+    //This seems like the best place to initialize the DvmDex mutex.
+    dvmInitMutex(&pDvmDex->modLock);
 
     /* tuck this into the DexFile so it gets released later */
     sysCopyMap(&pDvmDex->memMap, &memMap);
